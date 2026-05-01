@@ -1,0 +1,2 @@
+CLASS ct net/minecraft/world/level/LevelData
+	METHOD a setSpawn (III)V

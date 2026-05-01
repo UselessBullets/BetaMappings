@@ -1,0 +1,2 @@
+CLASS es net/minecraft/world/level/saveddata/SavedDataStorage
+	METHOD a save ()V

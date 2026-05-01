@@ -1,0 +1,2 @@
+CLASS lq net/minecraft/world/entity/Entity
+	METHOD e load (Liq;)V

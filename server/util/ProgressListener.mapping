@@ -1,0 +1,3 @@
+CLASS pj util/ProgressListener
+	METHOD a progressStartNoAbort (Ljava/lang/String;)V
+	METHOD b progressStage (Ljava/lang/String;)V

@@ -1,0 +1,24 @@
+CLASS jh net/minecraft/world/level/tile/entity/TileEntity
+	FIELD a idClassMap Ljava/util/Map;
+	FIELD b classIdMap Ljava/util/Map;
+	FIELD d level Ldj;
+	FIELD e x I
+	FIELD f y I
+	FIELD g z I
+	FIELD h remove Z
+	METHOD a load (Liq;)V
+		ARG 1 compoundTag
+	METHOD a setId (Ljava/lang/Class;Ljava/lang/String;)V
+		ARG 0 clazz
+		ARG 1 id
+	METHOD b save (Liq;)V
+		ARG 1 compoundTag
+	METHOD c loadStatic (Liq;)Ljh;
+		ARG 0 compoundTag
+	METHOD e getData ()I
+	METHOD f getUpdatePacket ()Lgt;
+	METHOD g isRemoved ()Z
+	METHOD g_ tick ()V
+	METHOD h setRemoved ()V
+	METHOD i setChanged ()V
+	METHOD j clearRemoved ()V

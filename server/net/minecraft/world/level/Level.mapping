@@ -1,0 +1,97 @@
+CLASS dj net/minecraft/world/level/Level
+	FIELD a instaTick Z
+	FIELD A maxLoop I
+	FIELD b entities Ljava/util/List;
+	FIELD B isClientSide Z
+	FIELD c tileEntityList Ljava/util/List;
+	FIELD C lightUpdates Ljava/util/List;
+	FIELD d players Ljava/util/List;
+	FIELD D entitiesToRemove Ljava/util/List;
+	FIELD e globalEntities Ljava/util/List;
+	FIELD E tickNextTickList Ljava/util/TreeSet;
+	FIELD f skyDarken I
+	FIELD F tickNextTickSet Ljava/util/Set;
+	FIELD g randValue I
+	FIELD G pendingTileEntities Ljava/util/List;
+	FIELD h addend I
+	FIELD H cloudColor J
+	FIELD i oRainLevel F
+	FIELD I sessionId J
+	FIELD j rainLevel F
+	FIELD J allPlayersSleeping Z
+	FIELD k oThunderLevel F
+	FIELD K boxes Ljava/util/ArrayList;
+	FIELD l thunderLevel F
+	FIELD L updatingTileEntities Z
+	FIELD m lightningTime I
+	FIELD M maxRecurse I
+	FIELD n lightningBoltTime I
+	FIELD N spawnEnemies Z
+	FIELD o noNeighborUpdate Z
+	FIELD O spawnFriendlies Z
+	FIELD p saveInterval I
+	FIELD P chunksToPoll Ljava/util/Set;
+	FIELD q difficulty I
+	FIELD Q delayUntilNextMoodSound I
+	FIELD r random Ljava/util/Random;
+	FIELD R es Ljava/util/List;
+	FIELD s isNew Z
+	FIELD t dimension Los;
+	FIELD u listeners Ljava/util/List;
+	FIELD v chunkSource Lbl;
+	FIELD w levelStorage Lom;
+	FIELD x levelData Lct;
+	FIELD y isFindingSpawn Z
+	FIELD z savedDataStorage Les;
+	METHOD a getBiomeSource ()Lph;
+	METHOD a hasChunksAt (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 r
+	METHOD a setTileAndDataNoUpdate (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+		ARG 5 data
+	METHOD a hasChunksAt (IIIIII)Z
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD a updateLight (Lco;IIIIII)V
+	METHOD a save (ZLpj;)V
+		ARG 1 force
+		ARG 2 progressListener
+	METHOD b createChunkSource ()Lbl;
+	METHOD b getChunkAt (II)Lhi;
+		ARG 1 x
+		ARG 2 z
+	METHOD b setTileNoUpdate (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD b tileEntityChanged (IIILjh;)V
+	METHOD c setInitialSpawn ()V
+	METHOD c getChunk (II)Lhi;
+		ARG 1 x
+		ARG 2 z
+	METHOD d getHeightmap (II)I
+	METHOD f isEmptyTile (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD g hasChunk (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD g hasChunkAt (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD g lightColumnChanged (IIII)V
+	METHOD k checkSession ()V
+	METHOD w saveLevelData ()V

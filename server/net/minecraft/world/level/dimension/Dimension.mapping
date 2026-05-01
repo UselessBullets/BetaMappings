@@ -1,0 +1,5 @@
+CLASS os net/minecraft/world/level/dimension/Dimension
+	FIELD b biomeSource Lph;
+	FIELD e hasCeiling Z
+	METHOD a isValidSpawn (II)Z
+	METHOD b createRandomLevelSource ()Lbl;

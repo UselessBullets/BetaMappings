@@ -1,0 +1,4 @@
+CLASS co net/minecraft/world/level/LightLayer
+	FIELD a Sky Lco;
+	FIELD b Block Lco;
+	FIELD c surrounding I

@@ -1,0 +1,83 @@
+CLASS hi net/minecraft/world/level/chunk/LevelChunk
+	FIELD a touchedSky Z
+	FIELD b blocks [B
+	FIELD c loaded Z
+	FIELD d level Ldj;
+	FIELD e data Lob;
+	FIELD f skyLight Lob;
+	FIELD g blockLight Lob;
+	FIELD h heightmap [B
+	FIELD i minHeight I
+	FIELD j x I
+	FIELD k z I
+	FIELD l tileEntities Ljava/util/Map;
+	FIELD m entityBlocks [Ljava/util/List;
+	FIELD n terrainPopulated Z
+	FIELD o unsaved Z
+	FIELD p dontSave Z
+	FIELD q lastSaveHadEntities Z
+	FIELD r lastSaveTime J
+	METHOD <init> (Ldj;[BII)V
+		ARG 1 level
+		ARG 2 blocks
+		ARG 3 x
+		ARG 4 z
+	METHOD <init> (Ldj;II)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 z
+	METHOD a recalcBlocksLights ()V
+	METHOD a isAt (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD a getTile (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a setTile (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD a setTileAndData (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+		ARG 5 data
+	METHOD a getBrightness (Lco;III)I
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a setBrightness (Lco;IIII)V
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 brightness
+	METHOD b recalcHeightmapOnly ()V
+	METHOD b getHeightmap (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD b getData (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b setData (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 val
+	METHOD c lightLava ()V
+	METHOD c lightGaps (II)V
+		ARG 1 x
+		ARG 2 z
+	METHOD f lightGap (III)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 source
+	METHOD g recalcHeight (III)V
+		ARG 1 x
+		ARG 2 yStart
+		ARG 3 z

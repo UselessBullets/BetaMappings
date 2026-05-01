@@ -1,0 +1,13 @@
+CLASS pb net/minecraft/world/level/LevelSource
+	METHOD a getTile (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD c getData (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD d getMaterial (III)Lhj;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

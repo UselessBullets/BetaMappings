@@ -1,0 +1,4 @@
+CLASS gt net/minecraft/network/packet/Packet
+	FIELD e packetStatistics Ljava/util/HashMap;
+	FIELD f readCounter I
+	METHOD a map (IZZLjava/lang/Class;)V

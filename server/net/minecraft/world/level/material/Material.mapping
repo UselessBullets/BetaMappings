@@ -1,0 +1,2 @@
+CLASS hj net/minecraft/world/level/material/Material
+	FIELD a air Lhj;

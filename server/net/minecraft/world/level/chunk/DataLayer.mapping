@@ -1,0 +1,3 @@
+CLASS ob net/minecraft/world/level/chunk/DataLayer
+	METHOD a get (III)I
+	METHOD a set (IIII)V

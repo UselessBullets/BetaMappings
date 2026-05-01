@@ -1,0 +1,5 @@
+CLASS bt net/minecraft/server/MinecraftServer_1
+	FIELD a a Lnet/minecraft/server/MinecraftServer;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 minecraftServer
+	METHOD run run ()V

@@ -1,0 +1,5 @@
+CLASS bl net/minecraft/world/level/chunk/ChunkSource
+	METHOD a hasChunk (II)Z
+	METHOD a save (ZLpj;)Z
+	METHOD b shouldSave ()Z
+	METHOD b getChunk (II)Lhi;

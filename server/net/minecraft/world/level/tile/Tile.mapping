@@ -1,0 +1,6 @@
+CLASS na net/minecraft/world/level/tile/Tile
+	FIELD bA material Lhj;
+	FIELD m tiles [Lna;
+	FIELD q lightBlock [I
+	METHOD b onRemove (Ldj;III)V
+	METHOD c onPlace (Ldj;III)V
