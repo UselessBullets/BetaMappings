@@ -1,0 +1,11 @@
+CLASS ur net/minecraft/world/level/PortalForcer
+	FIELD a random Ljava/util/Random;
+	METHOD a force (Lfd;Lsn;)V
+		ARG 1 level
+		ARG 2 e
+	METHOD b findPortal (Lfd;Lsn;)Z
+		ARG 1 level
+		ARG 2 e
+	METHOD c createPortal (Lfd;Lsn;)Z
+		ARG 1 level
+		ARG 2 e

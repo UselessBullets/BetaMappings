@@ -1,0 +1,13 @@
+CLASS iy net/minecraft/client/Minimap
+	FIELD a pixels [I
+	FIELD b mapTexture I
+	FIELD c options Lkv;
+	FIELD d font Lsj;
+	METHOD <init> (Lsj;Lkv;Lji;)V
+		ARG 1 font
+		ARG 2 options
+		ARG 3 textures
+	METHOD a render (Lgs;Lji;Liu;)V
+		ARG 1 player
+		ARG 2 textures
+		ARG 3 data

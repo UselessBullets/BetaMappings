@@ -1,0 +1,13 @@
+CLASS iq net/minecraft/world/entity/Painting_Motive
+	FIELD A name Ljava/lang/String;
+	FIELD B w I
+	FIELD C h I
+	FIELD D uo I
+	FIELD E vo I
+	FIELD z MAX_MOTIVE_NAME_LENGTH I
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;IIII)V
+		ARG 3 name
+		ARG 4 w
+		ARG 5 h
+		ARG 6 uo
+		ARG 7 vo

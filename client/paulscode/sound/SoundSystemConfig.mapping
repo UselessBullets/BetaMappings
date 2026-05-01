@@ -1,0 +1,20 @@
+CLASS paulscode/sound/SoundSystemConfig
+	FIELD THREAD_SYNC THREAD_SYNC Ljava/lang/Object;
+	METHOD addLibrary addLibrary (Ljava/lang/Class;)V
+	METHOD getCodec getCodec (Ljava/lang/String;)Lpaulscode/sound/ICodec;
+	METHOD getFileChunkSize getFileChunkSize ()I
+	METHOD getLibraries getLibraries ()Ljava/util/LinkedList;
+	METHOD getLibraryDescription getLibraryDescription (Ljava/lang/Class;)Ljava/lang/String;
+	METHOD getLibraryTitle getLibraryTitle (Ljava/lang/Class;)Ljava/lang/String;
+	METHOD getLogger getLogger ()Lpaulscode/sound/SoundSystemLogger;
+	METHOD getMasterGain getMasterGain ()F
+	METHOD getMaxFileSize getMaxFileSize ()I
+	METHOD getNumberNormalChannels getNumberNormalChannels ()I
+	METHOD getNumberStreamingBuffers getNumberStreamingBuffers ()I
+	METHOD getNumberStreamingChannels getNumberStreamingChannels ()I
+	METHOD getStreamingBufferSize getStreamingBufferSize ()I
+	METHOD libraryCompatible libraryCompatible (Ljava/lang/Class;)Z
+	METHOD midiCodec midiCodec ()Z
+	METHOD setCodec setCodec (Ljava/lang/String;Ljava/lang/Class;)V
+	METHOD setLogger setLogger (Lpaulscode/sound/SoundSystemLogger;)V
+	METHOD setMasterGain setMasterGain (F)V

@@ -1,0 +1,22 @@
+CLASS ut net/minecraft/world/level/tile/PistonMovingPiece
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD a newMovingPieceEntity (IIIZZ)Low;
+		ARG 0 block
+		ARG 1 data
+		ARG 2 facing
+		ARG 3 extending
+		ARG 4 isSourcePiston
+	METHOD a getAABB (Lfd;IIIIFI)Leq;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 tile
+		ARG 6 progress
+		ARG 7 facing
+	METHOD c getEntity (Lxp;III)Luk;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

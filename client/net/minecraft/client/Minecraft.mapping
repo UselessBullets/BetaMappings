@@ -1,0 +1,161 @@
+CLASS net/minecraft/client/Minecraft
+	FIELD a instance Lnet/minecraft/client/Minecraft;
+	FIELD A minecraftApplet Lnet/minecraft/client/MinecraftApplet;
+	FIELD aa levelSource Lnl;
+	FIELD ab connectToIp Ljava/lang/String;
+	FIELD ac connectToPort I
+	FIELD ad waterTexture Lvs;
+	FIELD ae lavaTexture Lcg;
+	FIELD af workDir Ljava/io/File;
+	FIELD ag lastClickTick I
+	FIELD ah recheckPlayerIn I
+	FIELD b __unused_byte_buffer [B
+	FIELD B soundEngine Lyo;
+	FIELD c gameMode Lob;
+	FIELD C mouseHandler Lvy;
+	FIELD d width I
+	FIELD D skins Lik;
+	FIELD e height I
+	FIELD E frameTimes [J
+	FIELD f level Lfd;
+	FIELD F tickTimes [J
+	FIELD g levelRenderer Ln;
+	FIELD G frameTimePos I
+	FIELD h player Ldc;
+	FIELD H warezTime J
+	FIELD i cameraTargetPlayer Lls;
+	FIELD I stats Lxi;
+	FIELD j particleEngine Ldn;
+	FIELD J running Z
+	FIELD k user Lgr;
+	FIELD K fpsString Ljava/lang/String;
+	FIELD l serverDomain Ljava/lang/String;
+	FIELD L wasDown Z
+	FIELD m parent Ljava/awt/Canvas;
+	FIELD M lastTimer J
+	FIELD n appletMode Z
+	FIELD N mouseGrabbed Z
+	FIELD o pause Z
+	FIELD O isRaining Z
+	FIELD p textures Lji;
+	FIELD P lastTickTime J
+	FIELD q font Lsj;
+	FIELD Q fullscreen Z
+	FIELD r screen Lda;
+	FIELD R hasCrashed Z
+	FIELD s progressRenderer Lmk;
+	FIELD S openGLCapabilities Lcx;
+	FIELD t gameRenderer Lpx;
+	FIELD T timer Lpy;
+	FIELD u achievementPopup Lvu;
+	FIELD U bgLoader Lcz;
+	FIELD v gui Luq;
+	FIELD V ticks I
+	FIELD w noRender Z
+	FIELD W missTime I
+	FIELD x humanoidModel Lfh;
+	FIELD X orgWidth I
+	FIELD y hitResult Lvf;
+	FIELD Y orgHeight I
+	FIELD z options Lkv;
+	FIELD Z workingDirectory Ljava/io/File;
+	METHOD <init> (Ljava/awt/Component;Ljava/awt/Canvas;Lnet/minecraft/client/MinecraftApplet;IIZ)V
+		ARG 1 component
+		ARG 2 parent
+		ARG 3 minecraftApplet
+		ARG 4 width
+		ARG 5 height
+		ARG 6 fullscreen
+	METHOD a init ()V
+	METHOD a handleMouseClick (I)V
+		ARG 1 button
+	METHOD a resize (II)V
+		ARG 1 width
+		ARG 2 height
+	METHOD a blit (IIIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 sx
+		ARG 4 sy
+		ARG 5 w
+		ARG 6 h
+	METHOD a handleMouseDown (IZ)V
+		ARG 1 button
+		ARG 2 down
+	METHOD a renderFpsMeter (J)V
+		ARG 1 tickTime
+	METHOD a setScreen (Lda;)V
+		ARG 1 screen
+	METHOD a setLevel (Lfd;)V
+		ARG 1 level
+	METHOD a setLevel (Lfd;Ljava/lang/String;)V
+		ARG 1 level
+		ARG 2 message
+	METHOD a setLevel (Lfd;Ljava/lang/String;Lgs;)V
+		ARG 1 level
+		ARG 2 message
+		ARG 3 forceInsertPlayer
+	METHOD a getWorkingDirectory (Ljava/lang/String;)Ljava/io/File;
+		ARG 0 applicationName
+	METHOD a connectTo (Ljava/lang/String;I)V
+		ARG 1 ip
+		ARG 2 port
+	METHOD a fileDownloaded (Ljava/lang/String;Ljava/io/File;)V
+		ARG 1 substring
+		ARG 2 file
+	METHOD a start (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 0 name
+		ARG 1 sessionId
+	METHOD a selectLevel (Ljava/lang/String;Ljava/lang/String;J)V
+		ARG 1 levelId
+		ARG 2 levelName
+		ARG 3 seed
+	METHOD a startAndConnectTo (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+		ARG 0 name
+		ARG 1 sessionId
+		ARG 2 url
+	METHOD a onCrash (Lmh;)V
+		ARG 1 crashReport
+	METHOD a respawnPlayer (ZI)V
+	METHOD A handleGrabTexture ()V
+	METHOD b getWorkingDirectory ()Ljava/io/File;
+	METHOD b handleClientSideCommand (Ljava/lang/String;)Z
+		ARG 1 chatMessage
+	METHOD b convertLevel (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 levelId
+		ARG 2 levelName
+	METHOD b crash (Lmh;)V
+		ARG 1 crashReport
+	METHOD B verify ()V
+	METHOD c getLevelSource ()Lnl;
+	METHOD c checkGlError (Ljava/lang/String;)V
+		ARG 1 str
+	METHOD C reloadSound ()V
+	METHOD d destroy ()V
+	METHOD d prepareLevel (Ljava/lang/String;)V
+		ARG 1 title
+	METHOD e emergencySave ()V
+	METHOD f stop ()V
+	METHOD g grabMouse ()V
+	METHOD h releaseMouse ()V
+	METHOD i pauseGame ()V
+	METHOD j toggleFullScreen ()V
+	METHOD k tick ()V
+	METHOD l isClientSide ()Z
+	METHOD m toggleDimension ()V
+	METHOD main main ([Ljava/lang/String;)V
+		ARG 0 args
+	METHOD n getOpenGLCapabilities ()Lcx;
+	METHOD o gatherStats1 ()Ljava/lang/String;
+	METHOD p gatherStats2 ()Ljava/lang/String;
+	METHOD q gatherStats3 ()Ljava/lang/String;
+	METHOD r gatherStats4 ()Ljava/lang/String;
+	METHOD run run ()V
+	METHOD s getConnection ()Lnb;
+	METHOD t renderNames ()Z
+	METHOD u useFancyGraphics ()Z
+	METHOD v useAmbientOcclusion ()Z
+	METHOD w renderDebug ()Z
+	METHOD x renderLoadingScreen ()V
+	METHOD y getPlatform ()Lpd;
+	METHOD z checkScreenshot ()V

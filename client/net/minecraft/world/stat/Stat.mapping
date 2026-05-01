@@ -1,0 +1,25 @@
+CLASS vr net/minecraft/world/stat/Stat
+	FIELD a formatter Lwk;
+	FIELD b numberFormat Ljava/text/NumberFormat;
+	FIELD c decimalFormat Ljava/text/DecimalFormat;
+	FIELD e id I
+	FIELD f name Ljava/lang/String;
+	FIELD g awardLocallyOnly Z
+	FIELD h guid Ljava/lang/String;
+	FIELD i defaultFormat Lwk;
+	FIELD j timeFormat Lwk;
+	FIELD k distanceFormat Lwk;
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 1 id
+		ARG 2 name
+	METHOD <init> (ILjava/lang/String;Lwk;)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 formatter
+	METHOD a format (I)Ljava/lang/String;
+		ARG 1 value
+	METHOD d isAchievement ()Z
+	METHOD g postConstruct ()Lvr;
+	METHOD h setAwardLocallyOnly ()Lvr;
+	METHOD i getNumberFormat ()Ljava/text/NumberFormat;
+	METHOD j getDecimalFormat ()Ljava/text/DecimalFormat;

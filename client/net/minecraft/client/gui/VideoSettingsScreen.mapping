@@ -1,0 +1,8 @@
+CLASS nj net/minecraft/client/gui/VideoSettingsScreen
+	FIELD a title Ljava/lang/String;
+	FIELD i lastScreen Lda;
+	FIELD j options Lkv;
+	FIELD l OPTIONS [Lht;
+	METHOD <init> (Lda;Lkv;)V
+		ARG 1 lastScreen
+		ARG 2 options

@@ -1,0 +1,19 @@
+CLASS id net/minecraft/client/gui/inventory/AbstractContainerScreen
+	FIELD a imageWidth I
+	FIELD i imageHeight I
+	FIELD j menu Ldw;
+	FIELD l itemRenderer Lbb;
+	METHOD <init> (Ldw;)V
+		ARG 1 menu
+	METHOD a renderBg (F)V
+		ARG 1 partialTick
+	METHOD a findSlot (II)Lgp;
+		ARG 1 x
+		ARG 2 y
+	METHOD a renderSlot (Lgp;)V
+		ARG 1 slot
+	METHOD a isHovering (Lgp;II)Z
+		ARG 1 slot
+		ARG 2 x
+		ARG 3 y
+	METHOD k renderLabels ()V

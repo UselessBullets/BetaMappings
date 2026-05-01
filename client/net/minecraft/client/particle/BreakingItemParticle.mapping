@@ -1,0 +1,7 @@
+CLASS pb net/minecraft/client/particle/BreakingItemParticle
+	METHOD <init> (Lfd;DDDLgm;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 irem

@@ -1,0 +1,2 @@
+CLASS js net/minecraft/world/level/tile/entity/ChestTileEntity
+	FIELD a items [Liz;

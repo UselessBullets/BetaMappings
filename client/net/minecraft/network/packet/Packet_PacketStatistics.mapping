@@ -1,0 +1,7 @@
+CLASS nv net/minecraft/network/packet/Packet_PacketStatistics
+	FIELD a count I
+	FIELD b totalSize J
+	METHOD <init> (Lgw;)V
+		ARG 1 empty
+	METHOD a addPacket (I)V
+		ARG 1 bytes

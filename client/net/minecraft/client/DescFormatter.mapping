@@ -1,0 +1,3 @@
+CLASS gt net/minecraft/client/DescFormatter
+	METHOD a format (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 i18nValue

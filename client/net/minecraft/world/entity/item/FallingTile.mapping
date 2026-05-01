@@ -1,0 +1,10 @@
+CLASS ju net/minecraft/world/entity/item/FallingTile
+	FIELD a tile I
+	FIELD b time I
+	METHOD <init> (Lfd;DDDI)V
+		ARG 1 level
+		ARG 2 xo
+		ARG 4 yo
+		ARG 6 zo
+		ARG 8 tile
+	METHOD k getLevel ()Lfd;

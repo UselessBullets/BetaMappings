@@ -1,0 +1,4 @@
+CLASS se net/minecraft/network/packet/ChunkVisibilityPacket
+	FIELD a x I
+	FIELD b y I
+	FIELD c visible Z

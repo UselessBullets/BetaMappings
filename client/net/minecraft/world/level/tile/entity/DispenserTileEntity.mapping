@@ -1,0 +1,4 @@
+CLASS az net/minecraft/world/level/tile/entity/DispenserTileEntity
+	FIELD a items [Liz;
+	FIELD b random Ljava/util/Random;
+	METHOD b removeRandomItem ()Liz;

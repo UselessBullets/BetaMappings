@@ -1,0 +1,7 @@
+CLASS ft net/minecraft/client/skins/TexturePackSelectScreen
+	FIELD a lastScreen Lda;
+	FIELD i updateIn I
+	FIELD j instructions Ljava/lang/String;
+	FIELD l packList Lde;
+	METHOD <init> (Lda;)V
+		ARG 1 lastScreen

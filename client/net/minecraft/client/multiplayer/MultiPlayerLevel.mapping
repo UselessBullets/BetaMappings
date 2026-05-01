@@ -1,0 +1,35 @@
+CLASS mm net/minecraft/client/multiplayer/MultiPlayerLevel
+	FIELD C updatesToReset Ljava/util/LinkedList;
+	FIELD D connection Lnb;
+	FIELD E chunkCache Luv;
+	FIELD F entitiesById Ljx;
+	FIELD G forced Ljava/util/Set;
+	FIELD H reEntries Ljava/util/Set;
+	METHOD <init> (Lnb;JI)V
+		ARG 1 connection
+		ARG 2 seed
+		ARG 4 dimension
+	METHOD a setChunkVisible (IIZ)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 visible
+	METHOD a putEntity (ILsn;)V
+		ARG 1 id
+		ARG 2 e
+	METHOD b getEntity (I)Lsn;
+		ARG 1 id
+	METHOD c removeEntity (I)Lsn;
+		ARG 1 id
+	METHOD c clearResetRegion (IIIIII)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD f doSetTileAndData (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+		ARG 5 data

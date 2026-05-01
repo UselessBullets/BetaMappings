@@ -1,0 +1,2 @@
+CLASS tb net/minecraft/client/renderer/entity/MinecartRenderer
+	FIELD a model Lko;

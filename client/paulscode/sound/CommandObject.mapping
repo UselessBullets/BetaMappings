@@ -1,0 +1,10 @@
+CLASS paulscode/sound/CommandObject
+	FIELD boolArgs boolArgs [Z
+	FIELD buffer buffer [B
+	FIELD classArgs classArgs [Ljava/lang/Class;
+	FIELD Command Command I
+	FIELD floatArgs floatArgs [F
+	FIELD intArgs intArgs [I
+	FIELD longArgs longArgs [J
+	FIELD objectArgs objectArgs [Ljava/lang/Object;
+	FIELD stringArgs stringArgs [Ljava/lang/String;

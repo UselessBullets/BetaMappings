@@ -1,0 +1,2 @@
+CLASS com/jcraft/jogg/Buffer
+	METHOD read read (I)I

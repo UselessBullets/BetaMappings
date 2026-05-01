@@ -1,0 +1,2 @@
+CLASS sz com/mojang/nbt/DoubleTag
+	FIELD a data D

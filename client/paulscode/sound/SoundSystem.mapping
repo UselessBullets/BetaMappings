@@ -1,0 +1,394 @@
+CLASS paulscode/sound/SoundSystem
+	FIELD className className Ljava/lang/String;
+	FIELD commandQueue commandQueue Ljava/util/List;
+	FIELD commandThread commandThread Lpaulscode/sound/CommandThread;
+	FIELD currentLibrary currentLibrary Ljava/lang/Class;
+	FIELD GET GET Z
+	FIELD initialized initialized Z
+	FIELD lastException lastException Lpaulscode/sound/SoundSystemException;
+	FIELD logger logger Lpaulscode/sound/SoundSystemLogger;
+	FIELD randomNumberGenerator randomNumberGenerator Ljava/util/Random;
+	FIELD SET SET Z
+	FIELD soundLibrary soundLibrary Lpaulscode/sound/Library;
+	FIELD sourcePlayList sourcePlayList Ljava/util/List;
+	FIELD XXX XXX Z
+	METHOD <init> (Ljava/lang/Class;)V
+		ARG 1 libraryClass
+	METHOD activate activate (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD backgroundMusic backgroundMusic (Ljava/lang/String;Ljava/lang/String;Z)V
+		ARG 1 sourcename
+		ARG 2 filename
+		ARG 3 toLoop
+	METHOD backgroundMusic backgroundMusic (Ljava/lang/String;Ljava/net/URL;Ljava/lang/String;Z)V
+		ARG 1 sourcename
+		ARG 2 url
+		ARG 3 identifer
+		ARG 4 toLoop
+	METHOD checkFadeVolumes checkFadeVolumes ()V
+	METHOD cleanup cleanup ()V
+	METHOD CommandActivate CommandActivate (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD CommandCheckFadeVolumes CommandCheckFadeVolumes ()V
+	METHOD CommandCull CommandCull (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD CommandDequeueSound CommandDequeueSound (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 sourcename
+		ARG 2 filename
+	METHOD CommandFadeOut CommandFadeOut (Ljava/lang/String;Lpaulscode/sound/FilenameURL;J)V
+		ARG 1 sourcename
+		ARG 2 filenameURL
+		ARG 3 milis
+	METHOD CommandFadeOutIn CommandFadeOutIn (Ljava/lang/String;Lpaulscode/sound/FilenameURL;JJ)V
+		ARG 1 sourcename
+		ARG 2 filenameURL
+		ARG 3 milisOut
+		ARG 5 milisIn
+	METHOD CommandFeedRawAudioData CommandFeedRawAudioData (Ljava/lang/String;[B)V
+		ARG 1 sourcename
+		ARG 2 buffer
+	METHOD CommandFlush CommandFlush (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD CommandInitialize CommandInitialize ()V
+	METHOD CommandLoadSound CommandLoadSound (Lpaulscode/sound/FilenameURL;)V
+		ARG 1 filenameURL
+	METHOD CommandMoveListener CommandMoveListener (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD CommandNewLibrary CommandNewLibrary (Ljava/lang/Class;)V
+		ARG 1 libraryClass
+	METHOD CommandNewSource CommandNewSource (ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;FFFIF)V
+		ARG 1 priority
+		ARG 2 toStreem
+		ARG 3 toLoop
+		ARG 4 sourcename
+		ARG 5 filenameURL
+		ARG 6 x
+		ARG 7 y
+		ARG 8 z
+		ARG 9 attmodel
+		ARG 10 distOrRoll
+	METHOD CommandPause CommandPause (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD CommandPlay CommandPlay (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD CommandQueue CommandQueue (Lpaulscode/sound/CommandObject;)Z
+		ARG 1 newCommand
+	METHOD CommandQueueSound CommandQueueSound (Ljava/lang/String;Lpaulscode/sound/FilenameURL;)V
+		ARG 1 sourcename
+		ARG 2 filenameURL
+	METHOD CommandQuickPlay CommandQuickPlay (ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;FFFIFZ)V
+		ARG 1 priority
+		ARG 2 toStream
+		ARG 3 toLoop
+		ARG 4 sourcename
+		ARG 5 filenameURL
+		ARG 6 x
+		ARG 7 y
+		ARG 8 z
+		ARG 9 attmodel
+		ARG 10 distOrRoll
+		ARG 11 temporary
+	METHOD CommandRawDataStream CommandRawDataStream (Ljavax/sound/sampled/AudioFormat;ZLjava/lang/String;FFFIF)V
+		ARG 1 audioFormat
+		ARG 2 priority
+		ARG 3 sourcename
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 attmodel
+		ARG 8 distOrRoll
+	METHOD CommandRemoveSource CommandRemoveSource (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD CommandRewind CommandRewind (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD CommandSetAttenuation CommandSetAttenuation (Ljava/lang/String;I)V
+		ARG 1 sourcename
+		ARG 2 model
+	METHOD CommandSetDistOrRoll CommandSetDistOrRoll (Ljava/lang/String;F)V
+		ARG 1 sourcename
+		ARG 2 dr
+	METHOD CommandSetListenerAngle CommandSetListenerAngle (F)V
+		ARG 1 angle
+	METHOD CommandSetListenerOrientation CommandSetListenerOrientation (FFFFFF)V
+		ARG 1 lookX
+		ARG 2 lookY
+		ARG 3 lookZ
+		ARG 4 upX
+		ARG 5 upY
+		ARG 6 upZ
+	METHOD CommandSetListenerPosition CommandSetListenerPosition (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD CommandSetLooping CommandSetLooping (Ljava/lang/String;Z)V
+		ARG 1 sourcename
+		ARG 2 lp
+	METHOD CommandSetMasterVolume CommandSetMasterVolume (F)V
+		ARG 1 value
+	METHOD CommandSetPitch CommandSetPitch (Ljava/lang/String;F)V
+		ARG 1 sourcename
+		ARG 2 value
+	METHOD CommandSetPosition CommandSetPosition (Ljava/lang/String;FFF)V
+		ARG 1 sourcename
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD CommandSetPriority CommandSetPriority (Ljava/lang/String;Z)V
+		ARG 1 sourcename
+		ARG 2 pri
+	METHOD CommandSetTemporary CommandSetTemporary (Ljava/lang/String;Z)V
+		ARG 1 sourcename
+		ARG 2 temporary
+	METHOD CommandSetVolume CommandSetVolume (Ljava/lang/String;F)V
+		ARG 1 sourcename
+		ARG 2 value
+	METHOD CommandStop CommandStop (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD CommandTurnListener CommandTurnListener (F)V
+		ARG 1 angle
+	METHOD CommandUnloadSound CommandUnloadSound (Ljava/lang/String;)V
+		ARG 1 filename
+	METHOD copySources copySources (Ljava/util/HashMap;)Ljava/util/HashMap;
+		ARG 1 sourceMap
+	METHOD cull cull (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD currentLibrary currentLibrary ()Ljava/lang/Class;
+	METHOD currentLibrary currentLibrary (ZLjava/lang/Class;)Ljava/lang/Class;
+		ARG 0 action
+		ARG 1 value
+	METHOD dequeueSound dequeueSound (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 sourcename
+		ARG 2 filename
+	METHOD errorCheck errorCheck (ZLjava/lang/String;I)Z
+		ARG 1 error
+		ARG 2 message
+		ARG 3 indent
+	METHOD errorMessage errorMessage (Ljava/lang/String;I)V
+		ARG 1 message
+		ARG 2 indent
+	METHOD fadeOut fadeOut (Ljava/lang/String;Ljava/lang/String;J)V
+		ARG 1 sourcename
+		ARG 2 filename
+		ARG 3 milis
+	METHOD fadeOut fadeOut (Ljava/lang/String;Ljava/net/URL;Ljava/lang/String;J)V
+		ARG 1 sourcename
+		ARG 2 url
+		ARG 3 identifier
+		ARG 4 milis
+	METHOD fadeOutIn fadeOutIn (Ljava/lang/String;Ljava/lang/String;JJ)V
+		ARG 1 sourcename
+		ARG 2 filename
+		ARG 3 milisOut
+		ARG 5 milisIn
+	METHOD fadeOutIn fadeOutIn (Ljava/lang/String;Ljava/net/URL;Ljava/lang/String;JJ)V
+		ARG 1 sourcename
+		ARG 2 url
+		ARG 3 identifier
+		ARG 4 milisOut
+		ARG 6 milisIn
+	METHOD feedRawAudioData feedRawAudioData (Ljava/lang/String;[B)V
+		ARG 1 sourcename
+		ARG 2 buffer
+	METHOD flush flush (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD getLastException getLastException ()Lpaulscode/sound/SoundSystemException;
+	METHOD getListenerData getListenerData ()Lpaulscode/sound/ListenerData;
+	METHOD getMasterVolume getMasterVolume ()F
+	METHOD getPitch getPitch (Ljava/lang/String;)F
+		ARG 1 sourcename
+	METHOD getVolume getVolume (Ljava/lang/String;)F
+		ARG 1 sourcename
+	METHOD importantMessage importantMessage (Ljava/lang/String;I)V
+		ARG 1 message
+		ARG 2 indent
+	METHOD init init (Ljava/lang/Class;)V
+		ARG 1 libraryClass
+	METHOD initialized initialized ()Z
+	METHOD initialized initialized (ZZ)Z
+		ARG 0 action
+		ARG 1 value
+	METHOD interruptCommandThread interruptCommandThread ()V
+	METHOD lastException lastException (ZLpaulscode/sound/SoundSystemException;)Lpaulscode/sound/SoundSystemException;
+		ARG 0 action
+		ARG 1 e
+	METHOD libraryCompatible libraryCompatible (Ljava/lang/Class;)Z
+		ARG 0 libraryClass
+	METHOD linkDefaultLibrariesAndCodecs linkDefaultLibrariesAndCodecs ()V
+	METHOD loadSound loadSound (Ljava/lang/String;)V
+		ARG 1 filename
+	METHOD loadSound loadSound (Ljava/net/URL;Ljava/lang/String;)V
+		ARG 1 url
+		ARG 2 identifier
+	METHOD ManageSources ManageSources ()V
+	METHOD message message (Ljava/lang/String;I)V
+		ARG 1 message
+		ARG 2 indent
+	METHOD moveListener moveListener (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD newLibrary newLibrary (Ljava/lang/Class;)Z
+		ARG 1 libraryClass
+	METHOD newSource newSource (ZLjava/lang/String;Ljava/lang/String;ZFFFIF)V
+		ARG 1 priority
+		ARG 2 sourcename
+		ARG 3 filename
+		ARG 4 toLoop
+		ARG 5 x
+		ARG 6 y
+		ARG 7 z
+		ARG 8 attmodel
+		ARG 9 distOrRoll
+	METHOD newSource newSource (ZLjava/lang/String;Ljava/net/URL;Ljava/lang/String;ZFFFIF)V
+		ARG 1 priority
+		ARG 2 sourcename
+		ARG 3 url
+		ARG 4 identifier
+		ARG 5 toLoop
+		ARG 6 x
+		ARG 7 y
+		ARG 8 z
+		ARG 9 attmodel
+		ARG 10 distOrRoll
+	METHOD newStreamingSource newStreamingSource (ZLjava/lang/String;Ljava/lang/String;ZFFFIF)V
+		ARG 1 priority
+		ARG 2 sourcename
+		ARG 3 identifier
+		ARG 4 toLoop
+		ARG 5 x
+		ARG 6 y
+		ARG 7 z
+		ARG 8 attmodel
+		ARG 9 distOrRoll
+	METHOD newStreamingSource newStreamingSource (ZLjava/lang/String;Ljava/net/URL;Ljava/lang/String;ZFFFIF)V
+		ARG 1 priority
+		ARG 2 sourcename
+		ARG 3 url
+		ARG 4 filename
+		ARG 5 toLoop
+		ARG 6 x
+		ARG 7 y
+		ARG 8 z
+		ARG 9 attmodel
+		ARG 10 distOrRoll
+	METHOD pause pause (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD play play (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD playing playing ()Z
+	METHOD playing playing (Ljava/lang/String;)Z
+		ARG 1 sourcename
+	METHOD queueSound queueSound (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 sourcename
+		ARG 2 filename
+	METHOD queueSound queueSound (Ljava/lang/String;Ljava/net/URL;Ljava/lang/String;)V
+		ARG 1 sourcename
+		ARG 2 url
+		ARG 3 identifier
+	METHOD quickPlay quickPlay (ZLjava/lang/String;ZFFFIF)Ljava/lang/String;
+		ARG 1 priority
+		ARG 2 filename
+		ARG 3 toLoop
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 attmodel
+		ARG 8 distOrRoll
+	METHOD quickPlay quickPlay (ZLjava/net/URL;Ljava/lang/String;ZFFFIF)Ljava/lang/String;
+		ARG 1 priority
+		ARG 2 url
+		ARG 3 identifier
+		ARG 4 toLoop
+		ARG 5 x
+		ARG 6 y
+		ARG 7 z
+		ARG 8 attmodel
+		ARG 9 distOrRoll
+	METHOD quickStream quickStream (ZLjava/lang/String;ZFFFIF)Ljava/lang/String;
+		ARG 1 priority
+		ARG 2 filename
+		ARG 3 toLoop
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 attmodel
+		ARG 8 distOrRoll
+	METHOD quickStream quickStream (ZLjava/net/URL;Ljava/lang/String;ZFFFIF)Ljava/lang/String;
+		ARG 1 priority
+		ARG 2 url
+		ARG 3 identifier
+		ARG 4 toLoop
+		ARG 5 x
+		ARG 6 y
+		ARG 7 z
+		ARG 8 attmodel
+		ARG 9 distOrRoll
+	METHOD rawDataStream rawDataStream (Ljavax/sound/sampled/AudioFormat;ZLjava/lang/String;FFFIF)V
+		ARG 1 audioFormat
+		ARG 2 priority
+		ARG 3 sourcename
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 attmodel
+		ARG 8 distOrRoll
+	METHOD removeSource removeSource (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD removeTemporarySources removeTemporarySources ()V
+	METHOD rewind rewind (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD setAttenuation setAttenuation (Ljava/lang/String;I)V
+		ARG 1 sourcename
+		ARG 2 model
+	METHOD setDistOrRoll setDistOrRoll (Ljava/lang/String;F)V
+		ARG 1 sourcename
+		ARG 2 dr
+	METHOD setException setException (Lpaulscode/sound/SoundSystemException;)V
+		ARG 0 e
+	METHOD setListenerAngle setListenerAngle (F)V
+		ARG 1 angle
+	METHOD setListenerOrientation setListenerOrientation (FFFFFF)V
+		ARG 1 lookX
+		ARG 2 lookY
+		ARG 3 lookZ
+		ARG 4 upX
+		ARG 5 upY
+		ARG 6 upZ
+	METHOD setListenerPosition setListenerPosition (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD setLooping setLooping (Ljava/lang/String;Z)V
+		ARG 1 sourcename
+		ARG 2 lp
+	METHOD setMasterVolume setMasterVolume (F)V
+		ARG 1 value
+	METHOD setPitch setPitch (Ljava/lang/String;F)V
+		ARG 1 sourcename
+		ARG 2 value
+	METHOD setPosition setPosition (Ljava/lang/String;FFF)V
+		ARG 1 sourcename
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD setPriority setPriority (Ljava/lang/String;Z)V
+		ARG 1 sourcename
+		ARG 2 pri
+	METHOD setTemporary setTemporary (Ljava/lang/String;Z)V
+		ARG 1 sourcename
+		ARG 2 temporary
+	METHOD setVolume setVolume (Ljava/lang/String;F)V
+		ARG 1 sourcename
+		ARG 2 value
+	METHOD snooze snooze (J)V
+		ARG 0 milliseconds
+	METHOD stop stop (Ljava/lang/String;)V
+		ARG 1 sourcename
+	METHOD switchLibrary switchLibrary (Ljava/lang/Class;)Z
+		ARG 1 libraryClass
+	METHOD turnListener turnListener (F)V
+		ARG 1 angle
+	METHOD unloadSound unloadSound (Ljava/lang/String;)V
+		ARG 1 filename

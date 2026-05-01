@@ -1,0 +1,16 @@
+CLASS fv net/minecraft/world/level/levelgen/LargeFeature
+	FIELD a radius I
+	FIELD b random Ljava/util/Random;
+	METHOD a apply (Lcl;Lfd;II[B)V
+		ARG 1 chunkSource
+		ARG 2 level
+		ARG 3 xOffs
+		ARG 4 zOffs
+		ARG 5 blocks
+	METHOD a addFeature (Lfd;IIII[B)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 z
+		ARG 4 xOffs
+		ARG 5 zOffs
+		ARG 6 blocks

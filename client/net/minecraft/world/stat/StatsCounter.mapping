@@ -1,0 +1,37 @@
+CLASS xi net/minecraft/world/stat/StatsCounter
+	FIELD a stats Ljava/util/Map;
+	FIELD b unsentStats Ljava/util/Map;
+	FIELD c requiresSave Z
+	FIELD d statsSyncher Lcj;
+	METHOD <init> (Lgr;Ljava/io/File;)V
+		ARG 1 user
+		ARG 2 workDir
+	METHOD a getUnsent ()Ljava/util/Map;
+	METHOD a loadStatsFromString (Ljava/lang/String;)Ljava/util/Map;
+		ARG 0 statsString
+	METHOD a saveStatsToString (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
+		ARG 0 name
+		ARG 1 sessionId
+		ARG 2 stats
+	METHOD a loadStats (Ljava/util/Map;)V
+		ARG 1 statMap
+	METHOD a add (Ljava/util/Map;Lvr;I)V
+		ARG 1 statMap
+		ARG 2 stat
+		ARG 3 count
+	METHOD a hasTaken (Lny;)Z
+		ARG 1 ach
+	METHOD a getValue (Lvr;)I
+		ARG 1 stat
+	METHOD a award (Lvr;I)V
+		ARG 1 stat
+		ARG 2 count
+	METHOD b forceSend ()V
+	METHOD b mergeStats (Ljava/util/Map;)V
+		ARG 1 statMap
+	METHOD b canTake (Lny;)Z
+		ARG 1 ach
+	METHOD c forceSave ()V
+	METHOD c queueStats (Ljava/util/Map;)V
+		ARG 1 statMap
+	METHOD d tick ()V

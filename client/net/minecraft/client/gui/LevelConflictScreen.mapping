@@ -1,0 +1,2 @@
+CLASS qh net/minecraft/client/gui/LevelConflictScreen
+	FIELD a frame I

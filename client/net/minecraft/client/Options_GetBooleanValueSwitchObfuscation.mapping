@@ -1,0 +1,2 @@
+CLASS fq net/minecraft/client/Options_GetBooleanValueSwitchObfuscation
+	FIELD a arr [I

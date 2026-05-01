@@ -1,0 +1,132 @@
+CLASS gs net/minecraft/world/entity/player/Player
+	FIELD a sleepCounter I
+	FIELD A isInsidePortal Z
+	FIELD b respawnPosition Lbr;
+	FIELD B portalTime F
+	FIELD bN minecartAchievementPos Lbr;
+	FIELD bO dmgSpill I
+	FIELD c inventory Lix;
+	FIELD C oPortalTime F
+	FIELD d inventoryMenu Ldw;
+	FIELD D fishing Llx;
+	FIELD e containerMenu Ldw;
+	FIELD f userType B
+	FIELD g score I
+	FIELD h oBob F
+	FIELD i bob F
+	FIELD j swinging Z
+	FIELD k swingTime I
+	FIELD l name Ljava/lang/String;
+	FIELD m dimension I
+	FIELD n cloakTexture Ljava/lang/String;
+	FIELD o xCloakO D
+	FIELD p yCloakO D
+	FIELD q zCloakO D
+	FIELD r xCloak D
+	FIELD s yCloak D
+	FIELD t zCloak D
+	FIELD u isSleeping Z
+	FIELD v bedPosition Lbr;
+	FIELD w bedOffsetX F
+	FIELD x bedOffsetY F
+	FIELD y bedOffsetZ F
+	FIELD z changingDimensionDelay I
+	METHOD a startCrafting (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a openTrap (Laz;)V
+		ARG 1 trap
+	METHOD a setRespawnPosition (Lbr;)V
+		ARG 1 respawnPosition
+	METHOD a checkBedValidRespawnPosition (Lfd;Lbr;)Lbr;
+		ARG 0 level
+		ARG 1 pos
+	METHOD a reallyDrop (Lhl;)V
+		ARG 1 itemEntity
+	METHOD a drop (Liz;)V
+		ARG 1 item
+	METHOD a drop (Liz;Z)V
+		ARG 1 item
+		ARG 2 randomly
+	METHOD a directAllTameWolvesOnTarget (Lls;Z)V
+		ARG 1 target
+		ARG 2 skipSitting
+	METHOD a openContainer (Llw;)V
+		ARG 1 container
+	METHOD a openFurnace (Lsk;)V
+		ARG 1 furnace
+	METHOD a getDestroySpeed (Luu;)F
+		ARG 1 tile
+	METHOD a awardStat (Lvr;)V
+		ARG 1 stat
+	METHOD a awardStat (Lvr;I)V
+		ARG 1 stat
+		ARG 2 count
+	METHOD a openTextEdit (Lyk;)V
+		ARG 1 sign
+	METHOD a stopSleepInBed (ZZZ)V
+		COMMENT /**
+		COMMENT \t*
+		COMMENT \t* @param forcefulWakeUp
+		COMMENT \t*            If the player has been forced to wake up. When this happens,
+		COMMENT \t*            the client will skip the wake-up animation. For example, when
+		COMMENT \t*            the player is hurt or the bed is destroyed.
+		COMMENT \t* @param updateLevelList
+		COMMENT \t*            If the level's sleeping player list needs to be updated. This
+		COMMENT \t*            is usually the case.
+		COMMENT \t* @param saveRespawnPoint
+		COMMENT \t*            TODO
+		COMMENT \t*/
+		ARG 1 forcefulWakeUp
+		ARG 2 updateLevelList
+		ARG 3 saveRespawnPoint
+	METHOD am checkBed ()Z
+	METHOD b startSleepInBed (III)Lcw;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b handleCollectItem (Liz;)V
+		ARG 1 carried
+	METHOD b displayClientMessage (Ljava/lang/String;)V
+		COMMENT /**
+		COMMENT * This method is currently only relevant to client-side players. It will
+		COMMENT * try to load the messageId from the language file and display it to the
+		COMMENT * client.
+		COMMENT */
+		ARG 1 message
+	METHOD b take (Lsn;I)V
+		ARG 1 e
+		ARG 2 orgCount
+	METHOD b canDestroy (Luu;)Z
+		ARG 1 tile
+	METHOD c interact (Lsn;)V
+		ARG 1 entity
+	METHOD C getScore ()I
+	METHOD d attack (Lsn;)V
+		ARG 1 entity
+	METHOD D drop ()V
+	METHOD e setBedOffset (I)V
+		ARG 1 bedDirection
+	METHOD E setDefaultHeadHeight ()V
+	METHOD F isPlayerVersusPlayer ()Z
+	METHOD G getSelectedItem ()Liz;
+	METHOD H removeSelectedItem ()V
+	METHOD i checkMovementStatistiscs (DDD)V
+		ARG 1 dx
+		ARG 3 dy
+		ARG 5 dz
+	METHOD j checkRidingStatistiscs (DDD)V
+		ARG 1 dx
+		ARG 3 dy
+		ARG 5 dz
+	METHOD j touch (Lsn;)V
+		ARG 1 entity
+	METHOD J swing ()V
+	METHOD M getSleepRotation ()F
+	METHOD O isSleepingLongEnough ()Z
+	METHOD P getSleepTimer ()I
+	METHOD p_ respawn ()V
+	METHOD Q getRespawnPosition ()Lbr;
+	METHOD r closeContainer ()V
+	METHOD v animateRespawn ()V

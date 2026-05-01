@@ -1,0 +1,6 @@
+CLASS sx argo/jdom/JsonObjectNodeBuilder
+	FIELD a fieldBuilders Ljava/util/List;
+	METHOD a withFieldBuilder (Lpn;)Lsx;
+		ARG 1 jsonFieldBuilder
+	METHOD a getFieldBuilders (Lsx;)Ljava/util/List;
+		ARG 0 instance

@@ -1,0 +1,100 @@
+CLASS iz net/minecraft/world/item/ItemInstance
+	FIELD a count I
+	FIELD b popTime I
+	FIELD c id I
+	FIELD d auxValue I
+	METHOD <init> (III)V
+		ARG 1 id
+		ARG 2 count
+		ARG 3 auxValue
+	METHOD <init> (Lgm;)V
+		ARG 1 item
+	METHOD <init> (Lgm;I)V
+		ARG 1 item
+		ARG 2 count
+	METHOD <init> (Lgm;II)V
+		ARG 1 item
+		ARG 2 count
+		ARG 3 auxValue
+	METHOD <init> (Lnu;)V
+		ARG 1 itemTag
+	METHOD <init> (Luu;)V
+		ARG 1 tile
+	METHOD <init> (Luu;I)V
+		ARG 1 tile
+		ARG 2 count
+	METHOD <init> (Luu;II)V
+		ARG 1 tile
+		ARG 2 count
+		ARG 3 auxValue
+	METHOD a getItem ()Lgm;
+	METHOD a remove (I)Liz;
+		ARG 1 count
+	METHOD a mineBlock (IIIILgs;)V
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 owner
+	METHOD a hurt (ILsn;)V
+		ARG 1 i
+		ARG 2 owner
+	METHOD a use (Lfd;Lgs;)Liz;
+		ARG 1 level
+		ARG 2 player
+	METHOD a inventoryTick (Lfd;Lsn;IZ)V
+		ARG 1 level
+		ARG 2 owner
+		ARG 3 slot
+		ARG 4 selected
+	METHOD a snap (Lgs;)V
+		ARG 1 player
+	METHOD a useOn (Lgs;Lfd;IIII)Z
+		ARG 1 player
+		ARG 2 level
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 face
+	METHOD a sameItem (Liz;)Z
+		ARG 1 b
+	METHOD a matches (Liz;Liz;)Z
+		ARG 0 a
+		ARG 1 b
+	METHOD a interactEnemy (Lls;)V
+		ARG 1 mob
+	METHOD a hurtEnemy (Lls;Lgs;)V
+		ARG 1 mob
+		ARG 2 attacker
+	METHOD a save (Lnu;)Lnu;
+		ARG 1 compoundTage
+	METHOD a getAttackDamage (Lsn;)I
+		ARG 1 entity
+	METHOD a getDestroySpeed (Luu;)F
+		ARG 1 tile
+	METHOD b getIcon ()I
+	METHOD b setAuxValue (I)V
+		ARG 1 value
+	METHOD b onCraftedBy (Lfd;Lgs;)V
+		ARG 1 level
+		ARG 2 player
+	METHOD b clone (Liz;)Liz;
+		ARG 0 item
+	METHOD b load (Lnu;)V
+		ARG 1 compoundTage
+	METHOD b canDestroySpecial (Luu;)Z
+		ARG 1 tile
+	METHOD c getMaxStackSize ()I
+	METHOD c equals (Liz;)Z
+		ARG 1 ii
+	METHOD d isStackable ()Z
+	METHOD d matches (Liz;)Z
+		ARG 1 b
+	METHOD e isDamageableItem ()Z
+	METHOD f isStackedByData ()Z
+	METHOD g isDamaged ()Z
+	METHOD h getDamageValue ()I
+	METHOD i getAuxValue ()I
+	METHOD j getMaxDamage ()I
+	METHOD k copy ()Liz;
+	METHOD l getDescriptionId ()Ljava/lang/String;

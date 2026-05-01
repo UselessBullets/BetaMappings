@@ -1,0 +1,11 @@
+CLASS mq net/minecraft/world/CraftingContainer
+	FIELD a items [Liz;
+	FIELD b width I
+	FIELD c menu Ldw;
+	METHOD <init> (Ldw;II)V
+		ARG 1 menu
+		ARG 2 w
+		ARG 3 h
+	METHOD b getItem (II)Liz;
+		ARG 1 x
+		ARG 2 y

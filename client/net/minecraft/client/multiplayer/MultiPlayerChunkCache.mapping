@@ -1,0 +1,10 @@
+CLASS uv net/minecraft/client/multiplayer/MultiPlayerChunkCache
+	FIELD a empty Llm;
+	FIELD b loadedChunks Ljava/util/Map;
+	FIELD c loadedChunkList Ljava/util/List;
+	FIELD d level Lfd;
+	METHOD <init> (Lfd;)V
+		ARG 1 level
+	METHOD d drop (II)V
+		ARG 1 x
+		ARG 2 z

@@ -1,0 +1,4 @@
+CLASS kh net/minecraft/client/Minecraft_DescFormatter
+	FIELD a mc Lnet/minecraft/client/Minecraft;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 mc

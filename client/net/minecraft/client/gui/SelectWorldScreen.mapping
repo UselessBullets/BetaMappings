@@ -1,0 +1,24 @@
+CLASS rq net/minecraft/client/gui/SelectWorldScreen
+	FIELD a lastScreen Lda;
+	FIELD i title Ljava/lang/String;
+	FIELD j DATE_FORMAT Ljava/text/DateFormat;
+	FIELD l done Z
+	FIELD m selectedWorld I
+	FIELD n levelList Ljava/util/List;
+	FIELD o worldSelectionList Lmg;
+	FIELD p worldLang Ljava/lang/String;
+	FIELD q conversionLang Ljava/lang/String;
+	FIELD r isDeleting Z
+	FIELD s deleteButton Lke;
+	FIELD t selectButton Lke;
+	FIELD u renameButton Lke;
+	METHOD <init> (Lda;)V
+		ARG 1 lastScreen
+	METHOD c getWorldId (I)Ljava/lang/String;
+		ARG 1 id
+	METHOD d getWorldName (I)Ljava/lang/String;
+		ARG 1 id
+	METHOD e worldSelected (I)V
+		ARG 1 id
+	METHOD k postInit ()V
+	METHOD l loadLevelList ()V

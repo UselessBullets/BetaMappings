@@ -1,0 +1,5 @@
+CLASS sh net/minecraft/world/inventory/TrapMenu
+	FIELD a trap Laz;
+	METHOD <init> (Llw;Laz;)V
+		ARG 1 container
+		ARG 2 trap

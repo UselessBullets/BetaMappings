@@ -1,0 +1,24 @@
+CLASS iv net/minecraft/client/gui/StatsScreen_StatisticsList
+	FIELD b headerPressed I
+	FIELD c statItemList Ljava/util/List;
+	FIELD d itemStatSorter Ljava/util/Comparator;
+	FIELD e sortColumn I
+	FIELD f sortOrder I
+	FIELD g ss Ldv;
+	METHOD <init> (Ldv;)V
+		ARG 1 statsScreen
+	METHOD a getHeaderDescriptionId (I)Ljava/lang/String;
+		ARG 1 column
+	METHOD a renderMousehoverTooltip (Ltw;II)V
+		ARG 1 stat
+		ARG 2 x
+		ARG 3 z
+	METHOD a renderStat (Ltw;IIZ)V
+		ARG 1 stat
+		ARG 2 x
+		ARG 3 y
+		ARG 4 shaded
+	METHOD b getSlotStat (I)Ltw;
+		ARG 1 slot
+	METHOD c sortByColumn (I)V
+		ARG 1 column

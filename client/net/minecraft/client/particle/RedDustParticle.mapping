@@ -1,0 +1,19 @@
+CLASS im net/minecraft/client/particle/RedDustParticle
+	FIELD a oSize F
+	METHOD <init> (Lfd;DDDFFF)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 rCol
+		ARG 9 gCol
+		ARG 10 bCol
+	METHOD <init> (Lfd;DDDFFFF)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 scale
+		ARG 9 rCol
+		ARG 10 gCol
+		ARG 11 bCol

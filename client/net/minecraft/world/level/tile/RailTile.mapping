@@ -1,0 +1,38 @@
+CLASS pc net/minecraft/world/level/tile/RailTile
+	FIELD a usesDataBit Z
+	METHOD <init> (IIZ)V
+		ARG 1 id
+		ARG 2 tex
+		ARG 3 usesDataBit
+	METHOD a findGoldenRailSignal (Lfd;IIIIZI)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+		ARG 6 forward
+		ARG 7 searchDepth
+	METHOD a updateDir (Lfd;IIIZ)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 first
+	METHOD a isGoldenRailWithPower (Lfd;IIIZII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 forward
+		ARG 6 searchDepth
+		ARG 7 dir
+	METHOD a usesDataBit (Lpc;)Z
+		ARG 0 rail
+	METHOD d isRail (I)Z
+		ARG 0 id
+	METHOD h isRail (Lfd;III)Z
+		ARG 0 level
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD i isUsesDataBit ()Z

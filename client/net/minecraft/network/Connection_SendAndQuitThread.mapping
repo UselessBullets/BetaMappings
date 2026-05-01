@@ -1,0 +1,5 @@
+CLASS xh net/minecraft/network/Connection_SendAndQuitThread
+	FIELD a connection Lpf;
+	METHOD <init> (Lpf;)V
+		ARG 1 connection
+	METHOD run run ()V

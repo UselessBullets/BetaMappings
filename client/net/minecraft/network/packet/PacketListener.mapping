@@ -1,0 +1,107 @@
+CLASS ti net/minecraft/network/packet/PacketListener
+	METHOD a handleInteract (La;)V
+		ARG 1 packet
+	METHOD a handleComplexItemData (Lai;)V
+		ARG 1 packet
+	METHOD a handleBedResponse (Lca;)V
+		ARG 1 packet
+	METHOD a handleTakeItemEntity (Ldi;)V
+		ARG 1 packet
+	METHOD a handleBlockRegionUpdate (Lef;)V
+		ARG 1 packet
+	METHOD a handleSetHealth (Leu;)V
+		ARG 1 packet
+	METHOD a handleAddGlobalEntity (Lfa;)V
+		ARG 1 packet
+	METHOD a handleLevelEvent (Lfn;)V
+		ARG 1 packet
+	METHOD a handleSetEntityMotion (Lgj;)V
+		ARG 1 packet
+	METHOD a handleUseItem (Lgx;)V
+		ARG 1 packet
+	METHOD a handleSetTime (Lhg;)V
+		ARG 1 packet
+	METHOD a handleSetCarriedItem (Lho;)V
+		ARG 1 packet
+	METHOD a handleContainerSetSlot (Lhq;)V
+		ARG 1 packet
+	METHOD a handleMovePlayer (Lig;)V
+		ARG 1 packet
+	METHOD a handleContainerOpen (Liw;)V
+		ARG 1 packet
+	METHOD a onDisconnect (Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 reason
+		ARG 2 reasonObjects
+	METHOD a handleEntityEvent (Ljf;)V
+		ARG 1 packet
+	METHOD a handleAddMob (Ljm;)V
+		ARG 1 packet
+	METHOD a handlePlayerAction (Ljv;)V
+		ARG 1 packet
+	METHOD a handleEntityActionAtPosition (Ljz;)V
+		ARG 1 packet
+	METHOD a handleContainerContent (Lkb;)V
+		ARG 1 packet
+	METHOD a handleAddPlayer (Lmf;)V
+		ARG 1 packet
+	METHOD a handleContainerClose (Lmn;)V
+		ARG 1 packet
+	METHOD a handlePreLogin (Lmp;)V
+		ARG 1 packet
+	METHOD a handleContainerSetData (Lmv;)V
+		ARG 1 packet
+	METHOD a handleAddItemEntity (Lnd;)V
+		ARG 1 packet
+	METHOD a handleAnimate (Lnm;)V
+		ARG 1 packet
+	METHOD a handleRidePacket (Lns;)V
+		ARG 1 packet
+	METHOD a handleLogin (Lnz;)V
+		ARG 1 packet
+	METHOD a handleAwardStat (Lof;)V
+		ARG 1 packet
+	METHOD a handleContainerAck (Loj;)V
+		ARG 1 packet
+	METHOD a handleRespawn (Lox;)V
+		ARG 1 packet
+	METHOD a handleChat (Lpe;)V
+		ARG 1 packet
+	METHOD a handlePlayerInput (Lql;)V
+		ARG 1 packet
+	METHOD a handleContainerClick (Lqs;)V
+		ARG 1 packet
+	METHOD a handleSetSpawn (Lrc;)V
+		ARG 1 packet
+	METHOD a handleTeleportEntity (Lrg;)V
+		ARG 1 packet
+	METHOD a handleExplosion (Lrm;)V
+		ARG 1 packet
+	METHOD a handleRemoveEntity (Lrv;)V
+		ARG 1 packet
+	METHOD a handleSetEquippedItem (Ls;)V
+		ARG 1 packet
+	METHOD a handleChunkVisibility (Lse;)V
+		ARG 1 packet
+	METHOD a handleAddEntity (Lso;)V
+		ARG 1 packet
+	METHOD a handlePlayerCommand (Lts;)V
+		ARG 1 packet
+	METHOD a handleTileUpdate (Ltv;)V
+		ARG 1 packet
+	METHOD a handleMoveEntity (Luh;)V
+		ARG 1 packet
+	METHOD a handleSignUpdate (Lui;)V
+		ARG 1 packet
+	METHOD a handleSetEntityData (Lux;)V
+		ARG 1 packet
+	METHOD a handleAddPainting (Lvt;)V
+		ARG 1 packet
+	METHOD a handleTileEvent (Lvw;)V
+		ARG 1 packet
+	METHOD a handleChunkTilesUpdate (Lwu;)V
+		ARG 1 packet
+	METHOD a handleDisconnect (Lyr;)V
+		ARG 1 packet
+	METHOD c isServerPacketListener ()Z
+	METHOD c onUnhandledPacket (Lki;)V
+		ARG 1 packet

@@ -1,0 +1,4 @@
+CLASS fp net/minecraft/SharedConstants
+	FIELD a acceptableLetters Ljava/lang/String;
+	FIELD b ILLEGAL_FILE_CHARACTERS [C
+	METHOD a readAcceptableChars ()Ljava/lang/String;

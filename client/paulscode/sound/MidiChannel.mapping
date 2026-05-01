@@ -1,0 +1,13 @@
+CLASS paulscode/sound/MidiChannel
+	METHOD cleanup cleanup ()V
+	METHOD dequeueSound dequeueSound (Ljava/lang/String;)V
+	METHOD fadeOut fadeOut (Lpaulscode/sound/FilenameURL;J)V
+	METHOD fadeOutIn fadeOutIn (Lpaulscode/sound/FilenameURL;JJ)V
+	METHOD getFilenameURL getFilenameURL ()Lpaulscode/sound/FilenameURL;
+	METHOD getLooping getLooping ()Z
+	METHOD getSourcename getSourcename ()Ljava/lang/String;
+	METHOD getVolume getVolume ()F
+	METHOD queueSound queueSound (Lpaulscode/sound/FilenameURL;)V
+	METHOD resetGain resetGain ()V
+	METHOD setVolume setVolume (F)V
+	METHOD switchSource switchSource (ZLjava/lang/String;Lpaulscode/sound/FilenameURL;)V

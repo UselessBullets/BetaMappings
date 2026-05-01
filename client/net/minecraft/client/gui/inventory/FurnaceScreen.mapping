@@ -1,0 +1,5 @@
+CLASS ov net/minecraft/client/gui/inventory/FurnaceScreen
+	FIELD l furnace Lsk;
+	METHOD <init> (Lix;Lsk;)V
+		ARG 1 inventory
+		ARG 2 furnace

@@ -1,0 +1,23 @@
+CLASS ep net/minecraft/world/stat/Achievements
+	FIELD a xMin I
+	FIELD b yMin I
+	FIELD c xMax I
+	FIELD d yMax I
+	FIELD e achievements Ljava/util/List;
+	FIELD f openInventory Lny;
+	FIELD g mineWood Lny;
+	FIELD h buildWorkbench Lny;
+	FIELD i buildPickaxe Lny;
+	FIELD j buildFurnace Lny;
+	FIELD k acquireIron Lny;
+	FIELD l buildHoe Lny;
+	FIELD m makeBread Lny;
+	FIELD n bakeCake Lny;
+	FIELD o buildBetterPickaxe Lny;
+	FIELD p cookFish Lny;
+	FIELD q onARail Lny;
+	FIELD r buildSword Lny;
+	FIELD s killEnemy Lny;
+	FIELD t killCow Lny;
+	FIELD u flyPig Lny;
+	METHOD a init ()V

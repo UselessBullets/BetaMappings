@@ -1,0 +1,2 @@
+CLASS qp com/mojang/nbt/ByteTag
+	FIELD a data B

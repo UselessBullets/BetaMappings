@@ -1,0 +1,3 @@
+CLASS paulscode/sound/FilenameURL
+	METHOD getFilename getFilename ()Ljava/lang/String;
+	METHOD getURL getURL ()Ljava/net/URL;

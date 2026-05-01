@@ -1,0 +1,8 @@
+CLASS yc net/minecraft/client/gui/inventory/TextEditScreen
+	FIELD a title Ljava/lang/String;
+	FIELD i sign Lyk;
+	FIELD j frame I
+	FIELD l line I
+	FIELD m allowedChars Ljava/lang/String;
+	METHOD <init> (Lyk;)V
+		ARG 1 sign

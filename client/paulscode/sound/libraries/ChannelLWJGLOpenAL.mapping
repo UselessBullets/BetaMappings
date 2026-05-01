@@ -1,0 +1,4 @@
+CLASS paulscode/sound/libraries/ChannelLWJGLOpenAL
+	FIELD ALSource ALSource Ljava/nio/IntBuffer;
+	METHOD attachBuffer attachBuffer (Ljava/nio/IntBuffer;)Z
+	METHOD setFormat setFormat (II)V

@@ -1,0 +1,2 @@
+CLASS eu net/minecraft/network/packet/SetHealthPacket
+	FIELD a health I

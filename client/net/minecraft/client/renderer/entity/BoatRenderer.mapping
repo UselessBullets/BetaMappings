@@ -1,0 +1,2 @@
+CLASS fe net/minecraft/client/renderer/entity/BoatRenderer
+	FIELD a model Lko;

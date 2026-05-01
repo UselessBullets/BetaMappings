@@ -1,0 +1,15 @@
+CLASS tm net/minecraft/client/multiplayer/MultiPlayerLevel_ResetInfo
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I
+	FIELD d ticks I
+	FIELD e tile I
+	FIELD f data I
+	FIELD g mpLevel Lmm;
+	METHOD <init> (Lmm;IIIII)V
+		ARG 1 mpLevel
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 tile
+		ARG 6 data

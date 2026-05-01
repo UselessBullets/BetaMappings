@@ -1,0 +1,78 @@
+CLASS px net/minecraft/client/renderer/GameRenderer
+	FIELD a anaglyph3d Z
+	FIELD A fovOffsetO F
+	FIELD b anaglyphPass I
+	FIELD B cameraRoll F
+	FIELD c itemInHandRenderer Lra;
+	FIELD C cameraRollO F
+	FIELD d xMod I
+	FIELD D isInClouds Z
+	FIELD e yMod I
+	FIELD E zoom D
+	FIELD f lb Ljava/nio/FloatBuffer;
+	FIELD F zoom_x D
+	FIELD g fr F
+	FIELD G zoom_y D
+	FIELD h fg F
+	FIELD H lastActiveTime J
+	FIELD i fb F
+	FIELD I lastNsTime J
+	FIELD j mc Lnet/minecraft/client/Minecraft;
+	FIELD J random Ljava/util/Random;
+	FIELD k renderDistance F
+	FIELD K rainSoundTime I
+	FIELD l tick I
+	FIELD L fogBrO F
+	FIELD m hovered Lsn;
+	FIELD M fogBr F
+	FIELD n smoothTurnX Lcu;
+	FIELD o smoothTurnY Lcu;
+	FIELD p smoothDistance Lcu;
+	FIELD q smoothRoation Lcu;
+	FIELD r smoothTilt Lcu;
+	FIELD s smoothRoll Lcu;
+	FIELD t thirdDistance F
+	FIELD u thirdDistanceO F
+	FIELD v thirdRotation F
+	FIELD w thirdRotationO F
+	FIELD x thirdTilt F
+	FIELD y thirdTiltO F
+	FIELD z fovOffset F
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 mc
+	METHOD a tick ()V
+	METHOD a pick (F)V
+		ARG 1 partialTick
+	METHOD a getBuffer (FFFF)Ljava/nio/FloatBuffer;
+		ARG 1 a
+		ARG 2 b
+		ARG 3 c
+		ARG 4 d
+	METHOD a setupCamera (FI)V
+		ARG 1 partialTick
+		ARG 2 eye
+	METHOD a renderLevel (FJ)V
+		ARG 1 partialTick
+		ARG 2 until
+	METHOD a setupFog (IF)V
+		ARG 1 i
+		ARG 2 alpha
+	METHOD b setupGuiScreen ()V
+	METHOD b render (F)V
+		ARG 1 partialTick
+	METHOD b renderItemInHand (FI)V
+		ARG 1 partialTick
+		ARG 2 eye
+	METHOD c tickRain ()V
+	METHOD c renderSnowAndRain (F)V
+		ARG 1 partialTick
+	METHOD d getFov (F)F
+		ARG 1 partialTick
+	METHOD e bobHurt (F)V
+		ARG 1 partialTick
+	METHOD f bobView (F)V
+		ARG 1 partialTick
+	METHOD g moveCameraToPlayer (F)V
+		ARG 1 partialTick
+	METHOD h setupClearColor (F)V
+		ARG 1 partialTick

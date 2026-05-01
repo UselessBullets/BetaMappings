@@ -1,0 +1,4 @@
+CLASS tp net/minecraft/world/item/crafting/OreRecipies
+	FIELD a map [[Ljava/lang/Object;
+	METHOD a addRecipes (Lhk;)V
+		ARG 1 recipes

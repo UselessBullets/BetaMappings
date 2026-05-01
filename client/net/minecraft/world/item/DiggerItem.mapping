@@ -1,0 +1,10 @@
+CLASS dq net/minecraft/world/item/DiggerItem
+	FIELD a tier Lbu;
+	FIELD bk tiles [Luu;
+	FIELD bl speed F
+	FIELD bm attackDamage I
+	METHOD <init> (IILbu;[Luu;)V
+		ARG 1 id
+		ARG 2 attackDamage
+		ARG 3 tier
+		ARG 4 tiles

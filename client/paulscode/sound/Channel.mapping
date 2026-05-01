@@ -1,0 +1,6 @@
+CLASS paulscode/sound/Channel
+	FIELD attachedSource attachedSource Lpaulscode/sound/Source;
+	METHOD cleanup cleanup ()V
+	METHOD close close ()V
+	METHOD play play ()V
+	METHOD preLoadBuffers preLoadBuffers (Ljava/util/LinkedList;)Z

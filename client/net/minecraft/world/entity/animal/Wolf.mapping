@@ -1,0 +1,30 @@
+CLASS gi net/minecraft/world/entity/animal/Wolf
+	FIELD b interestedAngle F
+	FIELD c interestedAngleO F
+	FIELD f isWet Z
+	FIELD g isShaking Z
+	FIELD h shakeAnim F
+	FIELD i shakeAnimO F
+	METHOD a getBodyRollAngle (FF)F
+		ARG 1 partialTick
+		ARG 2 offset
+	METHOD a setOwner (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD a spawnTamingParticles (Z)V
+		ARG 1 success
+	METHOD A getOwner ()Ljava/lang/String;
+	METHOD b setSitting (Z)V
+		ARG 1 value
+	METHOD B isSitting ()Z
+	METHOD b_ getWetShade (F)F
+		ARG 1 partialTick
+	METHOD c getHeadRollAngle (F)F
+		ARG 1 partialTick
+	METHOD c setAngry (Z)V
+		ARG 1 value
+	METHOD C isAngry ()Z
+	METHOD d setTame (Z)V
+		ARG 1 value
+	METHOD D isTame ()Z
+	METHOD v isWet ()Z
+	METHOD z getTailAngle ()F

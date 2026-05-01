@@ -1,0 +1,27 @@
+CLASS cf net/minecraft/world/entity/projectile/Fireball
+	FIELD a shakeTime I
+	FIELD b owner Lls;
+	FIELD c xPower D
+	FIELD d yPower D
+	FIELD e zPower D
+	FIELD f xTile I
+	FIELD g yTile I
+	FIELD h zTile I
+	FIELD i lastTile I
+	FIELD j inGround Z
+	FIELD k life I
+	FIELD l flightTime I
+	METHOD <init> (Lfd;DDDDDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xa
+		ARG 10 ya
+		ARG 12 za
+	METHOD <init> (Lfd;Lls;DDD)V
+		ARG 1 level
+		ARG 2 mob
+		ARG 3 xa
+		ARG 5 ya
+		ARG 7 za

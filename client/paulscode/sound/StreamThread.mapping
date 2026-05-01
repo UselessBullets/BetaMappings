@@ -1,0 +1,2 @@
+CLASS paulscode/sound/StreamThread
+	METHOD watch watch (Lpaulscode/sound/Source;)V

@@ -1,0 +1,2 @@
+CLASS com/jcraft/jorbis/Util
+	METHOD ilog ilog (I)I

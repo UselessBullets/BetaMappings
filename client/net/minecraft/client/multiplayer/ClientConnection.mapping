@@ -1,0 +1,19 @@
+CLASS nb net/minecraft/client/multiplayer/ClientConnection
+	FIELD a message Ljava/lang/String;
+	FIELD b savedDataStorage Lhc;
+	FIELD c random Ljava/util/Random;
+	FIELD d done Z
+	FIELD e connection Lpf;
+	FIELD f minecraft Lnet/minecraft/client/Minecraft;
+	FIELD g level Lmm;
+	FIELD h started Z
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/lang/String;I)V
+		ARG 1 minecraft
+		ARG 2 ip
+		ARG 3 port
+	METHOD a tick ()V
+	METHOD a getEntity (I)Lsn;
+		ARG 1 entityId
+	METHOD a sendAndDisconnect (Lki;)V
+	METHOD b close ()V
+	METHOD b send (Lki;)V

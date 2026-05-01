@@ -1,0 +1,7 @@
+CLASS com/jcraft/jorbis/DspState
+	FIELD fullbooks fullbooks [Lcom/jcraft/jorbis/CodeBook;
+	METHOD clear clear ()V
+	METHOD synthesis_blockin synthesis_blockin (Lcom/jcraft/jorbis/Block;)I
+	METHOD synthesis_init synthesis_init (Lcom/jcraft/jorbis/Info;)I
+	METHOD synthesis_pcmout synthesis_pcmout ([[[F[I)I
+	METHOD synthesis_read synthesis_read (I)I

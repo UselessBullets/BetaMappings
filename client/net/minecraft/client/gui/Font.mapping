@@ -1,0 +1,36 @@
+CLASS sj net/minecraft/client/gui/Font
+	FIELD a fontTexture I
+	FIELD b charWidths [I
+	FIELD c listPos I
+	FIELD d ib Ljava/nio/IntBuffer;
+	METHOD <init> (Lkv;Ljava/lang/String;Lji;)V
+		ARG 1 options
+		ARG 2 name
+		ARG 3 textures
+	METHOD a width (Ljava/lang/String;)I
+		ARG 1 str
+	METHOD a wordWrapHeight (Ljava/lang/String;I)I
+		ARG 1 str
+		ARG 2 w
+	METHOD a drawShadow (Ljava/lang/String;III)V
+		ARG 1 str
+		ARG 2 x
+		ARG 3 y
+		ARG 4 color
+	METHOD a drawWordWrapInternal (Ljava/lang/String;IIII)V
+		ARG 1 str
+		ARG 2 x
+		ARG 3 y
+		ARG 4 w
+		ARG 5 col
+	METHOD a draw (Ljava/lang/String;IIIZ)V
+		ARG 1 str
+		ARG 2 x
+		ARG 3 y
+		ARG 4 color
+		ARG 5 darken
+	METHOD b draw (Ljava/lang/String;III)V
+		ARG 1 str
+		ARG 2 x
+		ARG 3 y
+		ARG 4 color

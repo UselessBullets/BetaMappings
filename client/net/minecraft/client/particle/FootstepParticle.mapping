@@ -1,0 +1,10 @@
+CLASS gl net/minecraft/client/particle/FootstepParticle
+	FIELD a life I
+	FIELD o lifeTime I
+	FIELD p textures Lji;
+	METHOD <init> (Lji;Lfd;DDD)V
+		ARG 1 textures
+		ARG 2 level
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z

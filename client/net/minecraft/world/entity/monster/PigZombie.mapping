@@ -1,0 +1,6 @@
+CLASS ya net/minecraft/world/entity/monster/PigZombie
+	FIELD a angryTime I
+	FIELD b playAngrySoundIn I
+	FIELD f sword Liz;
+	METHOD d alert (Lsn;)V
+		ARG 1 target

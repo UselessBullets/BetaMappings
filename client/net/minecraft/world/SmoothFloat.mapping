@@ -1,0 +1,7 @@
+CLASS cu net/minecraft/world/SmoothFloat
+	FIELD a targetValue F
+	FIELD b remainingValue F
+	FIELD c lastAmount F
+	METHOD a getNewDeltaValue (FF)F
+		ARG 1 deltaValue
+		ARG 2 accelerationAmount

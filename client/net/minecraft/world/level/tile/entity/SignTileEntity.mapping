@@ -1,0 +1,4 @@
+CLASS yk net/minecraft/world/level/tile/entity/SignTileEntity
+	FIELD a messages [Ljava/lang/String;
+	FIELD b selectedLine I
+	FIELD c isEditable Z

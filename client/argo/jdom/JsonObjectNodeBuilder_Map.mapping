@@ -1,0 +1,4 @@
+CLASS oy argo/jdom/JsonObjectNodeBuilder_Map
+	FIELD a builder Lsx;
+	METHOD <init> (Lsx;)V
+		ARG 1 builder

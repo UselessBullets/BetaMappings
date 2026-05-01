@@ -1,0 +1,34 @@
+CLASS ny net/minecraft/world/stat/Achievement
+	FIELD a x I
+	FIELD b y I
+	FIELD c requires Lny;
+	FIELD d icon Liz;
+	FIELD l desc Ljava/lang/String;
+	FIELD m descFormatter Lgt;
+	FIELD n isGolden Z
+	METHOD <init> (ILjava/lang/String;IILgm;Lny;)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 x
+		ARG 4 y
+		ARG 5 icon
+		ARG 6 requires
+	METHOD <init> (ILjava/lang/String;IILiz;Lny;)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 x
+		ARG 4 y
+		ARG 5 icon
+		ARG 6 requires
+	METHOD <init> (ILjava/lang/String;IILuu;Lny;)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 x
+		ARG 4 y
+		ARG 5 icon
+		ARG 6 requires
+	METHOD a setDescFormatter (Lgt;)Lny;
+		ARG 1 descFormatter
+	METHOD b setGolden ()Lny;
+	METHOD e getDescription ()Ljava/lang/String;
+	METHOD f isGolden ()Z

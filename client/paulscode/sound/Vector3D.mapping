@@ -1,0 +1,31 @@
+CLASS paulscode/sound/Vector3D
+	FIELD x x F
+	FIELD y y F
+	FIELD z z F
+	METHOD <init> ()V
+	METHOD <init> (FFF)V
+		ARG 1 nx
+		ARG 2 ny
+		ARG 3 nz
+	METHOD add add (Lpaulscode/sound/Vector3D;)Lpaulscode/sound/Vector3D;
+		ARG 1 B
+	METHOD add add (Lpaulscode/sound/Vector3D;Lpaulscode/sound/Vector3D;)Lpaulscode/sound/Vector3D;
+		ARG 1 A
+		ARG 2 B
+	METHOD clone clone ()Ljava/lang/Object;
+	METHOD cross cross (Lpaulscode/sound/Vector3D;)Lpaulscode/sound/Vector3D;
+		ARG 1 B
+	METHOD cross cross (Lpaulscode/sound/Vector3D;Lpaulscode/sound/Vector3D;)Lpaulscode/sound/Vector3D;
+		ARG 1 A
+		ARG 2 B
+	METHOD dot dot (Lpaulscode/sound/Vector3D;)F
+		ARG 1 B
+	METHOD dot dot (Lpaulscode/sound/Vector3D;Lpaulscode/sound/Vector3D;)F
+		ARG 1 A
+		ARG 2 B
+	METHOD normalize normalize ()V
+	METHOD subtract subtract (Lpaulscode/sound/Vector3D;)Lpaulscode/sound/Vector3D;
+		ARG 1 B
+	METHOD subtract subtract (Lpaulscode/sound/Vector3D;Lpaulscode/sound/Vector3D;)Lpaulscode/sound/Vector3D;
+		ARG 1 A
+		ARG 2 B

@@ -1,0 +1,4 @@
+CLASS gc net/minecraft/client/gui/ChatScreen
+	FIELD a message Ljava/lang/String;
+	FIELD i frame I
+	FIELD j allowedChars Ljava/lang/String;

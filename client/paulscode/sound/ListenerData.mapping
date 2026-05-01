@@ -1,0 +1,7 @@
+CLASS paulscode/sound/ListenerData
+	FIELD angle angle F
+	FIELD position position Lpaulscode/sound/Vector3D;
+	METHOD setAngle setAngle (F)V
+	METHOD setData setData (Lpaulscode/sound/ListenerData;)V
+	METHOD setOrientation setOrientation (FFFFFF)V
+	METHOD setPosition setPosition (FFF)V

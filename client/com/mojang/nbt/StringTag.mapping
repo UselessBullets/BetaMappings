@@ -1,0 +1,2 @@
+CLASS xb com/mojang/nbt/StringTag
+	FIELD a data Ljava/lang/String;

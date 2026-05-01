@@ -1,0 +1,11 @@
+CLASS wr net/minecraft/world/item/MapItem
+	METHOD a update (Lfd;Lsn;Liu;)V
+		ARG 1 level
+		ARG 2 player
+		ARG 3 data
+	METHOD a getSavedData (Liz;Lfd;)Liu;
+		ARG 1 itemInstance
+		ARG 2 level
+	METHOD a getSavedData (SLfd;)Liu;
+		ARG 0 idNum
+		ARG 1 level

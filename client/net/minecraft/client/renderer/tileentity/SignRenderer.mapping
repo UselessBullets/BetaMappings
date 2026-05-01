@@ -1,0 +1,2 @@
+CLASS po net/minecraft/client/renderer/tileentity/SignRenderer
+	FIELD b signModel Lrf;

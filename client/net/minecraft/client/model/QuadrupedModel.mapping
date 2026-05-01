@@ -1,0 +1,10 @@
+CLASS nn net/minecraft/client/model/QuadrupedModel
+	FIELD d head Lps;
+	FIELD e body Lps;
+	FIELD f leg0 Lps;
+	FIELD g leg1 Lps;
+	FIELD h leg2 Lps;
+	FIELD i leg3 Lps;
+	METHOD <init> (IF)V
+		ARG 1 legSize
+		ARG 2 g

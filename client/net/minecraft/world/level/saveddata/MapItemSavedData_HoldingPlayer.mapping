@@ -1,0 +1,10 @@
+CLASS si net/minecraft/world/level/saveddata/MapItemSavedData_HoldingPlayer
+	FIELD a player Lgs;
+	FIELD b rowsDirtyMin [I
+	FIELD c rowsDirtyMax [I
+	FIELD d data Liu;
+	FIELD e tick I
+	FIELD f sendPosTick I
+	METHOD <init> (Liu;Lgs;)V
+		ARG 1 data
+		ARG 2 player

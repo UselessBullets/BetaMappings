@@ -1,0 +1,3 @@
+CLASS er net/minecraft/world/level/levelgen/feature/MonsterRoomFeature
+	METHOD a randomItem (Ljava/util/Random;)Liz;
+	METHOD b randomEntityId (Ljava/util/Random;)Ljava/lang/String;

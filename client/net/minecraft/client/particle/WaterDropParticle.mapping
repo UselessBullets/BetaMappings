@@ -1,0 +1,6 @@
+CLASS xd net/minecraft/client/particle/WaterDropParticle
+	METHOD <init> (Lfd;DDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z

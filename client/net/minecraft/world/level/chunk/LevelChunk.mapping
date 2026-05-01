@@ -1,0 +1,141 @@
+CLASS lm net/minecraft/world/level/chunk/LevelChunk
+	FIELD a touchedSky Z
+	FIELD b blocks [B
+	FIELD c loaded Z
+	FIELD d level Lfd;
+	FIELD e data Lwi;
+	FIELD f skyLight Lwi;
+	FIELD g blockLight Lwi;
+	FIELD h heightmap [B
+	FIELD i minHeight I
+	FIELD j x I
+	FIELD k z I
+	FIELD l tileEntities Ljava/util/Map;
+	FIELD m entityBlocks [Ljava/util/List;
+	FIELD n terrainPopulated Z
+	FIELD o unsaved Z
+	FIELD p dontSave Z
+	FIELD q lastSaveHadEntities Z
+	FIELD r lastSaveTime J
+	METHOD <init> (Lfd;[BII)V
+		ARG 1 level
+		ARG 2 blocks
+		ARG 3 x
+		ARG 4 z
+	METHOD <init> (Lfd;II)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 z
+	METHOD a recalcBlocksLights ()V
+	METHOD a getBlocksAndData ([BIIIIIII)I
+		ARG 1 data
+		ARG 2 x0
+		ARG 3 y0
+		ARG 4 z0
+		ARG 5 x1
+		ARG 6 y1
+		ARG 7 z1
+		ARG 8 p
+	METHOD a isAt (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD a getTile (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a setTile (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD a setTileAndData (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+		ARG 5 data
+	METHOD a setTileEntity (IIILow;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tileEntity
+	METHOD a getRandom (J)Ljava/util/Random;
+		ARG 1 l
+	METHOD a getBrightness (Leb;III)I
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a setBrightness (Leb;IIII)V
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 brightness
+	METHOD a getEntitiesOfClass (Ljava/lang/Class;Leq;Ljava/util/List;)V
+		ARG 1 ec
+		ARG 2 bb
+		ARG 3 es
+	METHOD a addTileEntity (Low;)V
+		ARG 1 te
+	METHOD a addEntity (Lsn;)V
+		ARG 1 e
+	METHOD a removeEntity (Lsn;I)V
+		ARG 1 e
+		ARG 2 yc
+	METHOD a getEntities (Lsn;Leq;Ljava/util/List;)V
+		ARG 1 except
+		ARG 2 bb
+		ARG 3 es
+	METHOD a shouldSave (Z)Z
+		ARG 1 force
+	METHOD b recalcHeightmapOnly ()V
+	METHOD b getHeightmap (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD b getData (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b setData (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 val
+	METHOD b removeEntity (Lsn;)V
+		ARG 1 e
+	METHOD c recalcHeightmap ()V
+	METHOD c lightGaps (II)V
+		ARG 1 x
+		ARG 2 z
+	METHOD c isSkyLit (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD c getRawBrightness (IIII)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 skyDampen
+	METHOD d lightLava ()V
+	METHOD d getTileEntity (III)Low;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD e load ()V
+	METHOD e removeTileEntity (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD f unload ()V
+	METHOD f lightGap (III)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 source
+	METHOD g markUnsaved ()V
+	METHOD g recalcHeight (III)V
+		ARG 1 x
+		ARG 2 yStart
+		ARG 3 z
+	METHOD h isEmpty ()Z
+	METHOD i attemptCompression ()V

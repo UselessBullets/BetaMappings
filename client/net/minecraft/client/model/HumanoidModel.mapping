@@ -1,0 +1,22 @@
+CLASS fh net/minecraft/client/model/HumanoidModel
+	FIELD a head Lps;
+	FIELD b hair Lps;
+	FIELD c body Lps;
+	FIELD d arm0 Lps;
+	FIELD e arm1 Lps;
+	FIELD f leg0 Lps;
+	FIELD g leg1 Lps;
+	FIELD h ear Lps;
+	FIELD i cloak Lps;
+	FIELD j holdingLeftHand Z
+	FIELD k holdingRightHand Z
+	FIELD l sneaking Z
+	METHOD <init> (F)V
+		ARG 1 g
+	METHOD <init> (FF)V
+		ARG 1 g
+		ARG 2 yOffset
+	METHOD a renderEars (F)V
+		ARG 1 scale
+	METHOD b renderCloak (F)V
+		ARG 1 scale

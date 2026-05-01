@@ -1,0 +1,4 @@
+CLASS hh net/minecraft/client/model/CowModel
+	FIELD a udder Lps;
+	FIELD b horn1 Lps;
+	FIELD c horn2 Lps;

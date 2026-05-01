@@ -1,0 +1,38 @@
+CLASS bb net/minecraft/client/renderer/entity/ItemRenderer
+	FIELD a setColor Z
+	FIELD e tileRenderer Lcv;
+	FIELD f random Ljava/util/Random;
+	METHOD a blit (IIIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 sx
+		ARG 4 sy
+		ARG 5 w
+		ARG 6 h
+	METHOD a fillRect (Lnw;IIIII)V
+		ARG 1 t
+		ARG 2 x
+		ARG 3 y
+		ARG 4 w
+		ARG 5 h
+		ARG 6 c
+	METHOD a renderGuiItem (Lsj;Lji;IIIII)V
+		ARG 1 font
+		ARG 2 textures
+		ARG 3 id
+		ARG 4 auxData
+		ARG 5 icon
+		ARG 6 x
+		ARG 7 y
+	METHOD a renderGuiItem (Lsj;Lji;Liz;II)V
+		ARG 1 font
+		ARG 2 textures
+		ARG 3 item
+		ARG 4 x
+		ARG 5 y
+	METHOD b renderGuiItemDecorations (Lsj;Lji;Liz;II)V
+		ARG 1 font
+		ARG 2 textures
+		ARG 3 item
+		ARG 4 x
+		ARG 5 y

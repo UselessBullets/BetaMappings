@@ -1,0 +1,13 @@
+CLASS hk net/minecraft/world/item/crafting/Recipes
+	FIELD a instance Lhk;
+	FIELD b recipies Ljava/util/List;
+	METHOD a getInstance ()Lhk;
+	METHOD a addShapedRecipy (Liz;[Ljava/lang/Object;)V
+		ARG 1 result
+		ARG 2 args
+	METHOD a getItemFor (Lmq;)Liz;
+		ARG 1 craftSlots
+	METHOD b getRecipies ()Ljava/util/List;
+	METHOD b addShapelessRecipy (Liz;[Ljava/lang/Object;)V
+		ARG 1 result
+		ARG 2 args

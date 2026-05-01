@@ -1,0 +1,4 @@
+CLASS sp com/mojang/nbt/ListTag
+	METHOD a get (I)Lij;
+	METHOD a add (Lij;)V
+	METHOD c size ()I

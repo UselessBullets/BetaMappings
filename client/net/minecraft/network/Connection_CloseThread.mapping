@@ -1,0 +1,5 @@
+CLASS xg net/minecraft/network/Connection_CloseThread
+	FIELD a connection Lpf;
+	METHOD <init> (Lpf;)V
+		ARG 1 connection
+	METHOD run run ()V

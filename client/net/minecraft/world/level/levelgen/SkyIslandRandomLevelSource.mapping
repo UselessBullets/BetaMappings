@@ -1,0 +1,46 @@
+CLASS jd net/minecraft/world/level/levelgen/SkyIslandRandomLevelSource
+	FIELD a scaleNoise Luf;
+	FIELD b depthNoise Luf;
+	FIELD c forestNoise Luf;
+	FIELD d pnr [D
+	FIELD e ar [D
+	FIELD f br [D
+	FIELD g sr [D
+	FIELD h dr [D
+	FIELD i waterDepths [[I
+	FIELD j random Ljava/util/Random;
+	FIELD k lperlinNoise1 Luf;
+	FIELD l lperlinNoise2 Luf;
+	FIELD m perlinNoise1 Luf;
+	FIELD n perlinNoise2 Luf;
+	FIELD o perlinNoise3 Luf;
+	FIELD p level Lfd;
+	FIELD q buffer [D
+	FIELD r sandBuffer [D
+	FIELD s gravelBuffer [D
+	FIELD t depthBuffer [D
+	FIELD u caveFeature Lfv;
+	FIELD v biomes [Lkd;
+	FIELD w temperatures [D
+	METHOD <init> (Lfd;J)V
+		ARG 1 level
+		ARG 2 seed
+	METHOD a getHeights ([DIIIIII)[D
+		ARG 1 buffer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 xSize
+		ARG 6 ySize
+		ARG 7 zSize
+	METHOD a buildSurfaces (II[B[Lkd;)V
+		ARG 1 xOff
+		ARG 2 zOffs
+		ARG 3 blocks
+		ARG 4 biomes
+	METHOD a prepareHeights (II[B[Lkd;[D)V
+		ARG 1 xOffs
+		ARG 2 zOffs
+		ARG 3 blocks
+		ARG 4 biomes
+		ARG 5 temperatures

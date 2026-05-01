@@ -1,0 +1,62 @@
+CLASS jl net/minecraft/world/stat/Stats
+	FIELD a statsById Ljava/util/Map;
+	FIELD A playerKills Lvr;
+	FIELD b all Ljava/util/List;
+	FIELD B fishCaught Lvr;
+	FIELD c generalStats Ljava/util/List;
+	FIELD C blockMined [Lvr;
+	FIELD d blocksMinedStats Ljava/util/List;
+	FIELD D itemCrafted [Lvr;
+	FIELD e itemsCraftedStats Ljava/util/List;
+	FIELD E itemUsed [Lvr;
+	FIELD f startGame Lvr;
+	FIELD F itemBroke [Lvr;
+	FIELD g createWorld Lvr;
+	FIELD G blockStatsLoaded Z
+	FIELD h loadWorld Lvr;
+	FIELD H itemStatsLoaded Z
+	FIELD i joinMultiplayer Lvr;
+	FIELD j leaveGame Lvr;
+	FIELD k playOneMinute Lvr;
+	FIELD l walkOneCm Lvr;
+	FIELD m swimOneCm Lvr;
+	FIELD n fallOneCm Lvr;
+	FIELD o climbOneCm Lvr;
+	FIELD p flyOneCm Lvr;
+	FIELD q diveOneCm Lvr;
+	FIELD r minecartOneCm Lvr;
+	FIELD s boatOneCm Lvr;
+	FIELD t pigOneCm Lvr;
+	FIELD u timesJumped Lvr;
+	FIELD v itemsDropped Lvr;
+	FIELD w damageDealt Lvr;
+	FIELD x damageTaken Lvr;
+	FIELD y deaths Lvr;
+	FIELD z mobKills Lvr;
+	METHOD a init ()V
+	METHOD a remapIds ([Lvr;)V
+		ARG 0 stats
+	METHOD a remapId ([Lvr;II)V
+		ARG 0 stats
+		ARG 1 id1
+		ARG 2 id2
+	METHOD a getUsedStats ([Lvr;Ljava/lang/String;III)[Lvr;
+		ARG 0 result
+		ARG 1 nameKey
+		ARG 2 idOff
+		ARG 3 start
+		ARG 4 end
+	METHOD a getStat (I)Lvr;
+		ARG 0 statId
+	METHOD a getMinedStats (Ljava/lang/String;I)[Lvr;
+		ARG 0 nameKey
+		ARG 1 idOff
+	METHOD b buildBlockStats ()V
+	METHOD b getBreakStats ([Lvr;Ljava/lang/String;III)[Lvr;
+		ARG 0 result
+		ARG 1 nameKey
+		ARG 2 idOff
+		ARG 3 start
+		ARG 4 end
+	METHOD c buildItemStats ()V
+	METHOD d buildCraftableStats ()V

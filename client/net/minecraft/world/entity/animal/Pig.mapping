@@ -1,0 +1,3 @@
+CLASS wh net/minecraft/world/entity/animal/Pig
+	METHOD a setSaddle (Z)V
+	METHOD v hasSaddle ()Z

@@ -1,0 +1,5 @@
+CLASS gg net/minecraft/client/multiplayer/ReceivingLevelScreen
+	FIELD a connection Lnb;
+	FIELD i tickCount I
+	METHOD <init> (Lnb;)V
+		ARG 1 connection

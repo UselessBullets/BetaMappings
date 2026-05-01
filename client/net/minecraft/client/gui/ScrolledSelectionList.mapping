@@ -1,0 +1,73 @@
+CLASS lg net/minecraft/client/gui/ScrolledSelectionList
+	FIELD a minecraft Lnet/minecraft/client/Minecraft;
+	FIELD b width I
+	FIELD c height I
+	FIELD d x1 I
+	FIELD e x0 I
+	FIELD f upId I
+	FIELD g downId I
+	FIELD h y0 I
+	FIELD i y1 I
+	FIELD j itemHeight I
+	FIELD k yDrag F
+	FIELD l yDragScale F
+	FIELD m yo F
+	FIELD n lastSelection I
+	FIELD o lastSelectionTime J
+	FIELD p renderSelection Z
+	FIELD q renderHeader Z
+	FIELD r headerHeight I
+	METHOD <init> (Lnet/minecraft/client/Minecraft;IIIII)V
+		ARG 2 width
+		ARG 3 height
+		ARG 4 y0
+		ARG 5 y1
+		ARG 6 itemHeight
+	METHOD a getNumberOfItems ()I
+	METHOD a clickedHeader (II)V
+		ARG 1 headerMouseX
+		ARG 2 headerMouseY
+	METHOD a render (IIF)V
+		ARG 1 xm
+		ARG 2 ym
+		ARG 3 partialTick
+	METHOD a renderHoleBackground (IIII)V
+		ARG 1 y0
+		ARG 2 y1
+		ARG 3 a0
+		ARG 4 a1
+	METHOD a renderItem (IIIILnw;)V
+		ARG 1 i
+		ARG 2 x
+		ARG 3 y
+		ARG 4 h
+		ARG 5 t
+	METHOD a renderHeader (IILnw;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 t
+	METHOD a selectItem (IZ)V
+		ARG 1 item
+		ARG 2 doubleClick
+	METHOD a init (Ljava/util/List;II)V
+		ARG 1 buttons
+		ARG 2 upButtonId
+		ARG 3 downButtonId
+	METHOD a buttonClicked (Lke;)V
+		ARG 1 button
+	METHOD a setRenderSelection (Z)V
+		ARG 1 renderSelection
+	METHOD a setRenderHeader (ZI)V
+		ARG 1 renderHeader
+		ARG 2 headerHeight
+	METHOD b getMaxPosition ()I
+	METHOD b renderDecorations (II)V
+		ARG 1 mouseX
+		ARG 2 mouseY
+	METHOD c renderBackground ()V
+	METHOD c getItemAtPosition (II)I
+		ARG 1 x
+		ARG 2 y
+	METHOD c_ isSelectedItem (I)Z
+		ARG 1 item
+	METHOD d capYPosition ()V

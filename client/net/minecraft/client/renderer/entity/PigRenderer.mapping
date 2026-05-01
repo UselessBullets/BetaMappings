@@ -1,0 +1,5 @@
+CLASS me net/minecraft/client/renderer/entity/PigRenderer
+	METHOD <init> (Lko;Lko;F)V
+		ARG 1 model
+		ARG 2 armor
+		ARG 3 shadow

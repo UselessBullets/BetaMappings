@@ -1,0 +1,7 @@
+CLASS com/jcraft/jorbis/Block
+	FIELD mode mode I
+	FIELD opb opb Lcom/jcraft/jogg/Buffer;
+	FIELD vd vd Lcom/jcraft/jorbis/DspState;
+	METHOD clear clear ()I
+	METHOD init init (Lcom/jcraft/jorbis/DspState;)V
+	METHOD synthesis synthesis (Lcom/jcraft/jogg/Packet;)I

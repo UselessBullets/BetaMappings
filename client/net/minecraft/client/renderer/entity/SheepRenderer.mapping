@@ -1,0 +1,5 @@
+CLASS xy net/minecraft/client/renderer/entity/SheepRenderer
+	METHOD <init> (Lko;Lko;F)V
+		ARG 1 model
+		ARG 2 armor
+		ARG 3 shadow

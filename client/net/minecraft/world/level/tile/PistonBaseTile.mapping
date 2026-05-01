@@ -1,0 +1,59 @@
+CLASS jq net/minecraft/world/level/tile/PistonBaseTile
+	FIELD a isSticky Z
+	FIELD b ignoreUpdate Z
+	METHOD <init> (IIZ)V
+		ARG 1 id
+		ARG 2 tex
+		ARG 3 isSticky
+	METHOD a isPushable (ILfd;IIIZ)Z
+		ARG 0 block
+		ARG 1 level
+		ARG 2 cx
+		ARG 3 cy
+		ARG 4 cz
+		ARG 5 allowDestroyable
+	METHOD c getNewFacing (Lfd;IIILgs;)I
+		ARG 0 level
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 player
+	METHOD d getFacing (I)I
+		ARG 0 data
+	METHOD e isExtended (I)Z
+		ARG 0 data
+	METHOD f getNeighborSignal (Lfd;IIII)Z
+		COMMENT /**
+		COMMENT * This method checks neighbor signals for this block and the block above,
+		COMMENT * and directly beneath. However, it avoids checking blocks that would be
+		COMMENT * pushed by this block.
+		COMMENT *
+		COMMENT * @param level
+		COMMENT * @param x
+		COMMENT * @param y
+		COMMENT * @param z
+		COMMENT * @return
+		COMMENT */
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 facing
+	METHOD h checkIfExtend (Lfd;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD h canPush (Lfd;IIII)Z
+		ARG 0 level
+		ARG 1 sx
+		ARG 2 sy
+		ARG 3 sz
+		ARG 4 facing
+	METHOD i getPlatformTexture ()I
+	METHOD i createPush (Lfd;IIII)Z
+		ARG 1 level
+		ARG 2 sx
+		ARG 3 sy
+		ARG 4 sz
+		ARG 5 facing

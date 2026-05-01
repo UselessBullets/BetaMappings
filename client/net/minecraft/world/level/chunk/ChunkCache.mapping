@@ -1,0 +1,24 @@
+CLASS kx net/minecraft/world/level/chunk/ChunkCache
+	FIELD a xLast I
+	FIELD b zLast I
+	FIELD c emptyChunk Llm;
+	FIELD d source Lcl;
+	FIELD e storage Lbf;
+	FIELD f chunks [Llm;
+	FIELD g level Lfd;
+	FIELD h last Llm;
+	FIELD i xCenter I
+	FIELD j zCenter I
+	METHOD a saveEntities (Llm;)V
+		ARG 1 levelChunk
+	METHOD b save (Llm;)V
+		ARG 1 levelChunk
+	METHOD d centerOn (II)V
+		ARG 1 xCenter
+		ARG 2 zCenter
+	METHOD e fits (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD f load (II)Llm;
+		ARG 1 x
+		ARG 2 z

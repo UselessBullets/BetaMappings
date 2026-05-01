@@ -1,0 +1,5 @@
+CLASS wc net/minecraft/world/item/ShovelItem
+	FIELD bk diggables [Luu;
+	METHOD <init> (ILbu;)V
+		ARG 1 id
+		ARG 2 tier

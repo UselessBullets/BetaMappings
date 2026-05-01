@@ -1,0 +1,2 @@
+CLASS rv net/minecraft/network/packet/RemoveEntityPacket
+	FIELD a id I

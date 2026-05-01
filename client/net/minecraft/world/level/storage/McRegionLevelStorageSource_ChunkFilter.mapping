@@ -1,0 +1,7 @@
+CLASS rs net/minecraft/world/level/storage/McRegionLevelStorageSource_ChunkFilter
+	FIELD a chunkFilePattern Ljava/util/regex/Pattern;
+	METHOD <init> (Lic;)V
+		ARG 1 ec
+	METHOD accept accept (Ljava/io/File;Ljava/lang/String;)Z
+		ARG 1 file
+		ARG 2 string

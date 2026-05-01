@@ -1,0 +1,41 @@
+CLASS uq net/minecraft/client/gui/Gui
+	FIELD a selectedName Ljava/lang/String;
+	FIELD b progress F
+	FIELD c tbr F
+	FIELD d itemRenderer Lbb;
+	FIELD e guiMessages Ljava/util/List;
+	FIELD f random Ljava/util/Random;
+	FIELD g minecraft Lnet/minecraft/client/Minecraft;
+	FIELD h tickCount I
+	FIELD i nowPlayingString Ljava/lang/String;
+	FIELD j nowPlayingTime I
+	FIELD l nowPlayingColor Z
+	METHOD a tick ()V
+	METHOD a renderVignette (FII)V
+		ARG 1 br
+		ARG 2 w
+		ARG 3 h
+	METHOD a render (FZII)V
+		ARG 1 partialTick
+		ARG 2 mouseFree
+		ARG 3 xMouse
+		ARG 4 yMouse
+	METHOD a renderPumpkin (II)V
+		ARG 1 w
+		ARG 2 h
+	METHOD a renderSlot (IIIF)V
+		ARG 1 slot
+		ARG 2 x
+		ARG 3 y
+		ARG 4 partialTick
+	METHOD a addMessage (Ljava/lang/String;)V
+		ARG 1 str
+	METHOD b clearMessages ()V
+	METHOD b renderTp (FII)V
+		ARG 1 br
+		ARG 2 w
+		ARG 3 h
+	METHOD b setNowPlaying (Ljava/lang/String;)V
+		ARG 1 str
+	METHOD c displayClientMessage (Ljava/lang/String;)V
+		ARG 1 message

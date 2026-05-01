@@ -1,0 +1,310 @@
+CLASS cv net/minecraft/client/renderer/TileRenderer
+	FIELD a fancy Z
+	FIELD A llXy0 F
+	FIELD aa c4b F
+	FIELD ab llTrans0Yz Z
+	FIELD ac llTransXY0 Z
+	FIELD ad llTransxY0 Z
+	FIELD ae llTrans0YZ Z
+	FIELD af llTransx0z Z
+	FIELD ag llTransX0Z Z
+	FIELD ah llTransx0Z Z
+	FIELD ai llTransX0z Z
+	FIELD aj llTrans0yz Z
+	FIELD ak llTransXy0 Z
+	FIELD al llTransxy0 Z
+	FIELD am llTrans0yZ Z
+	FIELD b setColor Z
+	FIELD B llXyZ F
+	FIELD c level Lxp;
+	FIELD C llxYz F
+	FIELD d fixedTexture I
+	FIELD D llxY0 F
+	FIELD e xFlipTexture Z
+	FIELD E llxYZ F
+	FIELD f noCulling Z
+	FIELD F ll0Yz F
+	FIELD g northFlip I
+	FIELD G llXYz F
+	FIELD h southFlip I
+	FIELD H llXY0 F
+	FIELD i eastFlip I
+	FIELD I ll0YZ F
+	FIELD j westFlip I
+	FIELD J llXYZ F
+	FIELD k upFlip I
+	FIELD K llx0z F
+	FIELD l downFlip I
+	FIELD L llX0z F
+	FIELD m applyAmbienceOcclusion Z
+	FIELD M llx0Z F
+	FIELD n ll000 F
+	FIELD N llX0Z F
+	FIELD o llx00 F
+	FIELD O blsmooth I
+	FIELD p ll0y0 F
+	FIELD P c1r F
+	FIELD q ll00z F
+	FIELD Q c2r F
+	FIELD r llX00 F
+	FIELD R c3r F
+	FIELD s ll0Y0 F
+	FIELD S c4r F
+	FIELD t ll00Z F
+	FIELD T c1g F
+	FIELD u llxyz F
+	FIELD U c2g F
+	FIELD v llxy0 F
+	FIELD V c3g F
+	FIELD w llxyZ F
+	FIELD W c4g F
+	FIELD x ll0yz F
+	FIELD X c1b F
+	FIELD y ll0yZ F
+	FIELD Y c2b F
+	FIELD z llXyz F
+	FIELD Z c3b F
+	METHOD <init> (Lxp;)V
+		ARG 1 level
+	METHOD a renderPistonArmUpDown (DDDDDDFD)V
+		ARG 1 x0
+		ARG 3 x1
+		ARG 5 y0
+		ARG 7 y1
+		ARG 9 z0
+		ARG 11 z1
+		ARG 13 br
+		ARG 14 armLengthPixels
+	METHOD a canRender (I)Z
+		ARG 0 renderShape
+	METHOD a getWaterHeight (IIILln;)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 m
+	METHOD a tesselateRailInWorld (Lpc;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a tesselateTorch (Luu;DDDDD)V
+		ARG 1 tt
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xxa
+		ARG 10 zza
+	METHOD a renderFaceUp (Luu;DDDI)V
+		ARG 1 tt
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 tex
+	METHOD a tesselateCrossTexture (Luu;IDDD)V
+		ARG 1 tt
+		ARG 2 data
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+	METHOD a renderTile (Luu;IF)V
+		ARG 1 tile
+		ARG 2 data
+		ARG 3 brightness
+	METHOD a tesselateInWorldNoCulling (Luu;III)V
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a tesselateBlockInWorldWithAmbienceOcclusionTexLighting (Luu;IIIFFF)Z
+		ARG 1 tt
+		ARG 2 pX
+		ARG 3 pY
+		ARG 4 pZ
+		ARG 5 pBaseRed
+		ARG 6 pBaseGreen
+		ARG 7 pBaseBlue
+	METHOD a tesselateInWorld (Luu;IIII)V
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 fixedTexture
+	METHOD a tesselatePistonArmNoCulling (Luu;IIIZ)V
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 fullArm
+	METHOD a renderBlock (Luu;Lfd;III)V
+		ARG 1 tt
+		ARG 2 level
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+	METHOD b renderPistonArmNorthSouth (DDDDDDFD)V
+		ARG 1 x0
+		ARG 3 x1
+		ARG 5 y0
+		ARG 7 y1
+		ARG 9 z0
+		ARG 11 z1
+		ARG 13 br
+		ARG 14 armLengthPixels
+	METHOD b renderFaceDown (Luu;DDDI)V
+		ARG 1 tt
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 tex
+	METHOD b tesselateRowTexture (Luu;IDDD)V
+		ARG 1 tt
+		ARG 2 data
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+	METHOD b tesselateInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD b tesselateBlockInWorld (Luu;IIIFFF)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 r
+		ARG 6 g
+		ARG 7 b
+	METHOD b tesselatePistonBaseInWorld (Luu;IIIZ)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 forceExtended
+	METHOD c renderPistonArmEastWest (DDDDDDFD)V
+		ARG 1 x0
+		ARG 3 x1
+		ARG 5 y0
+		ARG 7 y1
+		ARG 9 z0
+		ARG 11 z1
+		ARG 13 br
+		ARG 14 armLengthPixels
+	METHOD c renderNorth (Luu;DDDI)V
+		ARG 1 tt
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 tex
+	METHOD c tesselateTorchInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD c tesselateCactusInWorld (Luu;IIIFFF)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 r
+		ARG 6 g
+		ARG 7 b
+	METHOD c tesselatePistonExtensionInWorld (Luu;IIIZ)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 fullArm
+	METHOD d renderSouth (Luu;DDDI)V
+		ARG 1 tt
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 tex
+	METHOD d tesselatePistonBaseForceExtended (Luu;III)V
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD e renderWest (Luu;DDDI)V
+		ARG 1 tt
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 tex
+	METHOD e tesselateLeverInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 ry
+		ARG 4 z
+	METHOD f renderEast (Luu;DDDI)V
+		ARG 1 tt
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 tex
+	METHOD f tesselateFireInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD g tesselateDustInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD h tesselateLadderInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD i tesselateCrossInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD j tesselateRowInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD k tesselateWaterInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD l tesselateBlockInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD m tesselateCactusInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD n tesselateFenceInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD o tesselateStairsInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD p tesselateDoorInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD q tesselateBedInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD r tesselateDiodeInWorld (Luu;III)Z
+		ARG 1 tt
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

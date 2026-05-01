@@ -1,0 +1,3 @@
+CLASS hv net/minecraft/world/ContainerListener
+	METHOD a containerChanged (Lqo;)V
+		ARG 1 simpleContainer

@@ -1,0 +1,4 @@
+CLASS vi net/minecraft/world/level/chunk/BlockReplacements
+	FIELD a replacements [B
+	METHOD a replace ([B)V
+		ARG 0 blocks

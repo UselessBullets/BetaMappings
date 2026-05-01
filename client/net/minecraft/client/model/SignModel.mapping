@@ -1,0 +1,4 @@
+CLASS rf net/minecraft/client/model/SignModel
+	FIELD a cube Lps;
+	FIELD b cube2 Lps;
+	METHOD a render ()V

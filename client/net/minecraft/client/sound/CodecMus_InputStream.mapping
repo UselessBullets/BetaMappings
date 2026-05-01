@@ -1,0 +1,14 @@
+CLASS np net/minecraft/client/sound/CodecMus_InputStream
+	FIELD a buff [B
+	FIELD b cm Lio;
+	FIELD c seed I
+	FIELD d in Ljava/io/InputStream;
+	METHOD <init> (Lio;Ljava/net/URL;Ljava/io/InputStream;)V
+		ARG 1 cm
+		ARG 2 url
+		ARG 3 in
+	METHOD read read ()I
+	METHOD read read ([BII)I
+		ARG 1 buff
+		ARG 2 off
+		ARG 3 len

@@ -1,0 +1,4 @@
+CLASS ld net/minecraft/world/level/chunk/storage/McRegionChunkStorage
+	FIELD a saveFile Ljava/io/File;
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 saveFile

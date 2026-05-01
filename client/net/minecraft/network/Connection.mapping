@@ -1,0 +1,61 @@
+CLASS pf net/minecraft/network/Connection
+	FIELD a threadCounterLock Ljava/lang/Object;
+	FIELD b readThreads I
+	FIELD c writeThreads I
+	FIELD d readSizes [I
+	FIELD e writeSizes [I
+	FIELD f fakeLag I
+	FIELD g writeLock Ljava/lang/Object;
+	FIELD h socket Ljava/net/Socket;
+	FIELD i address Ljava/net/SocketAddress;
+	FIELD j dis Ljava/io/DataInputStream;
+	FIELD k dos Ljava/io/DataOutputStream;
+	FIELD l running Z
+	FIELD m incoming Ljava/util/List;
+	FIELD n outgoing Ljava/util/List;
+	FIELD o outgoing_slow Ljava/util/List;
+	FIELD p packetListener Lti;
+	FIELD q quitting Z
+	FIELD r writeThread Ljava/lang/Thread;
+	FIELD s readThread Ljava/lang/Thread;
+	FIELD t disconnected Z
+	FIELD u disconnectReason Ljava/lang/String;
+	FIELD v disconnectReasonObjects [Ljava/lang/Object;
+	FIELD w noInputTicks I
+	FIELD x estimatedRemaining I
+	FIELD y slowWriteDelay I
+	METHOD <init> (Ljava/net/Socket;Ljava/lang/String;Lti;)V
+		ARG 1 socket
+		ARG 2 id
+		ARG 3 packetListener
+	METHOD a flush ()V
+	METHOD a handleException (Ljava/lang/Exception;)V
+		ARG 1 ex
+	METHOD a close (Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 reason
+		ARG 2 disconnectReasonObjects
+	METHOD a send (Lki;)V
+		ARG 1 packet
+	METHOD a getRunning (Lpf;)Z
+		ARG 0 instance
+	METHOD a handleException (Lpf;Ljava/lang/Exception;)V
+		ARG 0 instance
+		ARG 1 ex
+	METHOD b tick ()V
+	METHOD b getQuitting (Lpf;)Z
+		ARG 0 instance
+	METHOD c sendAndQuit ()V
+	METHOD c readTick (Lpf;)Z
+		ARG 0 instance
+	METHOD d writeTick ()Z
+	METHOD d writeTick (Lpf;)Z
+		ARG 0 instance
+	METHOD e readTick ()Z
+	METHOD e getDOS (Lpf;)Ljava/io/DataOutputStream;
+		ARG 0 instance
+	METHOD f getDisconnected (Lpf;)Z
+		ARG 0 instance
+	METHOD g getReadThread (Lpf;)Ljava/lang/Thread;
+		ARG 0 instance
+	METHOD h getWriteThread (Lpf;)Ljava/lang/Thread;
+		ARG 0 instance

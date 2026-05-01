@@ -1,0 +1,4 @@
+CLASS dg net/minecraft/client/renderer/entity/ItemSpriteRenderer
+	FIELD a icon I
+	METHOD <init> (I)V
+		ARG 1 icon

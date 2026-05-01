@@ -1,0 +1,2 @@
+CLASS pp com/mojang/nbt/IntTag
+	FIELD a data I

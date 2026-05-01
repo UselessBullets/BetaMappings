@@ -1,0 +1,13 @@
+CLASS aw net/minecraft/client/renderer/ptexture/DynamicTexture
+	FIELD a pixels [B
+	FIELD b tex I
+	FIELD c anaglyph3d Z
+	FIELD d copyTo I
+	FIELD e replicate I
+	FIELD f textureId I
+		COMMENT Id of the texture to apply to: TEXTURE_TERRAIN = 0, TEXTURE_ITEMS = 1
+	METHOD <init> (I)V
+		ARG 1 tex
+	METHOD a tick ()V
+	METHOD a bindTexture (Lji;)V
+		ARG 1 textures

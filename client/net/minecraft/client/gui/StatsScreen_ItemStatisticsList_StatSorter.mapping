@@ -1,0 +1,9 @@
+CLASS gf net/minecraft/client/gui/StatsScreen_ItemStatisticsList_StatSorter
+	FIELD a ss Ldv;
+	FIELD b isl Lci;
+	METHOD <init> (Lci;Ldv;)V
+		ARG 1 isl
+		ARG 2 ss
+	METHOD compare (Ljava/lang/Object;Ljava/lang/Object;)I
+		ARG 1 o1
+		ARG 2 o2

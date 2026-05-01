@@ -1,0 +1,39 @@
+CLASS qn net/minecraft/world/level/levelgen/HellRandomLevelSource
+	FIELD a scaleNoise Luf;
+	FIELD b depthNoise Luf;
+	FIELD c pnr [D
+	FIELD d ar [D
+	FIELD e br [D
+	FIELD f sr [D
+	FIELD g dr [D
+	FIELD h random Ljava/util/Random;
+	FIELD i lperlinNoise1 Luf;
+	FIELD j lperlinNoise2 Luf;
+	FIELD k perlinNoise1 Luf;
+	FIELD l perlinNoise2 Luf;
+	FIELD m perlinNoise3 Luf;
+	FIELD n level Lfd;
+	FIELD o buffer [D
+	FIELD p sandBuffer [D
+	FIELD q gravelBuffer [D
+	FIELD r depthBuffer [D
+	FIELD s caveFeature Lfv;
+	METHOD <init> (Lfd;J)V
+		ARG 1 level
+		ARG 2 seed
+	METHOD a getHeights ([DIIIIII)[D
+		ARG 1 buffer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 xSize
+		ARG 6 ySize
+		ARG 7 zSize
+	METHOD a prepareHeights (II[B)V
+		ARG 1 xOff
+		ARG 2 zOffs
+		ARG 3 blocks
+	METHOD b buildSurfaces (II[B)V
+		ARG 1 xOffs
+		ARG 2 zOffs
+		ARG 3 blocks

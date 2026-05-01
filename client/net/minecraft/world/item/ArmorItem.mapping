@@ -1,0 +1,12 @@
+CLASS wa net/minecraft/world/item/ArmorItem
+	FIELD a tier I
+	FIELD bk slot I
+	FIELD bl defense I
+	FIELD bm materialIcon I
+	FIELD bn defensePerSlot [I
+	FIELD bo healthPerSlot [I
+	METHOD <init> (IIII)V
+		ARG 1 id
+		ARG 2 tier
+		ARG 3 materialIcon
+		ARG 4 slot

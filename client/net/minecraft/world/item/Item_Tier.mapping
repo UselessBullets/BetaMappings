@@ -1,0 +1,14 @@
+CLASS bu net/minecraft/world/item/Item_Tier
+	FIELD f level I
+	FIELD g uses I
+	FIELD h speed F
+	FIELD i damage I
+	METHOD <init> (Ljava/lang/String;IIIFI)V
+		ARG 3 level
+		ARG 4 uses
+		ARG 5 speed
+		ARG 6 damage
+	METHOD a getUses ()I
+	METHOD b getSpeed ()F
+	METHOD c getAttackDamageBonus ()I
+	METHOD d getLevel ()I

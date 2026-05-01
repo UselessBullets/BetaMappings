@@ -1,0 +1,6 @@
+CLASS ap net/minecraft/world/level/levelgen/feature/TallGrassFeature
+	FIELD a tile I
+	FIELD b type I
+	METHOD <init> (II)V
+		ARG 1 tile
+		ARG 2 type

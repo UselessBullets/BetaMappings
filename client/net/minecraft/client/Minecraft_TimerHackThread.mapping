@@ -1,0 +1,4 @@
+CLASS kg net/minecraft/client/Minecraft_TimerHackThread
+	FIELD a minecraft Lnet/minecraft/client/Minecraft;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V
+		ARG 2 name

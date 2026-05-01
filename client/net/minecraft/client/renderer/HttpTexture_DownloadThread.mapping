@@ -1,0 +1,9 @@
+CLASS tj net/minecraft/client/renderer/HttpTexture_DownloadThread
+	FIELD a url Ljava/lang/String;
+	FIELD b processor Lnf;
+	FIELD c texture Lek;
+	METHOD <init> (Lek;Ljava/lang/String;Lnf;)V
+		ARG 1 texture
+		ARG 2 url
+		ARG 3 processor
+	METHOD run run ()V

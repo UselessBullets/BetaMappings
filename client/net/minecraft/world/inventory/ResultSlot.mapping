@@ -1,0 +1,10 @@
+CLASS yv net/minecraft/world/inventory/ResultSlot
+	FIELD d craftSlots Llw;
+	FIELD e player Lgs;
+	METHOD <init> (Lgs;Llw;Llw;III)V
+		ARG 1 player
+		ARG 2 craftSlots
+		ARG 3 container
+		ARG 4 id
+		ARG 5 x
+		ARG 6 y

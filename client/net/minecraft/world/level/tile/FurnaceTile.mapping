@@ -1,0 +1,18 @@
+CLASS tc net/minecraft/world/level/tile/FurnaceTile
+	FIELD a random Ljava/util/Random;
+	FIELD b lit Z
+	FIELD c noDrop Z
+	METHOD <init> (IZ)V
+		ARG 1 id
+		ARG 2 lit
+	METHOD a setLit (ZLfd;III)V
+		ARG 0 lit
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD h recalcLockDir (Lfd;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

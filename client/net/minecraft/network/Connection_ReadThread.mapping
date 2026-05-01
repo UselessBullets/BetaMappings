@@ -1,0 +1,6 @@
+CLASS xj net/minecraft/network/Connection_ReadThread
+	FIELD a connection Lpf;
+	METHOD <init> (Lpf;Ljava/lang/String;)V
+		ARG 1 connection
+		ARG 2 name
+	METHOD run run ()V

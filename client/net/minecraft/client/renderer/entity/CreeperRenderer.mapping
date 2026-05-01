@@ -1,0 +1,2 @@
+CLASS m net/minecraft/client/renderer/entity/CreeperRenderer
+	FIELD a armorModel Lko;

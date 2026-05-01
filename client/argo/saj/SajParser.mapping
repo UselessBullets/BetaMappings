@@ -1,0 +1,4 @@
+CLASS an argo/saj/SajParser
+	METHOD a parse (Ljava/io/Reader;Lwg;)V
+		ARG 1 in
+		ARG 2 jsonListener

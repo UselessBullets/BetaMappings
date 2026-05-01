@@ -1,0 +1,9 @@
+CLASS pr net/minecraft/client/gui/StatsScreen_BlockStatisticsList_StatSorter
+	FIELD a ss Ldv;
+	FIELD b bsl Lga;
+	METHOD <init> (Lga;Ldv;)V
+		ARG 1 bsl
+		ARG 2 ss
+	METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I
+		ARG 1 o1
+		ARG 2 o2

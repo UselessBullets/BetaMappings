@@ -1,0 +1,4 @@
+CLASS mg net/minecraft/client/gui/SelectWorldScreen_WorldSelectionList
+	FIELD a sws Lrq;
+	METHOD <init> (Lrq;)V
+		ARG 1 sws

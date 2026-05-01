@@ -1,0 +1,85 @@
+CLASS eq net/minecraft/world/phys/AABB
+	FIELD a x0 D
+	FIELD b y0 D
+	FIELD c z0 D
+	FIELD d x1 D
+	FIELD e y1 D
+	FIELD f z1 D
+	FIELD g pool Ljava/util/List;
+	FIELD h poolPointer I
+	METHOD <init> (DDDDDD)V
+		ARG 1 x0
+		ARG 3 y0
+		ARG 5 z0
+		ARG 7 x1
+		ARG 9 y1
+		ARG 11 z1
+	METHOD a clearPool ()V
+	METHOD a expand (DDD)Leq;
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD a newPermanent (DDDDDD)Leq;
+		ARG 0 x0
+		ARG 2 y0
+		ARG 4 z0
+		ARG 6 x1
+		ARG 8 y1
+		ARG 10 z1
+	METHOD a contains (Lbt;)Z
+		ARG 1 vec3
+	METHOD a clip (Lbt;Lbt;)Lvf;
+		ARG 1 a
+		ARG 2 b
+	METHOD a intersects (Leq;)Z
+		ARG 1 aabb
+	METHOD a clipXCollide (Leq;D)D
+		ARG 1 aabb
+		ARG 2 xa
+	METHOD b resetPool ()V
+	METHOD b grow (DDD)Leq;
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD b newTemp (DDDDDD)Leq;
+		ARG 0 x0
+		ARG 2 y0
+		ARG 4 z0
+		ARG 6 x1
+		ARG 8 y1
+		ARG 10 z1
+	METHOD b containsX (Lbt;)Z
+		ARG 1 vec3
+	METHOD b set (Leq;)V
+		ARG 1 aabb
+	METHOD b clipYCollide (Leq;D)D
+		ARG 1 aabb
+		ARG 2 ya
+	METHOD c getSize ()D
+	METHOD c cloneMove (DDD)Leq;
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD c set (DDDDDD)Leq;
+		ARG 1 x0
+		ARG 3 y0
+		ARG 5 z0
+		ARG 7 x1
+		ARG 9 y1
+		ARG 11 z1
+	METHOD c containsY (Lbt;)Z
+		ARG 1 vec3
+	METHOD c clipZCollide (Leq;D)D
+		ARG 1 aabb
+		ARG 2 za
+	METHOD d copy ()Leq;
+	METHOD d move (DDD)Leq;
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD d containsZ (Lbt;)Z
+		ARG 1 vec3
+	METHOD e shrink (DDD)Leq;
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za

@@ -1,0 +1,2 @@
+CLASS x net/minecraft/client/gui/OutOfMemoryScreen
+	FIELD a frame I

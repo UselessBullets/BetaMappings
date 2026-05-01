@@ -1,0 +1,55 @@
+CLASS dv net/minecraft/client/gui/StatsScreen
+	FIELD a lastScreen Lda;
+	FIELD i title Ljava/lang/String;
+	FIELD j itemRenderer Lbb;
+	FIELD l statsList Lsu;
+	FIELD m itemStatsList Lci;
+	FIELD n blockStatsList Lga;
+	FIELD o stats Lxi;
+	FIELD p activeList Llg;
+	METHOD <init> (Lda;Lxi;)V
+		ARG 1 lastScreen
+		ARG 2 stats
+	METHOD a blitSlotBg (II)V
+		ARG 1 x
+		ARG 2 y
+	METHOD a (Ldv;)Lnet/minecraft/client/Minecraft;
+		ARG 0 instance
+	METHOD a (Ldv;IIII)V
+		ARG 0 instance
+	METHOD a (Ldv;IIIIII)V
+		ARG 0 instance
+	METHOD b (Ldv;)Lsj;
+		ARG 0 instance
+	METHOD c blitSlot (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 item
+	METHOD c blitSlotIcon (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 sx
+		ARG 4 sy
+	METHOD c (Ldv;)Lxi;
+		ARG 0 instance
+	METHOD d (Ldv;)Lsj;
+		ARG 0 instance
+	METHOD e (Ldv;)Lsj;
+		ARG 0 instance
+	METHOD f (Ldv;)Lnet/minecraft/client/Minecraft;
+		ARG 0 instance
+	METHOD g (Ldv;)Lnet/minecraft/client/Minecraft;
+		ARG 0 instance
+	METHOD h (Ldv;)Lsj;
+		ARG 0 instance
+	METHOD i (Ldv;)Lsj;
+		ARG 0 instance
+	METHOD j (Ldv;)Lsj;
+		ARG 0 instance
+	METHOD k postInit ()V
+	METHOD k (Ldv;)Lsj;
+		ARG 0 instance
+	METHOD l (Ldv;)Lsj;
+		ARG 0 instance
+	METHOD m (Ldv;)Lsj;
+		ARG 0 instance

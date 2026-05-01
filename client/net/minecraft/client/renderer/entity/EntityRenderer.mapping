@@ -1,0 +1,62 @@
+CLASS bw net/minecraft/client/renderer/entity/EntityRenderer
+	FIELD a m Lko;
+	FIELD b entityRenderDispatcher Lth;
+	FIELD c shadowRadius F
+	FIELD d shadowStrength F
+	FIELD e tr Lcv;
+	METHOD a getFont ()Lsj;
+	METHOD a renderFlat (Leq;)V
+		ARG 0 bb
+	METHOD a render (Leq;DDD)V
+		ARG 0 bb
+		ARG 1 xo
+		ARG 3 yo
+		ARG 5 zo
+	METHOD a bindTexture (Ljava/lang/String;)V
+		ARG 1 resourceName
+	METHOD a bindTexture (Ljava/lang/String;Ljava/lang/String;)Z
+		ARG 1 urlTexture
+		ARG 2 backupTexture
+	METHOD a renderFlame (Lsn;DDDF)V
+		ARG 1 e
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 partialTick
+	METHOD a render (Lsn;DDDFF)V
+		ARG 1 entity
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 rot
+		ARG 9 partialTick
+	METHOD a init (Lth;)V
+		ARG 1 entityRenderDispatcher
+	METHOD a renderTileShadow (Luu;DDDIIIFFDDD)V
+		ARG 1 tt
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xt
+		ARG 9 yt
+		ARG 10 zt
+		ARG 11 pow
+		ARG 12 r
+		ARG 13 xo
+		ARG 15 yo
+		ARG 17 zo
+	METHOD b getLevel ()Lfd;
+	METHOD b postRender (Lsn;DDDFF)V
+		ARG 1 entity
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 rot
+		ARG 9 partialTick
+	METHOD c renderShadow (Lsn;DDDFF)V
+		ARG 1 e
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 pow
+		ARG 9 partialTick

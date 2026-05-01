@@ -1,0 +1,26 @@
+CLASS cq net/minecraft/world/level/MobSpawner
+	FIELD a bedEnemies [Ljava/lang/Class;
+	FIELD b chunksToPoll Ljava/util/Set;
+	METHOD a getRandomPosWithin (Lfd;II)Lwf;
+		ARG 0 level
+		ARG 1 cx
+		ARG 2 cz
+	METHOD a attackSleepingPlayers (Lfd;Ljava/util/List;)Z
+		ARG 0 level
+		ARG 1 players
+	METHOD a tick (Lfd;ZZ)I
+		ARG 0 level
+		ARG 1 spawnEnemies
+		ARG 2 spawnFriendlies
+	METHOD a isSpawnPositionOk (Llk;Lfd;III)Z
+		ARG 0 category
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a finalizeMobSettings (Lls;Lfd;FFF)V
+		ARG 0 mob
+		ARG 1 level
+		ARG 2 xx
+		ARG 3 yy
+		ARG 4 zz

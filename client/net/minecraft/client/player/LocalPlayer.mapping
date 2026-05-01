@@ -1,0 +1,24 @@
+CLASS dc net/minecraft/client/player/LocalPlayer
+	FIELD a input Luo;
+	FIELD b minecraft Lnet/minecraft/client/Minecraft;
+	FIELD bN smoothFlyX Lcu;
+	FIELD bO smoothFlyY Lcu;
+	FIELD bP smoothFlyZ Lcu;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lfd;Lgr;I)V
+		ARG 1 minecraft
+		ARG 2 level
+		ARG 3 user
+		ARG 4 dimension
+	METHOD a setKey (IZ)V
+		ARG 1 eventKey
+		ARG 2 eventKeyState
+	METHOD a chat (Ljava/lang/String;)V
+		ARG 1 message
+	METHOD d isSolidBlock (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD d_ hurtTo (I)V
+		ARG 1 newHealth
+	METHOD o_ releaseAllKeys ()V
+	METHOD s getArmor ()I

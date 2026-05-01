@@ -1,0 +1,15 @@
+CLASS je net/minecraft/client/renderer/tileentity/TileEntityRenderer
+	FIELD a tileEntityRenderDispatcher Lll;
+	METHOD a getFont ()Lsj;
+	METHOD a onNewLevel (Lfd;)V
+		ARG 1 level
+	METHOD a bindTexture (Ljava/lang/String;)V
+		ARG 1 resourceName
+	METHOD a bindTexture (Lll;)V
+		ARG 1 tileEntityRenderDispatcher
+	METHOD a render (Low;DDDF)V
+		ARG 1 entity
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 partialTick

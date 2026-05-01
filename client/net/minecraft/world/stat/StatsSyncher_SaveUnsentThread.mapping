@@ -1,0 +1,7 @@
+CLASS vj net/minecraft/world/stat/StatsSyncher_SaveUnsentThread
+	FIELD a ss Ljava/util/Map;
+	FIELD b unsent Lcj;
+	METHOD <init> (Lcj;Ljava/util/Map;)V
+		ARG 1 ss
+		ARG 2 unsent
+	METHOD run run ()V

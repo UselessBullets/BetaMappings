@@ -1,0 +1,6 @@
+CLASS yg net/minecraft/client/renderer/entity/GiantMobRenderer
+	FIELD a scale F
+	METHOD <init> (Lko;FF)V
+		ARG 1 model
+		ARG 2 shadow
+		ARG 3 scale

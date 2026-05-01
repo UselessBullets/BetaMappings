@@ -1,0 +1,18 @@
+CLASS qm net/minecraft/client/particle/TerrainParticle
+	FIELD a tile Luu;
+	FIELD o face I
+	METHOD <init> (Lfd;DDDDDDLuu;II)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xa
+		ARG 10 ya
+		ARG 12 za
+		ARG 14 tile
+		ARG 15 face
+		ARG 16 data
+	METHOD a init (III)Lqm;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

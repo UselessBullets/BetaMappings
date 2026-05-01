@@ -1,0 +1,4 @@
+CLASS ai net/minecraft/network/packet/ComplexItemDataPacket
+	FIELD a itemType S
+	FIELD b itemId S
+	FIELD c data [B

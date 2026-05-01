@@ -1,0 +1,4 @@
+CLASS su net/minecraft/client/gui/StatsScreen_GeneralStatisticsList
+	FIELD a statsScreen Ldv;
+	METHOD <init> (Ldv;)V
+		ARG 1 statsScreen

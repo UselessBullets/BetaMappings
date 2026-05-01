@@ -1,0 +1,11 @@
+CLASS xz net/minecraft/client/player/RemotePlayer
+	FIELD a fallTime F
+	FIELD b lSteps I
+	FIELD bN lx D
+	FIELD bO ly D
+	FIELD bP lz D
+	FIELD bQ lyr D
+	FIELD bR lxr D
+	METHOD <init> (Lfd;Ljava/lang/String;)V
+		ARG 1 level
+		ARG 2 name

@@ -1,0 +1,36 @@
+CLASS ki net/minecraft/network/packet/Packet
+	FIELD a idToClassMap Ljava/util/Map;
+	FIELD b classToIdMap Ljava/util/Map;
+	FIELD c clientReceivedPackets Ljava/util/Set;
+	FIELD d serverReceivedPackets Ljava/util/Set;
+	FIELD e packetStatistics Ljava/util/HashMap;
+	FIELD f readCounter I
+	FIELD j createTime J
+	FIELD k shouldDelay Z
+	METHOD a getEstimatedSize ()I
+	METHOD a getPacket (I)Lki;
+		ARG 0 id
+	METHOD a map (IZZLjava/lang/Class;)V
+		ARG 0 id
+		ARG 1 receiveOnClient
+		ARG 2 receiveOnServer
+		ARG 3 clazz
+	METHOD a read (Ljava/io/DataInputStream;)V
+		ARG 1 dis
+	METHOD a readUTF (Ljava/io/DataInputStream;I)Ljava/lang/String;
+		ARG 0 dis
+		ARG 1 maxLength
+	METHOD a readPacket (Ljava/io/DataInputStream;Z)Lki;
+		ARG 0 dis
+		ARG 1 isServer
+	METHOD a write (Ljava/io/DataOutputStream;)V
+		ARG 1 dos
+	METHOD a writeUTF (Ljava/lang/String;Ljava/io/DataOutputStream;)V
+		ARG 0 value
+		ARG 1 dos
+	METHOD a writePacket (Lki;Ljava/io/DataOutputStream;)V
+		ARG 0 packet
+		ARG 1 dos
+	METHOD a handle (Lti;)V
+		ARG 1 listener
+	METHOD c getId ()I

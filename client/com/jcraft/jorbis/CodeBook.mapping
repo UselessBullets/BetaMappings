@@ -1,0 +1,2 @@
+CLASS com/jcraft/jorbis/CodeBook
+	METHOD decode decode (Lcom/jcraft/jogg/Buffer;)I

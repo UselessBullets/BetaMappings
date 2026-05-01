@@ -1,0 +1,18 @@
+CLASS vu net/minecraft/client/gui/AchievementPopup
+	FIELD a mc Lnet/minecraft/client/Minecraft;
+	FIELD b width I
+	FIELD c height I
+	FIELD d title Ljava/lang/String;
+	FIELD e desc Ljava/lang/String;
+	FIELD f ach Lny;
+	FIELD g startTime J
+	FIELD h ir Lbb;
+	FIELD i isHelper Z
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 mc
+	METHOD a render ()V
+	METHOD a popup (Lny;)V
+		ARG 1 ach
+	METHOD b prepareWindow ()V
+	METHOD b permanent (Lny;)V
+		ARG 1 ach
