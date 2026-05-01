@@ -1,3 +1,0 @@
-CLASS ca net/minecraft/network/packet/PacketBedResponse
-	FIELD a BED_RESPONSES [Ljava/lang/String;
-	FIELD b type I
