@@ -1,0 +1,20 @@
+CLASS ns net/minecraft/stats/Stat
+	FIELD a formatter Loe;
+	FIELD b numberFormat Ljava/text/NumberFormat;
+	FIELD c decimalFormat Ljava/text/DecimalFormat;
+	FIELD e id I
+	FIELD f name Ljava/lang/String;
+	FIELD g awardLocallyOnly Z
+	FIELD h guid Ljava/lang/String;
+	FIELD i defaultFormat Loe;
+	FIELD j timeFormat Loe;
+	FIELD k distanceFormat Loe;
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 1 id
+		ARG 2 name
+	METHOD <init> (ILjava/lang/String;Loe;)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 formatter
+	METHOD d postConstruct ()Lns;
+	METHOD e setAwardLocallyOnly ()Lns;

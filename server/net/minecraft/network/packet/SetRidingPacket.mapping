@@ -1,1 +1,6 @@
 CLASS io net/minecraft/network/packet/SetRidingPacket
+	FIELD a riderId I
+	FIELD b riddenId I
+	METHOD <init> (Llq;Llq;)V
+		ARG 1 rider
+		ARG 2 ridden

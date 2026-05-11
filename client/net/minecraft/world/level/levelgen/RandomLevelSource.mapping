@@ -18,7 +18,7 @@ CLASS yf net/minecraft/world/level/levelgen/RandomLevelSource
 	FIELD q buffer [D
 	FIELD r sandBuffer [D
 	FIELD s gravelBuffer [D
-	FIELD t deptjNiffer [D
+	FIELD t depthBuffer [D
 	FIELD u caveFeature Lfv;
 	FIELD v biomes [Lkd;
 	FIELD w temperatures [D
@@ -34,7 +34,7 @@ CLASS yf net/minecraft/world/level/levelgen/RandomLevelSource
 		ARG 6 ySize
 		ARG 7 zSize
 	METHOD a buildSurfaces (II[B[Lkd;)V
-		ARG 1 xOff
+		ARG 1 xOffs
 		ARG 2 zOffs
 		ARG 3 blocks
 		ARG 4 biomes

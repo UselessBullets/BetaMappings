@@ -1,0 +1,43 @@
+CLASS nq net/minecraft/world/level/tile/RailTile_Rail
+	FIELD a rt Ljj;
+	FIELD b level Ldj;
+	FIELD c x I
+	FIELD d y I
+	FIELD e z I
+	FIELD f usesDataBit Z
+	FIELD g connections Ljava/util/List;
+	METHOD <init> (Ljj;Ldj;III)V
+		ARG 1 rt
+		ARG 2 level
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+	METHOD a removeSoftConnections ()V
+	METHOD a updateConnections (I)V
+		ARG 1 direction
+	METHOD a hasRail (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a countPotentialConnections (Lnq;)I
+		ARG 0 rail
+	METHOD a getRail (Loa;)Lnq;
+		ARG 1 p
+	METHOD a place (ZZ)V
+		ARG 1 hasSignal
+		ARG 2 first
+	METHOD b countPotentialConnections ()I
+	METHOD b hasConnection (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b connectsTo (Lnq;)Z
+		ARG 1 rail
+	METHOD c hasNeighborRail (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD c canConnectTo (Lnq;)Z
+		ARG 1 rail
+	METHOD d connectTo (Lnq;)V
+		ARG 1 rail

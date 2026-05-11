@@ -1,0 +1,21 @@
+CLASS cm net/minecraft/world/level/material/MaterialColor
+	FIELD a colors [Lcm;
+	FIELD b none Lcm;
+	FIELD c grass Lcm;
+	FIELD d sand Lcm;
+	FIELD e cloth Lcm;
+	FIELD f fire Lcm;
+	FIELD g ice Lcm;
+	FIELD h metal Lcm;
+	FIELD i plant Lcm;
+	FIELD j snow Lcm;
+	FIELD k clay Lcm;
+	FIELD l dirt Lcm;
+	FIELD m stone Lcm;
+	FIELD n water Lcm;
+	FIELD o wood Lcm;
+	FIELD p col I
+	FIELD q id I
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 col

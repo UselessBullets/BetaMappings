@@ -43,7 +43,29 @@ CLASS dj net/minecraft/world/level/Level
 	FIELD x levelData Lct;
 	FIELD y isFindingSpawn Z
 	FIELD z savedDataStorage Les;
+	METHOD <init> (Lom;Ljava/lang/String;JLos;)V
+		ARG 1 levelStorage
+		ARG 2 levelName
+		ARG 3 seed
+		ARG 5 fixedDimension
 	METHOD a getBiomeSource ()Lph;
+	METHOD a getNearestPlayer (DDDD)Lem;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 maxDist
+	METHOD a playLocalSound (DDDLjava/lang/String;FF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 name
+		ARG 8 volume
+		ARG 9 pitch
+	METHOD a getSkyDarken (F)I
+		ARG 1 partialTick
+	METHOD a getTopTile (II)I
+		ARG 1 x
+		ARG 2 z
 	METHOD a hasChunksAt (IIII)Z
 		ARG 1 x
 		ARG 2 y
@@ -62,11 +84,180 @@ CLASS dj net/minecraft/world/level/Level
 		ARG 4 x1
 		ARG 5 y1
 		ARG 6 z1
+	METHOD a mayPlace (IIIIZI)Z
+		ARG 1 tileId
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 ignoreEntities
+		ARG 6 face
+	METHOD a setTileEntity (IIILjh;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tileEntity
+	METHOD a getRawBrightness (IIIZ)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 propagate
+	METHOD a setTime (J)V
+		ARG 1 time
+	METHOD a clip (Lba;Lba;)Lnh;
+		ARG 1 a
+		ARG 2 b
+	METHOD a clip (Lba;Lba;Z)Lnh;
+		ARG 1 a
+		ARG 2 b
+		ARG 3 liquid
+	METHOD a clip (Lba;Lba;ZZ)Lnh;
+		ARG 1 a
+		ARG 2 b
+		ARG 3 liquid
+		ARG 4 solidOnly
+	METHOD a getSeenPercent (Lba;Lcz;)F
+		ARG 1 center
+		ARG 2 bb
+	METHOD a getBrightness (Lco;III)I
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a updateLightIfOtherThan (Lco;IIII)V
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 expected
 	METHOD a updateLight (Lco;IIIIII)V
+		ARG 1 layer
+		ARG 2 x0
+		ARG 3 y0
+		ARG 4 z0
+		ARG 5 x1
+		ARG 6 y1
+		ARG 7 z1
+	METHOD a updateLight (Lco;IIIIIIZ)V
+		ARG 1 layer
+		ARG 2 x0
+		ARG 3 y0
+		ARG 4 z0
+		ARG 5 x1
+		ARG 6 y1
+		ARG 7 z1
+		ARG 8 expand
+	METHOD a isUnobstructed (Lcz;)Z
+		ARG 1 aabb
+	METHOD a containsMaterial (Lcz;Lhj;)Z
+		ARG 1 box
+		ARG 2 material
+	METHOD a checkAndHandleWater (Lcz;Lhj;Llq;)Z
+		ARG 1 box
+		ARG 2 material
+		ARG 3 e
+	METHOD a mayInteract (Lem;III)Z
+		ARG 1 player
+		ARG 2 xt
+		ARG 3 yt
+		ARG 4 zt
+	METHOD a extinguishFire (Lem;IIII)V
+		ARG 1 player
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+	METHOD a levelEvent (Lem;IIIII)V
+		ARG 1 source
+		ARG 2 type
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 data
+	METHOD a countInstanceOf (Ljava/lang/Class;)I
+		ARG 1 clas
+	METHOD a getEntitiesOfClass (Ljava/lang/Class;Lcz;)Ljava/util/List;
+		ARG 1 baseClass
+		ARG 2 bb
+	METHOD a getSavedData (Ljava/lang/Class;Ljava/lang/String;)Lfa;
+		ARG 1 clazz
+		ARG 2 id
+	METHOD a getPlayerByName (Ljava/lang/String;)Lem;
+		ARG 1 name
+	METHOD a addParticle (Ljava/lang/String;DDDDDD)V
+		ARG 1 id
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xd
+		ARG 10 yd
+		ARG 12 zd
+	METHOD a playStreamingMusic (Ljava/lang/String;III)V
+		ARG 1 name
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a setSavedData (Ljava/lang/String;Lfa;)V
+		ARG 1 id
+		ARG 2 data
+	METHOD a addAllPendingTileEntities (Ljava/util/Collection;)V
+		ARG 1 entities
+	METHOD a addEntities (Ljava/util/List;)V
+		ARG 1 list
+	METHOD a addListener (Ljp;)V
+		ARG 1 listener
+	METHOD a addGlobalEntity (Llq;)Z
+		ARG 1 e
+	METHOD a broadcastEntityEvent (Llq;B)V
+		ARG 1 e
+		ARG 2 event
+	METHOD a getNearestPlayer (Llq;D)Lem;
+		ARG 1 source
+		ARG 2 maxDist
+	METHOD a explode (Llq;DDDF)Lkh;
+		ARG 1 source
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 r
+	METHOD a explode (Llq;DDDFZ)Lkh;
+		ARG 1 source
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 r
+		ARG 9 fire
+	METHOD a findPath (Llq;IIIF)Lcb;
+		ARG 1 from
+		ARG 2 xBest
+		ARG 3 yBest
+		ARG 4 zBest
+		ARG 5 maxDist
+	METHOD a getCubes (Llq;Lcz;)Ljava/util/List;
+		ARG 1 source
+		ARG 2 box
+	METHOD a playSound (Llq;Ljava/lang/String;FF)V
+		ARG 1 entity
+		ARG 2 name
+		ARG 3 volume
+		ARG 4 pitch
+	METHOD a findPath (Llq;Llq;F)Lcb;
+		ARG 1 from
+		ARG 2 to
+		ARG 3 maxDist
+	METHOD a tick (Llq;Z)V
+		ARG 1 e
+		ARG 2 actual
+	METHOD a tickPendingTiles (Z)Z
+		ARG 1 force
 	METHOD a save (ZLpj;)V
 		ARG 1 force
 		ARG 2 progressListener
+	METHOD a setSpawnSettings (ZZ)V
+		ARG 1 spawnEnemies
+		ARG 2 spawnFriendlies
 	METHOD b createChunkSource ()Lbl;
+	METHOD b getTimeOfDay (F)F
+		ARG 1 partialTick
 	METHOD b getChunkAt (II)Lhi;
 		ARG 1 x
 		ARG 2 z
@@ -75,16 +266,126 @@ CLASS dj net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 tile
+	METHOD b setTileAndData (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+		ARG 5 data
+	METHOD b setTilesDirty (IIIIII)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
 	METHOD b tileEntityChanged (IIILjh;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 te
+	METHOD b setBrightness (Lco;IIII)V
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 brightness
+	METHOD b containsAnyBlocks (Lcz;)Z
+		ARG 1 box
+	METHOD b containsLiquid (Lcz;Lhj;)Z
+		ARG 1 box
+		ARG 2 material
+	METHOD b getFreeAuxValueFor (Ljava/lang/String;)I
+		ARG 1 id
+	METHOD b removeEntities (Ljava/util/List;)V
+		ARG 1 list
+	METHOD b addEntity (Llq;)Z
+		ARG 1 e
+	METHOD b getEntities (Llq;Lcz;)Ljava/util/List;
+		ARG 1 except
+		ARG 2 bb
 	METHOD c setInitialSpawn ()V
+	METHOD c getThunderLevel (F)F
+		ARG 1 partialTick
 	METHOD c getChunk (II)Lhi;
 		ARG 1 x
 		ARG 2 z
+	METHOD c setData (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 data
+	METHOD c addToTickNextTick (IIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tileId
+		ARG 5 tickDelay
+	METHOD c getBlocksAndData (IIIIII)[B
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 xs
+		ARG 5 ys
+		ARG 6 zs
+	METHOD c containsAnyLiquid (Lcz;)Z
+		ARG 1 box
+	METHOD c entityAdded (Llq;)V
+		ARG 1 e
+	METHOD d isDay ()Z
+	METHOD d getRainLevel (F)F
+		ARG 1 partialTick
 	METHOD d getHeightmap (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD d setDataNoUpdate (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 data
+	METHOD d tileEvent (IIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 b0
+		ARG 5 b1
+	METHOD d containsFireTile (Lcz;)Z
+		ARG 1 box
+	METHOD d entityRemoved (Llq;)V
+		ARG 1 e
+	METHOD e tickEntities ()V
+	METHOD e getTopSolidBlock (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD e setTile (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD e levelEvent (IIIII)V
+		ARG 1 type
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD e removeEntity (Llq;)V
+		ARG 1 e
+	METHOD f updateLights ()Z
+	METHOD f (II)I
+		ARG 1 x
+		ARG 2 z
 	METHOD f isEmptyTile (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD f tileUpdated (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD f removeEntityImmediately (Llq;)V
+		ARG 1 e
+	METHOD g updateSkyBrightness ()V
 	METHOD g hasChunk (II)Z
 		ARG 1 x
 		ARG 2 z
@@ -93,5 +394,95 @@ CLASS dj net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 	METHOD g lightColumnChanged (IIII)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 y0
+		ARG 4 y1
+	METHOD g tick (Llq;)V
+		ARG 1 e
+	METHOD h tick ()V
+	METHOD h sendTileUpdated (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD h updateNeighborsAt (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD i tickWeather ()V
+	METHOD i setTileDirty (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD i getDirectSignal (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 dir
+	METHOD j tickTiles ()V
+	METHOD j canSeeSky (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD j getSignal (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 dir
 	METHOD k checkSession ()V
+	METHOD k getDaytimeRawBrightness (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD k neighborChanged (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 type
+	METHOD l getSeed ()J
+	METHOD l getRawBrightness (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD m getTime ()J
+	METHOD m isSkyLit (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD n getSharedSpawnPos ()Lay;
+	METHOD n getBrightness (III)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD o getChunkSource ()Lbl;
+	METHOD o removeTileEntity (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD p getLevelStorage ()Lom;
+	METHOD p isSolidTile (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD q getLevelData ()Lct;
+	METHOD q hasDirectSignal (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD r updateSleepingPlayerList ()V
+	METHOD r hasNeighborSignal (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD s awakenAllPlayers ()V
+	METHOD s isRainingAt (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD t allPlayersAreSleeping ()Z
+	METHOD u isThundering ()Z
+	METHOD v isRaining ()Z
 	METHOD w saveLevelData ()V
+	METHOD x prepareWeather ()V
+	METHOD y stopWeather ()V

@@ -1,0 +1,9 @@
+CLASS gy net/minecraft/server/gui/StatsComponent
+	FIELD a values [I
+	FIELD b vp I
+	FIELD c msgs [Ljava/lang/String;
+	METHOD a tick ()V
+	METHOD a tick (Lgy;)V
+		ARG 0 instance
+	METHOD paint paint (Ljava/awt/Graphics;)V
+		ARG 1 graphics

@@ -1,1 +1,24 @@
 CLASS mu net/minecraft/world/level/tile/entity/PistonPieceEntity
+	FIELD a id I
+	FIELD b data I
+	FIELD c facing I
+	FIELD i extending Z
+	FIELD j isSourcePiston Z
+	FIELD k progress F
+	FIELD l progressO F
+	FIELD m collisionHolder Ljava/util/List;
+	METHOD <init> (IIIZZ)V
+		ARG 1 id
+		ARG 2 data
+		ARG 3 facing
+		ARG 4 extending
+		ARG 5 isSourcePiston
+	METHOD a getId ()I
+	METHOD a getProgress (F)F
+		ARG 1 partialTick
+	METHOD a moveCollidedEntities (FF)V
+		ARG 1 progress
+		ARG 2 amount
+	METHOD c isExtending ()Z
+	METHOD d getFacing ()I
+	METHOD k finalTick ()V

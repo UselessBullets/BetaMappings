@@ -1,0 +1,17 @@
+CLASS bb net/minecraft/world/item/Item_Tier
+	FIELD a WOOD Lbb;
+	FIELD b STONE Lbb;
+	FIELD c IRON Lbb;
+	FIELD d EMERALD Lbb;
+	FIELD e GOLD Lbb;
+	FIELD f level I
+	FIELD g uses I
+	FIELD h speed F
+	FIELD i damage I
+	METHOD <init> (Ljava/lang/String;IIIFI)V
+		ARG 3 level
+		ARG 4 uses
+	METHOD a getUses ()I
+	METHOD b getSpeed ()F
+	METHOD c getAttackDamageBonus ()I
+	METHOD d getLevel ()I

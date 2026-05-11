@@ -1,0 +1,5 @@
+CLASS fg net/minecraft/world/item/DoorItem
+	FIELD a material Lhj;
+	METHOD <init> (ILhj;)V
+		ARG 1 id
+		ARG 2 material

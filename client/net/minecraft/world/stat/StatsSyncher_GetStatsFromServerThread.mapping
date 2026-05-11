@@ -1,5 +1,0 @@
-CLASS vk net/minecraft/world/stat/StatsSyncher_GetStatsFromServerThread
-	FIELD a ss Lcj;
-	METHOD <init> (Lcj;)V
-		ARG 1 ss
-	METHOD run run ()V

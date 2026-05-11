@@ -1,0 +1,33 @@
+CLASS dx util/LongHashMap
+	FIELD a table [Lkd;
+	FIELD b size I
+	FIELD c threshold I
+	FIELD d loadFactor F
+	FIELD e modCount I
+	METHOD a transfer ([Lkd;)V
+		ARG 1 newTable
+	METHOD a hash (I)I
+		ARG 0 i
+	METHOD a indexFor (II)I
+		ARG 0 hash
+		ARG 1 length
+	METHOD a addEntry (IJLjava/lang/Object;I)V
+		ARG 1 hash
+		ARG 2 key
+		ARG 4 value
+		ARG 5 next
+	METHOD a get (J)Ljava/lang/Object;
+		ARG 1 key
+	METHOD a put (JLjava/lang/Object;)V
+		ARG 1 key
+		ARG 3 value
+	METHOD b resize (I)V
+		ARG 1 newSize
+	METHOD b remove (J)Ljava/lang/Object;
+		ARG 1 key
+	METHOD c removeEntryForKey (J)Lkd;
+		ARG 1 key
+	METHOD d hash2 (J)I
+		ARG 0 i
+	METHOD e hash (J)I
+		ARG 0 i

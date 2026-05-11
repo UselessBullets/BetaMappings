@@ -1,0 +1,41 @@
+CLASS cl net/minecraft/world/inventory/AbstractContainerMenu
+	FIELD a changeUid S
+	FIELD b unSynchedPlayers Ljava/util/Set;
+	FIELD d lastSlots Ljava/util/List;
+	FIELD e slots Ljava/util/List;
+	FIELD f containerId I
+	FIELD g containerListeners Ljava/util/List;
+	METHOD a broadcastChanges ()V
+	METHOD a quickMoveStack (I)Lfy;
+		ARG 1 slotIndex
+	METHOD a clicked (IIZLem;)Lfy;
+		ARG 1 slotIndex
+		ARG 2 buttonNum
+		ARG 3 clickType
+		ARG 4 player
+	METHOD a addSlotListener (Lcp;)V
+		ARG 1 listener
+	METHOD a addSlot (Lel;)V
+		ARG 1 slot
+	METHOD a removed (Lem;)V
+		ARG 1 player
+	METHOD a setSynched (Lem;Z)V
+		ARG 1 player
+		ARG 2 synched
+	METHOD a moveItemStackTo (Lfy;IIZ)V
+		ARG 1 itemStack
+		ARG 2 startSlot
+		ARG 3 endSlot
+		ARG 4 backwards
+	METHOD a slotsChanged (Lhp;)V
+		ARG 1 container
+	METHOD a getSlotFor (Lhp;I)Lel;
+		ARG 1 container
+		ARG 2 index
+	METHOD b getItems ()Ljava/util/List;
+	METHOD b getSlot (I)Lel;
+		ARG 1 index
+	METHOD b stillValid (Lem;)Z
+		ARG 1 player
+	METHOD c isSynched (Lem;)Z
+		ARG 1 player

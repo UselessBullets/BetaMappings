@@ -67,7 +67,7 @@ CLASS iz net/minecraft/world/item/ItemInstance
 		ARG 1 mob
 		ARG 2 attacker
 	METHOD a save (Lnu;)Lnu;
-		ARG 1 compoundTage
+		ARG 1 compoundTag
 	METHOD a getAttackDamage (Lsn;)I
 		ARG 1 entity
 	METHOD a getDestroySpeed (Luu;)F
@@ -81,7 +81,7 @@ CLASS iz net/minecraft/world/item/ItemInstance
 	METHOD b clone (Liz;)Liz;
 		ARG 0 item
 	METHOD b load (Lnu;)V
-		ARG 1 compoundTage
+		ARG 1 compoundTag
 	METHOD b canDestroySpecial (Luu;)Z
 		ARG 1 tile
 	METHOD c getMaxStackSize ()I

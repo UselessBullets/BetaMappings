@@ -1,1 +1,5 @@
 CLASS lh net/minecraft/network/packet/MoveEntityPacket_Rot
+	METHOD <init> (IBB)V
+		ARG 1 id
+		ARG 2 yRot
+		ARG 3 xRot

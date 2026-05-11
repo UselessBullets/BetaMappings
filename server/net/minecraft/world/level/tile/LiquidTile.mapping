@@ -1,0 +1,28 @@
+CLASS kv net/minecraft/world/level/tile/LiquidTile
+	METHOD b getRenderedDepth (Lpb;III)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD c getHeight (I)F
+		ARG 0 d
+	METHOD c getFlow (Lpb;III)Lba;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD g getDepth (Ldj;III)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD h fizz (Ldj;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD i updateLiquid (Ldj;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

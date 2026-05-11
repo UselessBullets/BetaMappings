@@ -30,7 +30,7 @@ CLASS qn net/minecraft/world/level/levelgen/HellRandomLevelSource
 		ARG 6 ySize
 		ARG 7 zSize
 	METHOD a prepareHeights (II[B)V
-		ARG 1 xOff
+		ARG 1 xOffs
 		ARG 2 zOffs
 		ARG 3 blocks
 	METHOD b buildSurfaces (II[B)V

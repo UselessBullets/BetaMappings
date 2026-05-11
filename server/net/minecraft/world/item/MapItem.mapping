@@ -1,0 +1,8 @@
+CLASS ol net/minecraft/world/item/MapItem
+	METHOD a update (Ldj;Llq;Lfv;)V
+		ARG 1 level
+		ARG 2 player
+		ARG 3 data
+	METHOD a getSavedData (Lfy;Ldj;)Lfv;
+		ARG 1 itemInstance
+		ARG 2 level

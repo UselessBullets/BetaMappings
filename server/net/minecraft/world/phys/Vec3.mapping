@@ -1,0 +1,15 @@
+CLASS ba net/minecraft/world/phys/Vec3
+	FIELD a x D
+	FIELD b y D
+	FIELD c z D
+	METHOD a resetPool ()V
+	METHOD a distanceTo (Lba;)D
+	METHOD a clipX (Lba;D)Lba;
+	METHOD b normalize ()Lba;
+	METHOD b newTemp (DDD)Lba;
+	METHOD b distanceToSqr (Lba;)D
+	METHOD b clipY (Lba;D)Lba;
+	METHOD c length ()D
+	METHOD c add (DDD)Lba;
+	METHOD c clipZ (Lba;D)Lba;
+	METHOD d distanceToSqr (DDD)D

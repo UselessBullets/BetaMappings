@@ -62,7 +62,7 @@ CLASS ei net/minecraft/world/level/LevelData
 		ARG 1 rainTime
 	METHOD g getSizeOnDisk ()J
 	METHOD h getLoadedPlayerTag ()Lnu;
-	METHOD i getDimesnion ()I
+	METHOD i getDimension ()I
 	METHOD j getLevelName ()Ljava/lang/String;
 	METHOD k getVersion ()I
 	METHOD l getLastPlayed ()J

@@ -1,1 +1,14 @@
 CLASS iz net/minecraft/world/level/tile/ButtonTile
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 tex
+	METHOD g findFace (Ldj;III)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD h checkCanSurvive (Ldj;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

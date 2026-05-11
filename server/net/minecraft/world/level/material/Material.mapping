@@ -1,2 +1,52 @@
 CLASS hj net/minecraft/world/level/material/Material
 	FIELD a air Lhj;
+	FIELD A web Lhj;
+	FIELD b grass Lhj;
+	FIELD B piston Lhj;
+	FIELD c dirt Lhj;
+	FIELD C color Lcm;
+	FIELD d wood Lhj;
+	FIELD D flammable Z
+	FIELD e stone Lhj;
+	FIELD E replaceable Z
+	FIELD f metal Lhj;
+	FIELD F neverBuildable Z
+	FIELD g water Lhj;
+	FIELD G isAlwaysDestroyable Z
+	FIELD h lava Lhj;
+	FIELD H pushReaction I
+	FIELD i leaves Lhj;
+	FIELD j replaceable_plant Lhj;
+	FIELD k sponge Lhj;
+	FIELD l cloth Lhj;
+	FIELD m fire Lhj;
+	FIELD n sand Lhj;
+	FIELD o decoration Lhj;
+	FIELD p glass Lhj;
+	FIELD q explosive Lhj;
+	FIELD r coral Lhj;
+	FIELD s ice Lhj;
+	FIELD t topSnow Lhj;
+	FIELD u snow Lhj;
+	FIELD v cactus Lhj;
+	FIELD w clay Lhj;
+	FIELD x vegetable Lhj;
+	FIELD y portal Lhj;
+	FIELD z cake Lhj;
+	METHOD <init> (Lcm;)V
+		ARG 1 color
+	METHOD a isSolid ()Z
+	METHOD b blocksLight ()Z
+	METHOD c blocksMotion ()Z
+	METHOD d isLiquid ()Z
+	METHOD e isFlammable ()Z
+	METHOD f replaceable ()Lhj;
+	METHOD g isReplaceable ()Z
+	METHOD h isSolidBlocking ()Z
+	METHOD i isDestroyedByHand ()Z
+	METHOD j getPushReaction ()I
+	METHOD k destroyOnPush ()Lhj;
+	METHOD l notPushable ()Lhj;
+	METHOD m neverBuildable ()Lhj;
+	METHOD n notAlwaysDestroyable ()Lhj;
+	METHOD o flammable ()Lhj;

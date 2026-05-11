@@ -1,1 +1,8 @@
 CLASS km net/minecraft/network/packet/SetSpawnPositionPacket
+	FIELD a x I
+	FIELD b y I
+	FIELD c c I
+	METHOD <init> (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

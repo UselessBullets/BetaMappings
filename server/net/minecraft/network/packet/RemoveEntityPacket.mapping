@@ -1,1 +1,4 @@
 CLASS la net/minecraft/network/packet/RemoveEntityPacket
+	FIELD a id I
+	METHOD <init> (I)V
+		ARG 1 id

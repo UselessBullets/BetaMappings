@@ -1,1 +1,13 @@
 CLASS jz net/minecraft/network/packet/PlayerInputPacket
+	FIELD a xa F
+	FIELD b ya F
+	FIELD c isJumping Z
+	FIELD d isSneaking Z
+	FIELD e xRot F
+	FIELD f yRot F
+	METHOD c getXa ()F
+	METHOD d getXRot ()F
+	METHOD e getYa ()F
+	METHOD f getYRot ()F
+	METHOD g isJumping ()Z
+	METHOD h isSneaking ()Z

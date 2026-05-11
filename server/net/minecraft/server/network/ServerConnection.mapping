@@ -1,0 +1,18 @@
+CLASS cu net/minecraft/server/network/ServerConnection
+	FIELD a logger Ljava/util/logging/Logger;
+	FIELD b running Z
+	FIELD c server Lnet/minecraft/server/MinecraftServer;
+	FIELD d serverSocket Ljava/net/ServerSocket;
+	FIELD e listenThread Ljava/lang/Thread;
+	FIELD f connectionCounter I
+	FIELD g pending Ljava/util/ArrayList;
+	FIELD h players Ljava/util/ArrayList;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/net/InetAddress;I)V
+		ARG 1 server
+		ARG 2 address
+		ARG 3 port
+	METHOD a tick ()V
+	METHOD a handleConnection (Lee;)V
+		ARG 1 uc
+	METHOD a addPlayerConnection (Lha;)V
+		ARG 1 uc

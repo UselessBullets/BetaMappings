@@ -1,0 +1,13 @@
+CLASS fu net/minecraft/world/inventory/CraftingMenu
+	FIELD a craftingSlots Lhz;
+	FIELD b resultSlots Lhp;
+	FIELD c level Ldj;
+	FIELD h x I
+	FIELD i y I
+	FIELD j z I
+	METHOD <init> (Lfx;Ldj;III)V
+		ARG 1 inventory
+		ARG 2 level
+		ARG 3 xt
+		ARG 4 yt
+		ARG 5 zt

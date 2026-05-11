@@ -1,1 +1,26 @@
 CLASS lp net/minecraft/world/entity/projectile/Arrow
+	FIELD a pickup Z
+	FIELD b shakeTime I
+	FIELD c owner Lhl;
+	FIELD d xTile I
+	FIELD e yTile I
+	FIELD f zTile I
+	FIELD g lastTile I
+	FIELD h lastData I
+	FIELD i inGround Z
+	FIELD j life I
+	FIELD k flightTime I
+	METHOD <init> (Ldj;DDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD <init> (Ldj;Lhl;)V
+		ARG 1 level
+		ARG 2 mob
+	METHOD a shoot (DDDFF)V
+		ARG 1 xd
+		ARG 3 yd
+		ARG 5 zd
+		ARG 7 pow
+		ARG 8 uncertainty

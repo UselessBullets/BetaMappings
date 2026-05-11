@@ -1,0 +1,42 @@
+CLASS dl net/minecraft/server/level/ServerPlayer
+	FIELD a connection Lha;
+	FIELD b server Lnet/minecraft/server/MinecraftServer;
+	FIELD bL lastSentHealth I
+	FIELD bM invulnerableTime2 I
+	FIELD bN lastCarried [Lfy;
+	FIELD bO containerCounter I
+	FIELD c gameMode Lpu;
+	FIELD d lastMoveX D
+	FIELD e lastMoveZ D
+	FIELD f chunksToSend Ljava/util/List;
+	FIELD g seenChunks Ljava/util/Set;
+	FIELD h ignoreSlotUpdateHack Z
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ldj;Ljava/lang/String;Lpu;)V
+		ARG 1 server
+		ARG 2 level
+		ARG 3 name
+		ARG 4 gameMode
+	METHOD a setPlayerInput (FFZZFF)V
+		ARG 1 xa
+		ARG 2 ya
+		ARG 3 jumping
+		ARG 4 sneaking
+		ARG 5 xRot
+		ARG 6 yRot
+	METHOD a refreshContainer (Lcl;)V
+		ARG 1 menu
+	METHOD a broadcast (Ljh;)V
+		ARG 1 te
+	METHOD a doTick (Z)V
+		ARG 1 sendChunks
+	METHOD A doCloseContainer ()V
+	METHOD ai nextContainerCounter ()V
+	METHOD b doCheckFallDamage (DZ)V
+		ARG 1 ya
+		ARG 3 onGround
+	METHOD B disconnect ()V
+	METHOD C resetSentInfo ()V
+	METHOD c_ getCarried (I)Lfy;
+		ARG 1 slot
+	METHOD o initMenu ()V
+	METHOD z broadcastCarriedItem ()V

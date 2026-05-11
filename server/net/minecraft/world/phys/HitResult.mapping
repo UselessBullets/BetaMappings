@@ -1,0 +1,8 @@
+CLASS nh net/minecraft/world/phys/HitResult
+	FIELD a type Lgd;
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e f I
+	FIELD f pos Lba;
+	FIELD g entity Llq;

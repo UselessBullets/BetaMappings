@@ -1,1 +1,4 @@
 CLASS oc net/minecraft/world/entity/animal/Pig
+	METHOD a setSaddle (Z)V
+		ARG 1 value
+	METHOD x hasSaddle ()Z

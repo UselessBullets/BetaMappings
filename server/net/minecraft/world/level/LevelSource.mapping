@@ -3,11 +3,19 @@ CLASS pb net/minecraft/world/level/LevelSource
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD b getTileEntity (III)Ljh;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD c getData (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 	METHOD d getMaterial (III)Lhj;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD e isSolidBlockingTile (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

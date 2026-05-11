@@ -1,7 +1,0 @@
-CLASS dt net/minecraft/world/item/crafting/Recipy
-	METHOD a size ()I
-	METHOD a matches (Lmq;)Z
-		ARG 1 craftSlots
-	METHOD b getResultItem ()Liz;
-	METHOD b assemble (Lmq;)Liz;
-		ARG 1 craftSlots

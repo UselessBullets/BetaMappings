@@ -1,1 +1,7 @@
 CLASS ec net/minecraft/world/entity/monster/Creeper
+	FIELD a swell I
+	FIELD b oldSwell I
+	METHOD e setSwellDir (I)V
+		ARG 1 dir
+	METHOD s isPowered ()Z
+	METHOD x getSwellDir ()I

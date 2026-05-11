@@ -1,0 +1,5 @@
+CLASS i net/minecraft/server/gui/PlayerListComponent
+	FIELD a server Lnet/minecraft/server/MinecraftServer;
+	FIELD b tick I
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 server

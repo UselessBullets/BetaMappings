@@ -1,0 +1,8 @@
+CLASS eg net/minecraft/server/level/DerivedServerLevel
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lom;Ljava/lang/String;IJLdp;)V
+		ARG 1 server
+		ARG 2 levelStorage
+		ARG 3 levelName
+		ARG 4 dimension
+		ARG 5 seed
+		ARG 7 wrapped

@@ -24,6 +24,8 @@ CLASS jx util/IntHashMap
 		ARG 1 key
 	METHOD c removeEntryForKey (I)Lwm;
 		ARG 1 key
+	METHOD d hash2 (I)I
+		ARG 0 i
 	METHOD e hash (I)I
 		ARG 0 i
 	METHOD f resize (I)V

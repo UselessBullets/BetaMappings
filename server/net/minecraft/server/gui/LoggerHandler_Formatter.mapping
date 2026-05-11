@@ -1,0 +1,6 @@
+CLASS fi net/minecraft/server/gui/LoggerHandler_Formatter
+	FIELD a lh Lci;
+	METHOD <init> (Lci;)V
+		ARG 1 lh
+	METHOD format format (Ljava/util/logging/LogRecord;)Ljava/lang/String;
+		ARG 1 logRecord

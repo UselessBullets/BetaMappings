@@ -1,0 +1,3 @@
+CLASS mg net/minecraft/world/level/chunk/storage/OldChunkStorage
+	METHOD a load (Ldj;Liq;)Lhi;
+	METHOD a save (Lhi;Ldj;Liq;)V

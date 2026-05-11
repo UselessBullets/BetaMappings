@@ -1,0 +1,4 @@
+CLASS lv net/minecraft/world/level/LightUpdate
+	FIELD a layer Lco;
+	METHOD a expandToContain (IIIIII)Z
+	METHOD a update (Ldj;)V

@@ -1,6 +1,6 @@
 CLASS by net/minecraft/world/entity/projectile/Snowball
 	FIELD a shakeTime I
-	FIELD b xTIle I
+	FIELD b xTile I
 	FIELD c yTile I
 	FIELD d zTile I
 	FIELD e lastTile I
@@ -17,8 +17,8 @@ CLASS by net/minecraft/world/entity/projectile/Snowball
 		ARG 1 level
 		ARG 2 mob
 	METHOD a shoot (DDDFF)V
-		ARG 1 x
-		ARG 3 y
-		ARG 5 z
+		ARG 1 xd
+		ARG 3 yd
+		ARG 5 zd
 		ARG 7 pow
 		ARG 8 uncertainty

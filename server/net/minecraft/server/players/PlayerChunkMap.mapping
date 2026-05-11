@@ -1,0 +1,38 @@
+CLASS oo net/minecraft/server/players/PlayerChunkMap
+	FIELD a players Ljava/util/List;
+	FIELD b chunks Ldx;
+	FIELD c changedChunks Ljava/util/List;
+	FIELD d server Lnet/minecraft/server/MinecraftServer;
+	FIELD e dimension I
+	FIELD f radius I
+	FIELD g direction [[I
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;II)V
+		ARG 1 server
+		ARG 2 dimension
+		ARG 3 radius
+	METHOD a getLevel ()Ldp;
+	METHOD a isTrackingTile (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a chunkInRange (IIII)Z
+		ARG 1 x
+		ARG 2 z
+		ARG 3 xc
+		ARG 4 zc
+	METHOD a getChunk (IIZ)Ly;
+		ARG 1 x
+		ARG 2 z
+		ARG 3 create
+	METHOD a add (Ldl;)V
+		ARG 1 player
+	METHOD a chunks (Loo;)Ldx;
+		ARG 0 instance
+	METHOD b tick ()V
+	METHOD b remove (Ldl;)V
+		ARG 1 player
+	METHOD b changedChunks (Loo;)Ljava/util/List;
+		ARG 0 instance
+	METHOD c getMaxRange ()I
+	METHOD c move (Ldl;)V
+		ARG 1 player

@@ -1,0 +1,4 @@
+CLASS oh net/minecraft/server/LogConfigurator_Formatter
+	FIELD a df Ljava/text/SimpleDateFormat;
+	METHOD format format (Ljava/util/logging/LogRecord;)Ljava/lang/String;
+		ARG 1 logRecord

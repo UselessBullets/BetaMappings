@@ -1,6 +1,365 @@
 CLASS na net/minecraft/world/level/tile/Tile
+	FIELD a descriptionId Ljava/lang/String;
+	FIELD A unbreakable Lna;
+	FIELD aa pistonBase Lna;
+	FIELD aA crops Lna;
+	FIELD ab pistonExtension Lg;
+	FIELD aB farmland Lna;
+	FIELD ac cloth Lna;
+	FIELD aC furnace Lna;
+	FIELD ad pistonMovingPiece Lmz;
+	FIELD aD furnace_lit Lna;
+	FIELD ae flower Lnw;
+	FIELD aE sign Lna;
+	FIELD af rose Lnw;
+	FIELD aF door_wood Lna;
+	FIELD ag mushroom1 Lnw;
+	FIELD aG ladder Lna;
+	FIELD ah mushroom2 Lnw;
+	FIELD aH rail Lna;
+	FIELD ai goldBlock Lna;
+	FIELD aI stairs_stone Lna;
+	FIELD aj ironBlock Lna;
+	FIELD aJ wallSign Lna;
+	FIELD ak stoneSlab Lna;
+	FIELD aK lever Lna;
+	FIELD al stoneSlabHalf Lna;
+	FIELD aL pressurePlate_stone Lna;
+	FIELD am redBrick Lna;
+	FIELD aM door_iron Lna;
+	FIELD an tnt Lna;
+	FIELD aN pressurePlate_wood Lna;
+	FIELD ao bookshelf Lna;
+	FIELD aO redStoneOre Lna;
+	FIELD ap mossStone Lna;
+	FIELD aP redStoneOre_lit Lna;
+	FIELD aq obsidian Lna;
+	FIELD aQ notGate_off Lna;
+	FIELD ar torch Lna;
+	FIELD aR notGate_on Lna;
+	FIELD as fire Lpt;
+	FIELD aS button Lna;
+	FIELD at mobSpawner Lna;
+	FIELD aT topSnow Lna;
+	FIELD au stairs_wood Lna;
+	FIELD aU ice Lna;
+	FIELD av chest Lna;
+	FIELD aV snow Lna;
+	FIELD aw redStoneDust Lna;
+	FIELD aW cactus Lna;
+	FIELD ax emeraldOre Lna;
+	FIELD aX clay Lna;
+	FIELD ay emeraldBlock Lna;
+	FIELD aY reeds Lna;
+	FIELD az workBench Lna;
+	FIELD aZ recordPlayer Lna;
+	FIELD B water Lna;
+	FIELD ba fence Lna;
 	FIELD bA material Lhj;
+	FIELD bb pumpkin Lna;
+	FIELD bB friction F
+	FIELD bc hellRock Lna;
+	FIELD bd hellSand Lna;
+	FIELD be lightGem Lna;
+	FIELD bf portalTile Lz;
+	FIELD bg litPumpkin Lna;
+	FIELD bh cake Lna;
+	FIELD bi diode_off Lna;
+	FIELD bj diode_on Lna;
+	FIELD bk aprilFoolsJoke Lna;
+	FIELD bl trapdoor Lna;
+	FIELD bm tex I
+	FIELD bn id I
+	FIELD bo destroySpeed F
+	FIELD bp explosionResistance F
+	FIELD bq isInventoryItem Z
+	FIELD br collectStatistics Z
+	FIELD bs xx0 D
+	FIELD bt yy0 D
+	FIELD bu zz0 D
+	FIELD bv xx1 D
+	FIELD bw yy1 D
+	FIELD bx zz1 D
+	FIELD by soundType Lbu;
+	FIELD bz gravity F
+	FIELD C calmWater Lna;
+	FIELD d SOUND_NORMAL Lbu;
+	FIELD D lava Lna;
+	FIELD e SOUND_WOOD Lbu;
+	FIELD E calmLava Lna;
+	FIELD f SOUND_GRAVEL Lbu;
+	FIELD F sand Lna;
+	FIELD g SOUND_GRASS Lbu;
+	FIELD G gravel Lna;
+	FIELD h SOUND_STONE Lbu;
+	FIELD H goldOre Lna;
+	FIELD i SOUND_METAL Lbu;
+	FIELD I ironOre Lna;
+	FIELD j SOUND_GLASS Lbu;
+	FIELD J coalOre Lna;
+	FIELD k SOUND_CLOTH Lbu;
+	FIELD K treeTrunk Lna;
+	FIELD l SOUND_SAND Lbu;
+	FIELD L leaves Lar;
 	FIELD m tiles [Lna;
+	FIELD M sponge Lna;
+	FIELD n shouldTick [Z
+	FIELD N glass Lna;
+	FIELD o solid [Z
+	FIELD O lapisOre Lna;
+	FIELD p isEntityTile [Z
+	FIELD P lapisBlock Lna;
 	FIELD q lightBlock [I
+	FIELD Q dispenser Lna;
+	FIELD r transculent [Z
+	FIELD R sandStone Lna;
+	FIELD s lightEmission [I
+	FIELD S musicBlock Lna;
+	FIELD t sendTileData [Z
+	FIELD T bed Lna;
+	FIELD u rock Lna;
+	FIELD U goldenRail Lna;
+	FIELD v grass Loj;
+	FIELD V detectorRail Lna;
+	FIELD w dirt Lna;
+	FIELD W pistonStickyBase Lna;
+	FIELD x stoneBrick Lna;
+	FIELD X web Lna;
+	FIELD y wood Lna;
+	FIELD Y tallgrass Lkz;
+	FIELD z sapling Lna;
+	FIELD Z deadBush Lfz;
+	METHOD <init> (IILhj;)V
+		ARG 1 id
+		ARG 2 tex
+		ARG 3 material
+	METHOD <init> (ILhj;)V
+		ARG 1 id
+		ARG 2 material
+	METHOD a isSolidRender ()Z
+	METHOD a setLightEmission (F)Lna;
+		ARG 1 f
+	METHOD a setShape (FFFFFF)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD a getTexture (I)I
+		ARG 1 face
+	METHOD a getTexture (II)I
+		ARG 1 face
+		ARG 2 data
+	METHOD a getResource (ILjava/util/Random;)I
+		ARG 1 data
+		ARG 2 random
+	METHOD a mayPick (IZ)Z
+		ARG 1 data
+		ARG 2 liquid
+	METHOD a containsX (Lba;)Z
+		ARG 1 v
+	METHOD a setSoundType (Lbu;)Lna;
+		ARG 1 soundType
+	METHOD a mayPlace (Ldj;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a mayPlace (Ldj;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+	METHOD a spawnResources (Ldj;IIIIF)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+		ARG 6 odds
+	METHOD a triggerEvent (Ldj;IIIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 b0
+		ARG 6 b1
+	METHOD a clip (Ldj;IIILba;Lba;)Lnh;
+		ARG 1 level
+		ARG 2 xt
+		ARG 3 yt
+		ARG 4 zt
+		ARG 5 a
+		ARG 6 b
+	METHOD a addAABBs (Ldj;IIILcz;Ljava/util/ArrayList;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 box
+		ARG 6 boxes
+	METHOD a use (Ldj;IIILem;)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 player
+	METHOD a popResource (Ldj;IIILfy;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 itemInstance
+	METHOD a setPlacedBy (Ldj;IIILhl;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 by
+	METHOD a tick (Ldj;IIILjava/util/Random;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
+	METHOD a entityInside (Ldj;IIILlq;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+	METHOD a handleEntityInside (Ldj;IIILlq;Lba;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 e
+		ARG 6 current
+	METHOD a playerDestroy (Ldj;Lem;IIII)V
+		ARG 1 level
+		ARG 2 player
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 data
+	METHOD a getDestroyProgress (Lem;)F
+		ARG 1 player
+	METHOD a setDescriptionId (Ljava/lang/String;)Lna;
+		ARG 1 id
+	METHOD a getResourceCount (Ljava/util/Random;)I
+		ARG 1 random
+	METHOD a getExplosionResistance (Llq;)F
+		ARG 1 source
+	METHOD a updateShape (Lpb;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a getSignal (Lpb;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 dir
+	METHOD a setTicking (Z)Lna;
+		ARG 1 tick
+	METHOD a_ getSpawnResourcesAuxValue (I)I
+		ARG 1 data
+	METHOD b isCubeShaped ()Z
+	METHOD b setExplodeable (F)Lna;
+		ARG 1 explosionResistance
+	METHOD b containsY (Lba;)Z
+		ARG 1 v
 	METHOD b onRemove (Ldj;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD b neighborChanged (Ldj;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 type
+	METHOD b attack (Ldj;IIILem;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 player
+	METHOD b stepOn (Ldj;IIILlq;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+	METHOD b isSolidFace (Lpb;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+	METHOD c getTickDelay ()I
+	METHOD c setDestroyTime (F)Lna;
+		ARG 1 destroySpeed
+	METHOD c containsZ (Lba;)Z
+		ARG 1 v
 	METHOD c onPlace (Ldj;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD c destroy (Ldj;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD d isSignalSource ()Z
+	METHOD d wasExploded (Ldj;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD d getDirectSignal (Ldj;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 dir
+	METHOD e getPistonPushReaction ()I
+	METHOD e getAABB (Ldj;III)Lcz;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD e setPlacedOnFace (Ldj;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+	METHOD f setLightBlock (I)Lna;
+		ARG 1 i
+	METHOD f canSurvive (Ldj;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD g sendTileData ()Lna;
+	METHOD g spawnResources (Ldj;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD h init ()V
+	METHOD i setIndestructible ()Lna;
+	METHOD j getDestroySpeed ()F
+	METHOD k getName ()Ljava/lang/String;
+	METHOD k_ mayPick ()Z
+	METHOD l getDescriptionId ()Ljava/lang/String;
+	METHOD m isCollectStatistics ()Z
+	METHOD n setNotCollectStatistics ()Lna;

@@ -1,1 +1,7 @@
 CLASS ke net/minecraft/network/packet/ContainerClickPacket
+	FIELD a containerId I
+	FIELD b slotNum I
+	FIELD c buttonNum I
+	FIELD d uid S
+	FIELD e item Lfy;
+	FIELD f quickKey Z

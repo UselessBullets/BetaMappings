@@ -1,2 +1,0 @@
-CLASS ga net/minecraft/client/gui/StatsScreen_BlockStatisticsList
-	FIELD a statsScreen Ldv;

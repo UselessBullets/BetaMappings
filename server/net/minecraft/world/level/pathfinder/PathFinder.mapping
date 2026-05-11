@@ -1,0 +1,55 @@
+CLASS dz net/minecraft/world/level/pathfinder/PathFinder
+	FIELD a level Lpb;
+	FIELD b openSet Lhd;
+	FIELD c nodes Lgo;
+	FIELD d neighbors [Ld;
+	METHOD <init> (Lpb;)V
+		ARG 1 level
+	METHOD a getNode (III)Ld;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a reconstruct_path (Ld;Ld;)Lcb;
+		ARG 1 from
+		ARG 2 to
+	METHOD a findPath (Llq;DDDF)Lcb;
+		ARG 1 e
+		ARG 2 xt
+		ARG 4 yt
+		ARG 6 zt
+		ARG 8 maxDist
+	METHOD a findPath (Llq;IIIF)Lcb;
+		ARG 1 from
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 maxDist
+	METHOD a isFree (Llq;IIILd;)I
+		ARG 1 entity
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 size
+	METHOD a getNode (Llq;IIILd;I)Ld;
+		ARG 1 entity
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 size
+		ARG 6 jumpSize
+	METHOD a findPath (Llq;Ld;Ld;Ld;F)Lcb;
+		ARG 1 e
+		ARG 2 from
+		ARG 3 to
+		ARG 4 size
+		ARG 5 maxDist
+	METHOD a findPath (Llq;Llq;F)Lcb;
+		ARG 1 from
+		ARG 2 to
+		ARG 3 maxDist
+	METHOD b getNeighbors (Llq;Ld;Ld;Ld;F)I
+		ARG 1 entity
+		ARG 2 pos
+		ARG 3 size
+		ARG 4 target
+		ARG 5 maxDist

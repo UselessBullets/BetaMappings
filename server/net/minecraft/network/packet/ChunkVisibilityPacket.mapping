@@ -1,1 +1,8 @@
 CLASS li net/minecraft/network/packet/ChunkVisibilityPacket
+	FIELD a x I
+	FIELD b y I
+	FIELD c visible Z
+	METHOD <init> (IIZ)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 visible

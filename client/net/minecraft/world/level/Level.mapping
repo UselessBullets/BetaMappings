@@ -239,7 +239,7 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 4 y
 		ARG 6 z
 		ARG 8 r
-	METHOD a source (Lsn;DDDFZ)Lqx;
+	METHOD a explode (Lsn;DDDFZ)Lqx;
 		ARG 1 source
 		ARG 2 x
 		ARG 4 y
@@ -251,10 +251,10 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 2 partialTick
 	METHOD a findPath (Lsn;IIIF)Ldh;
 		ARG 1 from
-		ARG 2 to
-		ARG 3 xBest
-		ARG 4 yBest
-		ARG 5 zBest
+		ARG 2 xBest
+		ARG 3 yBest
+		ARG 4 zBest
+		ARG 5 maxDist
 	METHOD a getCubes (Lsn;Leq;)Ljava/util/List;
 		ARG 1 source
 		ARG 2 box
@@ -326,6 +326,7 @@ CLASS fd net/minecraft/world/level/Level
 	METHOD b getFreeAuxValueFor (Ljava/lang/String;)I
 		ARG 1 id
 	METHOD b removeEntities (Ljava/util/List;)V
+		ARG 1 list
 	METHOD b removeListener (Lpm;)V
 		ARG 1 listener
 	METHOD b addEntity (Lsn;)Z

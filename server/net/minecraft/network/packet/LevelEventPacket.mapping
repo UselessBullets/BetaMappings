@@ -1,1 +1,12 @@
 CLASS ds net/minecraft/network/packet/LevelEventPacket
+	FIELD a type I
+	FIELD b data I
+	FIELD c x I
+	FIELD d y I
+	FIELD e z I
+	METHOD <init> (IIIII)V
+		ARG 1 type
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data

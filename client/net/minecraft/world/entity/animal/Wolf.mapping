@@ -1,4 +1,5 @@
 CLASS gi net/minecraft/world/entity/animal/Wolf
+	FIELD a isInterested Z
 	FIELD b interestedAngle F
 	FIELD c interestedAngleO F
 	FIELD f isWet Z
@@ -20,6 +21,9 @@ CLASS gi net/minecraft/world/entity/animal/Wolf
 		ARG 1 partialTick
 	METHOD c getHeadRollAngle (F)F
 		ARG 1 partialTick
+	METHOD c followOwner (Lsn;F)V
+		ARG 1 owner
+		ARG 2 distance
 	METHOD c setAngry (Z)V
 		ARG 1 value
 	METHOD C isAngry ()Z

@@ -1,1 +1,8 @@
 CLASS w net/minecraft/network/packet/ComplexItemDataPacket
+	FIELD a itemType S
+	FIELD b itemId S
+	FIELD c data [B
+	METHOD <init> (SS[B)V
+		ARG 1 itemType
+		ARG 2 itemId
+		ARG 3 data

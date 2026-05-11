@@ -1,0 +1,6 @@
+CLASS oz net/minecraft/network/Connection_WriteThread
+	FIELD a connection Ljl;
+	METHOD <init> (Ljl;Ljava/lang/String;)V
+		ARG 1 connection
+		ARG 2 name
+	METHOD run run ()V

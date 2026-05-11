@@ -19,6 +19,8 @@ CLASS vo net/minecraft/world/level/tile/RailTile_Rail
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD a countPotentialConnections (Lvo;)I
+		ARG 0 rail
 	METHOD a getRail (Lwf;)Lvo;
 		ARG 1 p
 	METHOD a place (ZZ)V

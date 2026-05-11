@@ -1,0 +1,11 @@
+CLASS mi net/minecraft/world/level/storage/DirectoryLevelStorageSource
+	FIELD a baseDir Ljava/io/File;
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 dir
+	METHOD a deleteRecursive ([Ljava/io/File;)V
+		ARG 0 files
+	METHOD a selectLevel (Ljava/lang/String;Z)Lom;
+		ARG 1 levelId
+		ARG 2 createPlayerDir
+	METHOD b getDataTagFor (Ljava/lang/String;)Lct;
+		ARG 1 levelId

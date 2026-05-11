@@ -1,0 +1,43 @@
+CLASS ff net/minecraft/server/TrackedEntity
+	FIELD a e Llq;
+	FIELD b range I
+	FIELD c updateInterval I
+	FIELD d xp I
+	FIELD e yp I
+	FIELD f zp I
+	FIELD g yRotp I
+	FIELD h xRotp I
+	FIELD i xap D
+	FIELD j yap D
+	FIELD k zap D
+	FIELD l tickCount I
+	FIELD m moved Z
+	FIELD n seenBy Ljava/util/Set;
+	FIELD o xpu D
+	FIELD p ypu D
+	FIELD q zpu D
+	FIELD r updatedPlayerVisibility Z
+	FIELD s trackDelta Z
+	FIELD t teleportDelay I
+	METHOD <init> (Llq;IIZ)V
+		ARG 1 e
+		ARG 2 range
+		ARG 3 updateInterval
+		ARG 4 trackDelta
+	METHOD a broadcastRemoved ()V
+	METHOD a removePlayer (Ldl;)V
+		ARG 1 sp
+	METHOD a broadcast (Lgt;)V
+		ARG 1 packet
+	METHOD a tick (Ljava/util/List;)V
+		ARG 1 players
+	METHOD b getAddEntityPacket ()Lgt;
+	METHOD b updatePlayer (Ldl;)V
+		ARG 1 sp
+	METHOD b broadcastAndSend (Lgt;)V
+		ARG 1 packet
+	METHOD b updatePlayers (Ljava/util/List;)V
+		ARG 1 players
+	METHOD c clear (Ldl;)V
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 o

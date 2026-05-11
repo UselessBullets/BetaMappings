@@ -1,0 +1,7 @@
+CLASS ck net/minecraft/world/item/crafting/Recipe
+	METHOD a size ()I
+	METHOD a matches (Lhz;)Z
+		ARG 1 craftSlots
+	METHOD b getResultItem ()Lfy;
+	METHOD b assemble (Lhz;)Lfy;
+		ARG 1 craftSlots

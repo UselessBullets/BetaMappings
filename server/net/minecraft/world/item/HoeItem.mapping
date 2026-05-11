@@ -1,0 +1,4 @@
+CLASS gz net/minecraft/world/item/HoeItem
+	METHOD <init> (ILbb;)V
+		ARG 1 id
+		ARG 2 tier

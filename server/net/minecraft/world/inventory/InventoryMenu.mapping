@@ -1,0 +1,9 @@
+CLASS o net/minecraft/world/inventory/InventoryMenu
+	FIELD a craftSlots Lhz;
+	FIELD b resultSlots Lhp;
+	FIELD c active Z
+	METHOD <init> (Lfx;)V
+		ARG 1 inventory
+	METHOD <init> (Lfx;Z)V
+		ARG 1 inventory
+		ARG 2 active

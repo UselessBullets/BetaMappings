@@ -1,0 +1,119 @@
+CLASS fc net/minecraft/server/players/PlayerList
+	FIELD a logger Ljava/util/logging/Logger;
+	FIELD b players Ljava/util/List;
+	FIELD c server Lnet/minecraft/server/MinecraftServer;
+	FIELD d chunkMaps [Loo;
+	FIELD e maxPlayers I
+	FIELD f bans Ljava/util/Set;
+	FIELD g ipBans Ljava/util/Set;
+	FIELD h ops Ljava/util/Set;
+	FIELD i whitelist Ljava/util/Set;
+	FIELD j banFile Ljava/io/File;
+	FIELD k ipBanFile Ljava/io/File;
+	FIELD l opFile Ljava/io/File;
+	FIELD m whiteListFile Ljava/io/File;
+	FIELD n playerIo Lfl;
+	FIELD o doWhiteList Z
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 server
+	METHOD a getMaxRange ()I
+	METHOD a setLevel ([Ldp;)V
+		ARG 1 levels
+	METHOD a broadcast (DDDDILgt;)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 range
+		ARG 9 dimension
+		ARG 10 packet
+	METHOD a getChunkMap (I)Loo;
+		ARG 1 dimension
+	METHOD a isTrackingTile (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 dimension
+	METHOD a isTrackingTileEntity (IIILjh;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 te
+	METHOD a changeDimension (Ldl;)V
+		ARG 1 player
+	METHOD a respawn (Ldl;I)Ldl;
+		ARG 1 serverPlayer
+		ARG 2 targetDimension
+	METHOD a sendLevelInfo (Ldl;Ldp;)V
+		ARG 1 player
+		ARG 2 level
+	METHOD a getPlayerForLogin (Lee;Ljava/lang/String;)Ldl;
+		ARG 1 pendingConnection
+		ARG 2 userName
+	METHOD a broadcast (Lem;DDDDILgt;)V
+		ARG 1 except
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 range
+		ARG 10 dimension
+		ARG 11 packet
+	METHOD a broadcastAll (Lgt;)V
+		ARG 1 packet
+	METHOD a broadcastAll (Lgt;I)V
+		ARG 1 packet
+		ARG 2 dimension
+	METHOD a ban (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD a sendTo (Ljava/lang/String;Lgt;)Z
+		ARG 1 name
+		ARG 2 packet
+	METHOD a sendMessage (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 name
+		ARG 2 message
+	METHOD b tick ()V
+	METHOD b load (Ldl;)V
+		ARG 1 player
+	METHOD b pardon (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD c getPlayerNames ()Ljava/lang/String;
+	METHOD c add (Ldl;)V
+		ARG 1 player
+	METHOD c ipBan (Ljava/lang/String;)V
+		ARG 1 ip
+	METHOD d saveAll ()V
+	METHOD d move (Ldl;)V
+		ARG 1 player
+	METHOD d ipParden (Ljava/lang/String;)V
+		ARG 1 ip
+	METHOD e getWhiteList ()Ljava/util/Set;
+	METHOD e remove (Ldl;)V
+		ARG 1 player
+	METHOD e op (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD f reloadWhitelist ()V
+	METHOD f toggleDimension (Ldl;)V
+		ARG 1 player
+	METHOD f deop (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD g loadBans ()V
+	METHOD g sendAllPlayerInfo (Ldl;)V
+		ARG 1 player
+	METHOD g isWhiteListed (Ljava/lang/String;)Z
+		ARG 1 name
+	METHOD h saveBans ()V
+	METHOD h isOp (Ljava/lang/String;)Z
+		ARG 1 name
+	METHOD i loadIpBans ()V
+	METHOD i getPlayer (Ljava/lang/String;)Ldl;
+		ARG 1 name
+	METHOD j saveIpBans ()V
+	METHOD j broadcastToAllOps (Ljava/lang/String;)V
+		ARG 1 message
+	METHOD k loadOps ()V
+	METHOD k whitelist (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD l saveOps ()V
+	METHOD l blackList (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD m loadWhitelist ()V
+	METHOD n saveWhitelist ()V

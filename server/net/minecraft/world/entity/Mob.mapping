@@ -1,1 +1,104 @@
 CLASS hl net/minecraft/world/entity/Mob
+	FIELD a ambientSoundTime I
+	FIELD aa attackAnim F
+	FIELD aA yya F
+	FIELD ab health I
+	FIELD aB yRotA F
+	FIELD ac lastHealth I
+	FIELD aC jumping Z
+	FIELD ad hurtTime I
+	FIELD aD defaultLookAngle F
+	FIELD ae hurtDuration I
+	FIELD aE runSpeed F
+	FIELD af hurtDir F
+	FIELD aF lookTime I
+	FIELD ag deathTime I
+	FIELD ah attackTime I
+	FIELD ai oTilt F
+	FIELD aj tilt F
+	FIELD ak dead Z
+	FIELD al modelNum I
+	FIELD am animSpeed F
+	FIELD an walkAnimSpeedO F
+	FIELD ao walkAnimSpeed F
+	FIELD ap walkAnimPos F
+	FIELD aq lSteps I
+	FIELD ar lx D
+	FIELD as ly D
+	FIELD at lz D
+	FIELD au lyr D
+	FIELD av lxr D
+	FIELD aw fallTime F
+	FIELD ax lastHurt I
+	FIELD ay noActionTime I
+	FIELD az xxa F
+	FIELD b lookingAt Llq;
+	FIELD H invulnerableDuration I
+	FIELD I timeOffs F
+	FIELD J rotA F
+	FIELD K yBodyRot F
+	FIELD L yBodyRotO F
+	FIELD M cRun F
+	FIELD N run F
+	FIELD O animStep F
+	FIELD P animStepO F
+	FIELD Q hasHair Z
+	FIELD R textureName Ljava/lang/String;
+	FIELD S allowAlpha Z
+	FIELD T rotOffs F
+	FIELD U modelName Ljava/lang/String;
+	FIELD V bobStrength F
+	FIELD W deathScore I
+	FIELD X renderOffset F
+	FIELD Y interpolateOnly Z
+	FIELD Z oAttackAnim F
+	METHOD a travel (FF)V
+		ARG 1 xa
+		ARG 2 ya
+	METHOD a die (Llq;)V
+		ARG 1 source
+	METHOD a lookAt (Llq;FF)V
+		ARG 1 e
+		ARG 2 yMax
+		ARG 3 xMax
+	METHOD a knockback (Llq;IDD)V
+		ARG 1 source
+		ARG 2 dmg
+		ARG 3 xd
+		ARG 5 zd
+	METHOD b getViewVector (F)Lba;
+		ARG 1 partialTick
+	METHOD b rotLerp (FFF)F
+		ARG 1 a
+		ARG 2 b
+		ARG 3 max
+	METHOD b heal (I)V
+		ARG 1 heal
+	METHOD b_ isWaterMob ()Z
+	METHOD c actuallyHurt (I)V
+		ARG 1 dmg
+	METHOD c_ updateAi ()V
+	METHOD d canSpawn ()Z
+	METHOD D isImmobile ()Z
+	METHOD e getAmbientSoundInterval ()I
+	METHOD e canSee (Llq;)Z
+		ARG 1 target
+	METHOD g getAmbientSound ()Ljava/lang/String;
+	METHOD h getHurtSound ()Ljava/lang/String;
+	METHOD h_ removeWhenFarAway ()Z
+	METHOD i getDeathSound ()Ljava/lang/String;
+	METHOD j getDeathLoot ()I
+	METHOD k getSoundVolume ()F
+	METHOD l getMaxSpawnClusterSize ()I
+	METHOD L isSleeping ()Z
+	METHOD O jumpFromGround ()V
+	METHOD p onLadder ()Z
+	METHOD q dropDeathLoot ()V
+	METHOD Q playAmbientSound ()V
+	METHOD S spawnAnim ()V
+	METHOD u getMaxHeadXRot ()I
+	METHOD U checkDespawn ()V
+	METHOD v aiStep ()V
+	METHOD V isLookingAtAnEntity ()Z
+	METHOD W getLookingAt ()Llq;
+	METHOD X beforeRemove ()V

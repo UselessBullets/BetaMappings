@@ -1,0 +1,15 @@
+CLASS hp net/minecraft/world/Container
+	METHOD a getContainerSize ()I
+	METHOD a removeItem (II)Lfy;
+		ARG 1 slot
+		ARG 2 count
+	METHOD a setItem (ILfy;)V
+		ARG 1 slot
+		ARG 2 item
+	METHOD a_ stillValid (Lem;)Z
+		ARG 1 player
+	METHOD c getName ()Ljava/lang/String;
+	METHOD d getMaxStackSize ()I
+	METHOD d_ getItem (I)Lfy;
+		ARG 1 slot
+	METHOD i setChanged ()V

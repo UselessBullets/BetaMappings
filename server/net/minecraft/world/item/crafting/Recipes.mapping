@@ -1,0 +1,13 @@
+CLASS ey net/minecraft/world/item/crafting/Recipes
+	FIELD a instance Ley;
+	FIELD b recipes Ljava/util/List;
+	METHOD a getInstance ()Ley;
+	METHOD a addShapedRecipe (Lfy;[Ljava/lang/Object;)V
+		ARG 1 result
+		ARG 2 args
+	METHOD a getItemFor (Lhz;)Lfy;
+		ARG 1 craftSlots
+	METHOD b getRecipes ()Ljava/util/List;
+	METHOD b addShapelessRecipe (Lfy;[Ljava/lang/Object;)V
+		ARG 1 result
+		ARG 2 args

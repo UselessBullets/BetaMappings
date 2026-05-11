@@ -1,1 +1,13 @@
 CLASS hc net/minecraft/world/level/tile/DoorTile
+	METHOD a setOpen (Ldj;IIIZ)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 shouldOpen
+	METHOD c setShape (I)V
+		ARG 1 compositeData
+	METHOD d getDir (I)I
+		ARG 1 data
+	METHOD e isOpen (I)Z
+		ARG 0 data

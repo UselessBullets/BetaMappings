@@ -104,7 +104,7 @@ CLASS ls net/minecraft/world/entity/Mob
 	METHOD q dropDeathLoot ()V
 	METHOD R jumpFromGround ()V
 	METHOD r_ getCarriedItem ()Liz;
-	METHOD T playAmientSound ()V
+	METHOD T playAmbientSound ()V
 	METHOD u removeWhenFarAway ()Z
 	METHOD V spawnAnim ()V
 	METHOD x getMaxHeadXRot ()I

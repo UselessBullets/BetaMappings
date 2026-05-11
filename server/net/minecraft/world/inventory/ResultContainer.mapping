@@ -1,0 +1,2 @@
+CLASS of net/minecraft/world/inventory/ResultContainer
+	FIELD a items [Lfy;

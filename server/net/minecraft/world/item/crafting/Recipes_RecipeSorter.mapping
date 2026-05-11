@@ -1,0 +1,7 @@
+CLASS gx net/minecraft/world/item/crafting/Recipes_RecipeSorter
+	FIELD a recipes Ley;
+	METHOD <init> (Ley;)V
+		ARG 1 recipes
+	METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I
+		ARG 1 r0
+		ARG 2 r1

@@ -1,1 +1,7 @@
 CLASS pq net/minecraft/world/level/tile/entity/SignTileEntity
+	FIELD a messages [Ljava/lang/String;
+	FIELD b selectedLine I
+	FIELD c isEditable Z
+	METHOD a isEditable ()Z
+	METHOD a setEditable (Z)V
+		ARG 1 isEditable

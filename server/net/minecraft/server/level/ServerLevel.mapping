@@ -1,0 +1,25 @@
+CLASS dp net/minecraft/server/level/ServerLevel
+	FIELD C cache Lhe;
+	FIELD D canEditSpawn Z
+	FIELD E noSave Z
+	FIELD F server Lnet/minecraft/server/MinecraftServer;
+	FIELD G entitiesById Lgo;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lom;Ljava/lang/String;IJ)V
+		ARG 1 server
+		ARG 2 levelStorage
+		ARG 3 levelName
+		ARG 4 dimension
+		ARG 5 seed
+	METHOD a getEntity (I)Llq;
+		ARG 1 id
+	METHOD b forceTick (Llq;Z)V
+		ARG 1 e
+		ARG 2 actual
+	METHOD d getTileEntitiesInRegion (IIIIII)Ljava/util/List;
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD w closeLevelStorage ()V

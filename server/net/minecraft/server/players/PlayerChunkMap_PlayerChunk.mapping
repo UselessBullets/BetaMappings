@@ -1,0 +1,31 @@
+CLASS y net/minecraft/server/players/PlayerChunkMap_PlayerChunk
+	FIELD a playerChunkMap Loo;
+	FIELD b players Ljava/util/List;
+	FIELD c x I
+	FIELD d z I
+	FIELD e pos Lqa;
+	FIELD f changedTiles [S
+	FIELD g changes I
+	FIELD h xChangeMin I
+	FIELD i xChangeMax I
+	FIELD j yChangeMin I
+	FIELD k yChangeMax I
+	FIELD l zChangeMin I
+	FIELD m zChangeMax I
+	METHOD <init> (Loo;II)V
+		ARG 1 pcm
+		ARG 2 x
+		ARG 3 z
+	METHOD a broadcastChanges ()V
+	METHOD a tileChanged (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a add (Ldl;)V
+		ARG 1 player
+	METHOD a broadcast (Lgt;)V
+		ARG 1 packet
+	METHOD a broadcast (Ljh;)V
+		ARG 1 te
+	METHOD b remove (Ldl;)V
+		ARG 1 player

@@ -1,1 +1,6 @@
 CLASS gr net/minecraft/network/packet/ContainerSetContentPacket
+	FIELD a containerId I
+	FIELD b items [Lfy;
+	METHOD <init> (ILjava/util/List;)V
+		ARG 1 containerId
+		ARG 2 newItems

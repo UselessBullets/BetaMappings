@@ -1,1 +1,11 @@
 CLASS no net/minecraft/world/level/tile/FarmTile
+	METHOD g isUnderCrops (Ldj;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD h isNearWater (Ldj;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

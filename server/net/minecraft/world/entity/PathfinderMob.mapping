@@ -1,0 +1,23 @@
+CLASS fp net/minecraft/world/entity/PathfinderMob
+	FIELD a path Lcb;
+	FIELD d attackTarget Llq;
+	FIELD e holdGround Z
+	METHOD a getWalkTargetValue (III)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a setPath (Lcb;)V
+		ARG 1 path
+	METHOD a checkHurtTarget (Llq;F)V
+		ARG 1 target
+		ARG 2 distance
+	METHOD b cantSeeTarget (Llq;F)V
+		ARG 1 target
+		ARG 2 distance
+	METHOD B findRandomStrollLocation ()V
+	METHOD c setAttackTarget (Llq;)V
+		ARG 1 attacker
+	METHOD C isPathFinding ()Z
+	METHOD F getAttackTarget ()Llq;
+	METHOD o findAttackTarget ()Llq;
+	METHOD w shouldHoldGround ()Z

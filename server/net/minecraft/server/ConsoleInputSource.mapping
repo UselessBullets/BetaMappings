@@ -1,0 +1,4 @@
+CLASS mb net/minecraft/server/ConsoleInputSource
+	METHOD b info (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD d getConsoleName ()Ljava/lang/String;

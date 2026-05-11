@@ -1,0 +1,2 @@
+CLASS dg net/minecraft/server/Tickable
+	METHOD a tick ()V

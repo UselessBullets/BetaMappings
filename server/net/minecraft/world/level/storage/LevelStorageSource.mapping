@@ -1,0 +1,6 @@
+CLASS il net/minecraft/world/level/storage/LevelStorageSource
+	METHOD a requiresConversion (Ljava/lang/String;)Z
+		ARG 1 levelId
+	METHOD a convertLevel (Ljava/lang/String;Lpj;)Z
+		ARG 1 levelId
+		ARG 2 progress

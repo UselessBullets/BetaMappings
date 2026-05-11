@@ -1,1 +1,32 @@
 CLASS ph net/minecraft/world/level/biome/BiomeSource
+	FIELD a temperatures [D
+	FIELD b downfalls [D
+	FIELD c noises [D
+	FIELD d biomes [Lgs;
+	FIELD e temperatureMap Lmq;
+	FIELD f downfallMap Lmq;
+	FIELD g noiseMap Lmq;
+	METHOD <init> (Ldj;)V
+		ARG 1 level
+	METHOD a getTemperatureBlock ([DIIII)[D
+		ARG 1 result
+		ARG 2 x
+		ARG 3 z
+		ARG 4 w
+		ARG 5 h
+	METHOD a getBiomeBlock ([Lgs;IIII)[Lgs;
+		ARG 1 result
+		ARG 2 x
+		ARG 3 z
+		ARG 4 w
+		ARG 5 h
+	METHOD a getBiome (II)Lgs;
+		ARG 1 x
+		ARG 2 z
+	METHOD a getBiomeBlock (IIII)[Lgs;
+		ARG 1 x
+		ARG 2 z
+		ARG 3 w
+		ARG 4 h
+	METHOD a getBiome (Lqa;)Lgs;
+		ARG 1 chunkPos

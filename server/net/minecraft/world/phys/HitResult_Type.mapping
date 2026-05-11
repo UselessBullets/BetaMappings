@@ -1,0 +1,3 @@
+CLASS gd net/minecraft/world/phys/HitResult_Type
+	FIELD a TILE Lgd;
+	FIELD b ENTITY Lgd;

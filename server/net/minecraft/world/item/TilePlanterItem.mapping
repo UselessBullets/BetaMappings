@@ -1,0 +1,5 @@
+CLASS hn net/minecraft/world/item/TilePlanterItem
+	FIELD a tileId I
+	METHOD <init> (ILna;)V
+		ARG 1 id
+		ARG 2 tile

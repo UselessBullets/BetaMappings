@@ -1,0 +1,13 @@
+CLASS lm net/minecraft/world/level/saveddata/MapItemSavedData_HoldingPlayer
+	FIELD a player Lem;
+	FIELD b rowsDirtyMin [I
+	FIELD c rowsDirtyMax [I
+	FIELD d data Lfv;
+	FIELD e tick I
+	FIELD f sendPosTick I
+	FIELD g lastSentDecorations [B
+	METHOD <init> (Lfv;Lem;)V
+		ARG 1 data
+		ARG 2 player
+	METHOD a nextUpdatePacket (Lfy;)[B
+		ARG 1 itemInstance

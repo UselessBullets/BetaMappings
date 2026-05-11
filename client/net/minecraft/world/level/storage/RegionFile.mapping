@@ -60,6 +60,6 @@ CLASS qj net/minecraft/world/level/storage/RegionFile
 	METHOD d outOfBounds (II)Z
 		ARG 1 x
 		ARG 2 z
-	METHOD e getoffset (II)I
+	METHOD e getOffset (II)I
 		ARG 1 x
 		ARG 2 z

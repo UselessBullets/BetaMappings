@@ -1,0 +1,8 @@
+CLASS r net/minecraft/server/gui/MinecraftServerGui_2
+	FIELD a jtf Ljavax/swing/JTextField;
+	FIELD b gui Lnf;
+	METHOD <init> (Lnf;Ljavax/swing/JTextField;)V
+		ARG 1 gui
+		ARG 2 jtf
+	METHOD actionPerformed actionPerformed (Ljava/awt/event/ActionEvent;)V
+		ARG 1 actionEvent

@@ -1,9 +1,34 @@
 CLASS iq net/minecraft/world/entity/Painting_Motive
+	FIELD a Kebab Liq;
 	FIELD A name Ljava/lang/String;
+	FIELD b Aztec Liq;
 	FIELD B w I
+	FIELD c Alban Liq;
 	FIELD C h I
+	FIELD d Aztec2 Liq;
 	FIELD D uo I
+	FIELD e Bomb Liq;
 	FIELD E vo I
+	FIELD f Plant Liq;
+	FIELD g Wasteland Liq;
+	FIELD h Pool Liq;
+	FIELD i Courbet Liq;
+	FIELD j Sea Liq;
+	FIELD k Sunset Liq;
+	FIELD l Creebet Liq;
+	FIELD m Wanderer Liq;
+	FIELD n Graham Liq;
+	FIELD o Match Liq;
+	FIELD p Bust Liq;
+	FIELD q Stage Liq;
+	FIELD r Void Liq;
+	FIELD s SkullAndRoses Liq;
+	FIELD t Fighters Liq;
+	FIELD u Pointer Liq;
+	FIELD v Pigscene Liq;
+	FIELD w BurningSkull Liq;
+	FIELD x Skeleton Liq;
+	FIELD y DonkeyKong Liq;
 	FIELD z MAX_MOTIVE_NAME_LENGTH I
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;IIII)V
 		ARG 3 name

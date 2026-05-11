@@ -1,0 +1,26 @@
+CLASS el net/minecraft/world/inventory/Slot
+	FIELD a index I
+	FIELD b x I
+	FIELD c y I
+	FIELD d slot I
+	FIELD e container Lhp;
+	METHOD <init> (Lhp;III)V
+		ARG 1 container
+		ARG 2 slot
+		ARG 3 x
+		ARG 4 y
+	METHOD a getItem ()Lfy;
+	METHOD a remove (I)Lfy;
+		ARG 1 c
+	METHOD a onTake (Lfy;)V
+		ARG 1 item
+	METHOD a isAt (Lhp;I)Z
+		ARG 1 container
+		ARG 2 slot
+	METHOD b hasItem ()Z
+	METHOD b mayPlace (Lfy;)Z
+		ARG 1 item
+	METHOD c setChanged ()V
+	METHOD c set (Lfy;)V
+		ARG 1 item
+	METHOD d getMaxStackSize ()I

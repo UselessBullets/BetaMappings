@@ -1,0 +1,2 @@
+CLASS ci net/minecraft/client/gui/achievement/StatsScreen_ItemStatisticsList
+	FIELD a statsScreen Ldv;

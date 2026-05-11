@@ -1,1 +1,11 @@
 CLASS jd net/minecraft/world/level/tile/TrapDoorTile
+	METHOD a setOpen (Ldj;IIIZ)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 shouldOpen
+	METHOD c setShape (I)V
+		ARG 1 data
+	METHOD d isOpen (I)Z
+		ARG 0 data

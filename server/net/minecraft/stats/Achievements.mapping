@@ -1,0 +1,23 @@
+CLASS cy net/minecraft/stats/Achievements
+	FIELD a xMin I
+	FIELD b yMin I
+	FIELD c xMax I
+	FIELD d yMax I
+	FIELD e achievements Ljava/util/List;
+	FIELD f openInventory Lit;
+	FIELD g mineWood Lit;
+	FIELD h buildWorkbench Lit;
+	FIELD i buildPickaxe Lit;
+	FIELD j buildFurnace Lit;
+	FIELD k acquireIron Lit;
+	FIELD l buildHoe Lit;
+	FIELD m makeBread Lit;
+	FIELD n bakeCake Lit;
+	FIELD o buildBetterPickaxe Lit;
+	FIELD p cookFish Lit;
+	FIELD q onARail Lit;
+	FIELD r buildSword Lit;
+	FIELD s killEnemy Lit;
+	FIELD t killCow Lit;
+	FIELD u flyPig Lit;
+	METHOD a init ()V

@@ -1,0 +1,5 @@
+CLASS ox net/minecraft/network/Connection_SendAndQuitThread
+	FIELD a connection Ljl;
+	METHOD <init> (Ljl;)V
+		ARG 1 connection
+	METHOD run run ()V

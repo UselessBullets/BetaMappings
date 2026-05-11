@@ -1,0 +1,5 @@
+CLASS bo net/minecraft/world/item/ComplexItem
+	METHOD b getUpdatePacket (Lfy;Ldj;Lem;)Lgt;
+		ARG 1 itemInstance
+		ARG 2 level
+		ARG 3 player

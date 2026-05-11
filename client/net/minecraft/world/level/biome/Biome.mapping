@@ -37,6 +37,7 @@ CLASS kd net/minecraft/world/level/biome/Biome
 	METHOD a setName (Ljava/lang/String;)Lkd;
 		ARG 1 name
 	METHOD a getTreeFeature (Ljava/util/Random;)Lpg;
+		ARG 1 random
 	METHOD a getMobs (Llk;)Ljava/util/List;
 		ARG 1 category
 	METHOD b setSnowCovered ()Lkd;

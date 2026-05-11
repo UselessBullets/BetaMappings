@@ -11,7 +11,7 @@ CLASS tc net/minecraft/world/level/tile/FurnaceTile
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD h recalcLockDir (Lfd;III)V
+	METHOD h recalcLookDir (Lfd;III)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y

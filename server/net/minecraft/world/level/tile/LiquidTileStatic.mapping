@@ -1,1 +1,11 @@
 CLASS is net/minecraft/world/level/tile/LiquidTileStatic
+	METHOD i setDynamic (Ldj;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD j isFlammable (Ldj;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

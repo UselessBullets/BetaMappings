@@ -1,0 +1,3 @@
+CLASS bp net/minecraft/world/level/MobSpawner
+	METHOD a attackSleepingPlayers (Ldj;Ljava/util/List;)Z
+	METHOD a tick (Ldj;ZZ)I

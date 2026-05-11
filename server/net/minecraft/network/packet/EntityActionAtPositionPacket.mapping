@@ -1,1 +1,12 @@
 CLASS gq net/minecraft/network/packet/EntityActionAtPositionPacket
+	FIELD a id I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e action I
+	METHOD <init> (Llq;IIII)V
+		ARG 1 e
+		ARG 2 action
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z

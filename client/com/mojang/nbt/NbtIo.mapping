@@ -5,7 +5,7 @@ CLASS as com/mojang/nbt/NbtIo
 		ARG 0 in
 	METHOD a write (Lnu;Ljava/io/DataOutput;)V
 		ARG 0 tag
-		ARG 1 ods
+		ARG 1 dos
 	METHOD a writeCompressed (Lnu;Ljava/io/OutputStream;)V
 		ARG 0 tag
 		ARG 1 out

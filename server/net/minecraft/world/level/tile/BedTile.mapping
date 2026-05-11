@@ -1,1 +1,23 @@
 CLASS nj net/minecraft/world/level/tile/BedTile
+	FIELD a HEAD_DIRECTION_OFFSETS [[I
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD a setOccupied (Ldj;IIIZ)V
+		ARG 0 level
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 occupied
+	METHOD c getDirection (I)I
+		ARG 0 data
+	METHOD d isHeadPiece (I)Z
+		ARG 0 data
+	METHOD e isOccupied (I)Z
+		ARG 0 data
+	METHOD f findStandUpPosition (Ldj;IIII)Lay;
+		ARG 0 level
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 skipCount
+	METHOD o setShape ()V

@@ -1,0 +1,7 @@
+CLASS pu net/minecraft/server/level/ServerPlayerGameMode
+	FIELD a player Lem;
+	METHOD a tick ()V
+	METHOD a stopDestroyBlock (III)V
+	METHOD a startDestroyBlock (IIII)V
+	METHOD a useItem (Lem;Ldj;Lfy;)Z
+	METHOD a useItemOn (Lem;Ldj;Lfy;IIII)Z

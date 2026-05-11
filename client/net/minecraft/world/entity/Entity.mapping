@@ -57,7 +57,7 @@ CLASS sn net/minecraft/world/entity/Entity
 	FIELD br pushthrough F
 	FIELD bs random Ljava/util/Random;
 	FIELD bt tickCount I
-	FIELD bu flameTIme I
+	FIELD bu flameTime I
 	FIELD bv onFire I
 	FIELD bw airCapacity I
 	FIELD bx wasInWater Z
@@ -169,7 +169,7 @@ CLASS sn net/minecraft/world/entity/Entity
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-		ARG 7 yRoth
+		ARG 7 yRot
 		ARG 8 xRot
 	METHOD c setRot (FF)V
 		ARG 1 yRot

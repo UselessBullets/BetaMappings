@@ -1,1 +1,7 @@
 CLASS g net/minecraft/world/level/tile/PistonExtensionTile
+	FIELD a overrideTopTexture I
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 tex
+	METHOD b getFacing (I)I
+		ARG 0 data

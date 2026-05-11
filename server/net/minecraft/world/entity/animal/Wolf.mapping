@@ -1,1 +1,25 @@
 CLASS eh net/minecraft/world/entity/animal/Wolf
+	FIELD a isInterested Z
+	FIELD b interestedAngle F
+	FIELD c interestedAngleO F
+	FIELD f isWet Z
+	FIELD g isShaking Z
+	FIELD h shakeAnim F
+	FIELD i shakeAnimO F
+	METHOD a setOwner (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD a spawnTamingParticles (Z)V
+		ARG 1 success
+	METHOD A isTame ()Z
+	METHOD b setSitting (Z)V
+		ARG 1 value
+	METHOD c followOwner (Llq;F)V
+		ARG 1 owner
+		ARG 2 distance
+	METHOD c setAngry (Z)V
+		ARG 1 value
+	METHOD d setTame (Z)V
+		ARG 1 value
+	METHOD x getOwner ()Ljava/lang/String;
+	METHOD y isSitting ()Z
+	METHOD z isAngry ()Z

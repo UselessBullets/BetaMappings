@@ -1,1 +1,11 @@
 CLASS ar net/minecraft/world/level/tile/LeafTile
+	FIELD a checkBuffer [I
+	FIELD c oTex I
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 tex
+	METHOD g die (Ldj;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

@@ -1,0 +1,4 @@
+CLASS kx net/minecraft/world/level/tile/PressurePlateTile_Sensitivity
+	FIELD a everything Lkx;
+	FIELD b mobs Lkx;
+	FIELD c players Lkx;

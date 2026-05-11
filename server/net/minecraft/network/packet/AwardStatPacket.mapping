@@ -1,1 +1,6 @@
 CLASS ix net/minecraft/network/packet/AwardStatPacket
+	FIELD a statId I
+	FIELD b count I
+	METHOD <init> (II)V
+		ARG 1 statId
+		ARG 2 count

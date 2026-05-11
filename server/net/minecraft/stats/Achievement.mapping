@@ -1,0 +1,29 @@
+CLASS it net/minecraft/stats/Achievement
+	FIELD a x I
+	FIELD b y I
+	FIELD c requires Lit;
+	FIELD d icon Lfy;
+	FIELD l desc Ljava/lang/String;
+	FIELD m isGolden Z
+	METHOD <init> (ILjava/lang/String;IILej;Lit;)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 x
+		ARG 4 y
+		ARG 5 icon
+		ARG 6 requires
+	METHOD <init> (ILjava/lang/String;IILfy;Lit;)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 x
+		ARG 4 y
+		ARG 5 icon
+		ARG 6 requires
+	METHOD <init> (ILjava/lang/String;IILna;Lit;)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 x
+		ARG 4 y
+		ARG 5 icon
+		ARG 6 requires
+	METHOD b setGolden ()Lit;

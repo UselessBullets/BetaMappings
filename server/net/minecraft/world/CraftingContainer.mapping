@@ -1,0 +1,11 @@
+CLASS hz net/minecraft/world/CraftingContainer
+	FIELD a items [Lfy;
+	FIELD b width I
+	FIELD c menu Lcl;
+	METHOD <init> (Lcl;II)V
+		ARG 1 menu
+		ARG 2 w
+		ARG 3 h
+	METHOD b getItem (II)Lfy;
+		ARG 1 x
+		ARG 2 y

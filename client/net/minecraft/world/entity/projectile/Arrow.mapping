@@ -1,6 +1,6 @@
 CLASS sl net/minecraft/world/entity/projectile/Arrow
 	FIELD a pickup Z
-	FIELD b shadeTime I
+	FIELD b shakeTime I
 	FIELD c owner Lls;
 	FIELD d xTile I
 	FIELD e yTile I

@@ -1,0 +1,19 @@
+CLASS jb net/minecraft/client/ClientChunkCache
+	FIELD a toDrop Ljava/util/Set;
+	FIELD b emptyChunk Lhi;
+	FIELD c source Lbl;
+	FIELD d storage Lan;
+	FIELD e cache Ljava/util/Map;
+	FIELD f loadedChunkList Ljava/util/List;
+	FIELD g level Ldj;
+	METHOD <init> (Ldj;Lan;Lbl;)V
+		ARG 1 level
+		ARG 2 storage
+		ARG 3 source
+	METHOD a saveEntities (Lhi;)V
+		ARG 1 levelChunk
+	METHOD b save (Lhi;)V
+		ARG 1 levelChunk
+	METHOD d load (II)Lhi;
+		ARG 1 x
+		ARG 2 z

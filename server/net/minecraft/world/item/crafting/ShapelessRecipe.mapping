@@ -1,0 +1,6 @@
+CLASS ml net/minecraft/world/item/crafting/ShapelessRecipe
+	FIELD a result Lfy;
+	FIELD b ingredients Ljava/util/List;
+	METHOD <init> (Lfy;Ljava/util/List;)V
+		ARG 1 result
+		ARG 2 ingredients

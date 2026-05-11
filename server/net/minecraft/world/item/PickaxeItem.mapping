@@ -1,0 +1,5 @@
+CLASS ah net/minecraft/world/item/PickaxeItem
+	FIELD bk diggables [Lna;
+	METHOD <init> (ILbb;)V
+		ARG 1 id
+		ARG 2 tier

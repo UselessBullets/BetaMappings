@@ -6,13 +6,13 @@ CLASS ln net/minecraft/world/level/material/Material
 	FIELD c dirt Lln;
 	FIELD C color Ldx;
 	FIELD d wood Lln;
-	FIELD D _flammable Z
+	FIELD D flammable Z
 	FIELD e stone Lln;
-	FIELD E _replaceable Z
+	FIELD E replaceable Z
 	FIELD f metal Lln;
-	FIELD F _neverBuildable Z
+	FIELD F neverBuildable Z
 	FIELD g water Lln;
-	FIELD G _isAlwaysDestoyable Z
+	FIELD G isAlwaysDestroyable Z
 	FIELD h lava Lln;
 	FIELD H pushReaction I
 	FIELD i leaves Lln;
@@ -36,7 +36,7 @@ CLASS ln net/minecraft/world/level/material/Material
 	METHOD <init> (Ldx;)V
 		ARG 1 color
 	METHOD a isSolid ()Z
-	METHOD b isTransculent ()Z
+	METHOD b blocksLight ()Z
 	METHOD c blocksMotion ()Z
 	METHOD d isLiquid ()Z
 	METHOD e isFlammable ()Z

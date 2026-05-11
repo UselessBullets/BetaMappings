@@ -5,6 +5,7 @@ CLASS bk net/minecraft/world/level/tile/LeafTile
 		ARG 1 id
 		ARG 2 tex
 	METHOD a setFancy (Z)V
+		ARG 1 fancyGraphics
 	METHOD h die (Lfd;III)V
 		ARG 1 level
 		ARG 2 x

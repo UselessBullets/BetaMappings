@@ -1,1 +1,47 @@
 CLASS gi net/minecraft/world/level/tile/PistonBaseTile
+	FIELD a isSticky Z
+	FIELD b ignoreUpdate Z
+	METHOD <init> (IIZ)V
+		ARG 1 id
+		ARG 2 tex
+		ARG 3 isSticky
+	METHOD a isPushable (ILdj;IIIZ)Z
+		ARG 0 block
+		ARG 1 level
+		ARG 2 cx
+		ARG 3 cy
+		ARG 4 cz
+		ARG 5 allowDestroyable
+	METHOD c getFacing (I)I
+		ARG 0 data
+	METHOD c getNewFacing (Ldj;IIILem;)I
+		ARG 0 level
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 player
+	METHOD d isExtended (I)Z
+		ARG 0 data
+	METHOD f getNeighborSignal (Ldj;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 facing
+	METHOD g checkIfExtend (Ldj;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD h canPush (Ldj;IIII)Z
+		ARG 0 level
+		ARG 1 sx
+		ARG 2 sy
+		ARG 3 sz
+		ARG 4 facing
+	METHOD i createPush (Ldj;IIII)Z
+		ARG 1 level
+		ARG 2 sx
+		ARG 3 sy
+		ARG 4 sz
+		ARG 5 facing

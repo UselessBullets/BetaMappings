@@ -1,0 +1,5 @@
+CLASS ow net/minecraft/network/Connection_CloseThread
+	FIELD a connection Ljl;
+	METHOD <init> (Ljl;)V
+		ARG 1 connectionconnection
+	METHOD run run ()V

@@ -1,0 +1,36 @@
+CLASS fr net/minecraft/world/entity/Painting_Motive
+	FIELD a Kebab Lfr;
+	FIELD A name Ljava/lang/String;
+	FIELD b Aztec Lfr;
+	FIELD B w I
+	FIELD c Alban Lfr;
+	FIELD C h I
+	FIELD d Aztec2 Lfr;
+	FIELD D uo I
+	FIELD e Bomb Lfr;
+	FIELD E vo I
+	FIELD f Plant Lfr;
+	FIELD g Wasteland Lfr;
+	FIELD h Pool Lfr;
+	FIELD i Courbet Lfr;
+	FIELD j Sea Lfr;
+	FIELD k Sunset Lfr;
+	FIELD l Creebet Lfr;
+	FIELD m Wanderer Lfr;
+	FIELD n Graham Lfr;
+	FIELD o Match Lfr;
+	FIELD p Bust Lfr;
+	FIELD q Stage Lfr;
+	FIELD r Void Lfr;
+	FIELD s SkullAndRoses Lfr;
+	FIELD t Fighters Lfr;
+	FIELD u Pointer Lfr;
+	FIELD v Pigscene Lfr;
+	FIELD w BurningSkull Lfr;
+	FIELD x Skeleton Lfr;
+	FIELD y DonkeyKong Lfr;
+	FIELD z MAX_MOTIVE_NAME_LENGTH I
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;IIII)V
+		ARG 3 name
+		ARG 4 w
+		ARG 5 h

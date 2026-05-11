@@ -1,1 +1,13 @@
 CLASS an net/minecraft/world/level/chunk/storage/ChunkStorage
+	METHOD a tick ()V
+	METHOD a load (Ldj;II)Lhi;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 z
+	METHOD a save (Ldj;Lhi;)V
+		ARG 1 level
+		ARG 2 levelChunk
+	METHOD b flush ()V
+	METHOD b saveEntities (Ldj;Lhi;)V
+		ARG 1 level
+		ARG 2 levelChunk

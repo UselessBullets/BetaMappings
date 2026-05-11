@@ -1,0 +1,2 @@
+CLASS ga net/minecraft/client/gui/achievement/StatsScreen_BlockStatisticsList
+	FIELD a statsScreen Ldv;

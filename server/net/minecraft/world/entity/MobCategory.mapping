@@ -1,0 +1,15 @@
+CLASS hh net/minecraft/world/entity/MobCategory
+	FIELD a monster Lhh;
+	FIELD b creature Lhh;
+	FIELD c waterCreature Lhh;
+	FIELD d base Ljava/lang/Class;
+	FIELD e max I
+	FIELD f spawnPositionMaterial Lhj;
+	FIELD g isFriendly Z
+	METHOD <init> (Ljava/lang/String;ILjava/lang/Class;ILhj;Z)V
+		ARG 3 base
+		ARG 4 max
+	METHOD a getBaseClass ()Ljava/lang/Class;
+	METHOD b getMaxInstancesPerChunk ()I
+	METHOD c getSpawnPositionMaterial ()Lhj;
+	METHOD d isFriendly ()Z

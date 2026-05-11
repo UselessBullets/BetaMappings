@@ -1,2 +1,213 @@
 CLASS lq net/minecraft/world/entity/Entity
+	FIELD a entityCounter I
+	FIELD aG entityId I
+	FIELD aH viewScale D
+	FIELD aI blocksBuilding Z
+	FIELD aJ rider Llq;
+	FIELD aK riding Llq;
+	FIELD aL level Ldj;
+	FIELD aM xo D
+	FIELD aN yo D
+	FIELD aO zo D
+	FIELD aP x D
+	FIELD aQ y D
+	FIELD aR z D
+	FIELD aS xd D
+	FIELD aT yd D
+	FIELD aU zd D
+	FIELD aV yRot F
+	FIELD aW xRot F
+	FIELD aX yRotO F
+	FIELD aY xRotO F
+	FIELD aZ bb Lcz;
+	FIELD b nextStep I
+	FIELD ba onGround Z
+	FIELD bA wasInWater Z
+	FIELD bb horizontalCollision Z
+	FIELD bB invulnerableTime I
+	FIELD bc verticalCollision Z
+	FIELD bC airSupply I
+	FIELD bd collision Z
+	FIELD bD fireImmune Z
+	FIELD be hurtMarked Z
+	FIELD bE entityData Lmo;
+	FIELD bf isStuckInWeb Z
+	FIELD bF emission F
+	FIELD bg slide Z
+	FIELD bG inChunk Z
+	FIELD bh removed Z
+	FIELD bH xChunk I
+	FIELD bi heightOffset F
+	FIELD bI yChunk I
+	FIELD bj bbWidth F
+	FIELD bJ zChunk I
+	FIELD bk bbHeight F
+	FIELD bK noCulling Z
+	FIELD bl walkDistO F
+	FIELD bm walkDist F
+	FIELD bn fallDistance F
+	FIELD bo xOld D
+	FIELD bp yOld D
+	FIELD bq zOld D
+	FIELD br ySlideOffset F
+	FIELD bs footSize F
+	FIELD bt noPhysics Z
+	FIELD bu pushThrough F
+	FIELD bv random Ljava/util/Random;
+	FIELD bw tickCount I
+	FIELD bx flameTime I
+	FIELD by onFire I
+	FIELD bz airCapacity I
+	FIELD c firstTick Z
+	FIELD d xRideRotA D
+	FIELD e yRideRotA D
+	METHOD <init> (Ldj;)V
+		ARG 1 level
+	METHOD a newDoubleList ([D)Llr;
+		ARG 1 doubles
+	METHOD a newFloatList ([F)Llr;
+		ARG 1 floats
+	METHOD a move (DDD)V
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD a checkFallDamage (DZ)V
+		ARG 1 ya
+		ARG 3 onGround
+	METHOD a causeFallDamage (F)V
+		ARG 1 distance
+	METHOD a moveRelative (FFF)V
+		ARG 1 xa
+		ARG 2 ya
+		ARG 3 za
+	METHOD a burn (I)V
+		ARG 1 dmg
+	METHOD a spawnAtLocation (IIF)Lez;
+		ARG 1 resource
+		ARG 2 count
+		ARG 3 yOffs
+	METHOD a setSharedFlag (IZ)V
+		ARG 1 flag
+		ARG 2 value
+	METHOD a thunderHit (Lc;)V
+		ARG 1 lightningBolt
+	METHOD a setLevel (Ldj;)V
+		ARG 1 level
+	METHOD a interact (Lem;)Z
+		ARG 1 player
+	METHOD a spawnAtLocation (Lfy;F)Lez;
+		ARG 1 itemInstance
+		ARG 2 yOffs
+	METHOD a isUnderLiquid (Lhj;)Z
+		ARG 1 material
+	METHOD a killed (Lhl;)V
+		ARG 1 mob
+	METHOD a readAdditionalSaveData (Liq;)V
+		ARG 1 compoundTag
+	METHOD a hurt (Llq;I)Z
+		ARG 1 source
+		ARG 2 dmg
+	METHOD a_ getCollideAgainstBox (Llq;)Lcz;
+		ARG 1 entity
+	METHOD aa getEntityData ()Lmo;
+	METHOD ab lavaHurt ()V
+	METHOD ac isInWaterOrRain ()Z
+	METHOD ad isInWater ()Z
+	METHOD ae isInLava ()Z
+	METHOD af markHurt ()V
+	METHOD ag getEncodeId ()Ljava/lang/String;
+	METHOD ah isSneaking ()Z
+	METHOD b definedSynchedData ()V
+	METHOD b push (DDD)V
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD b absMoveTo (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yRot
+		ARG 8 xRot
+	METHOD b setSize (FF)V
+		ARG 1 w
+		ARG 2 h
+	METHOD b spawnAtLocation (II)Lez;
+		ARG 1 resource
+		ARG 2 count
+	METHOD b playerTouch (Lem;)V
+		ARG 1 player
+	METHOD b addAdditionalSaveData (Liq;)V
+		ARG 1 compoundTag
+	METHOD b ride (Llq;)V
+		ARG 1 e
+	METHOD c setPos (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD c moveTo (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yRot
+		ARG 8 xRot
+	METHOD c getBrightness (F)F
+		ARG 1 partialTick
+	METHOD c setRot (FF)V
+		ARG 1 yRot
+		ARG 2 xRot
+	METHOD c save (Liq;)Z
+		ARG 1 compoundTag
+	METHOD c awardKillScore (Llq;I)V
+		ARG 1 victim
+		ARG 2 score
+	METHOD d isFree (DDD)Z
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD d getSharedFlag (I)Z
+		ARG 1 flag
+	METHOD d saveWithoutId (Liq;)V
+		ARG 1 compoundTag
+	METHOD d_ isPushable ()Z
+	METHOD e distanceToSqr (DDD)D
+		ARG 1 x2
+		ARG 3 y2
+		ARG 5 z2
 	METHOD e load (Liq;)V
+		ARG 1 compoundTag
+	METHOD e setSneaking (Z)V
+		ARG 1 value
+	METHOD E rideTick ()V
+	METHOD e_ getCollideBox ()Lcz;
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 obj
+	METHOD f positionRider ()V
+	METHOD f distanceTo (DDD)D
+		ARG 1 x2
+		ARG 3 y2
+		ARG 5 z2
+	METHOD f distanceTo (Llq;)F
+		ARG 1 e
+	METHOD f_ updateInWaterState ()Z
+	METHOD g checkInTile (DDD)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD g distanceToSqr (Llq;)D
+		ARG 1 e
+	METHOD h push (Llq;)V
+		ARG 1 e
+	METHOD I getRidingHeight ()D
+	METHOD i_ getEquipmentSlots ()[Lfy;
+	METHOD J remove ()V
+	METHOD K isInWall ()Z
+	METHOD l_ isPickable ()Z
+	METHOD m getRideHeight ()D
+	METHOD m_ tick ()V
+	METHOD n makeStepSound ()Z
+	METHOD P handleInsidePortal ()V
+	METHOD R baseTick ()V
+	METHOD t getHeadHeight ()F
+	METHOD T isAlive ()Z
+	METHOD Y outOfWorld ()V
+	METHOD Z getLookAngle ()Lba;

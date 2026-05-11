@@ -1,0 +1,6 @@
+CLASS s net/minecraft/server/gui/MinecraftServerGui_3
+	FIELD a gui Lnf;
+	METHOD <init> (Lnf;)V
+		ARG 1 gui
+	METHOD focusGained focusGained (Ljava/awt/event/FocusEvent;)V
+		ARG 1 focusEvent

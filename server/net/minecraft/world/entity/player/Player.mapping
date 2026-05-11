@@ -1,0 +1,107 @@
+CLASS em net/minecraft/world/entity/player/Player
+	FIELD a sleepCounter I
+	FIELD A bedPosition Lay;
+	FIELD b respawnPosition Lay;
+	FIELD B bedOffsetX F
+	FIELD c minecartAchievementPos Lay;
+	FIELD C bedOffsetZ F
+	FIELD d dmgSpill I
+	FIELD D changingDimensionDelay I
+	FIELD E isInsidePortal Z
+	FIELD F portalTime F
+	FIELD G fishing Lhq;
+	FIELD i inventory Lfx;
+	FIELD j inventoryMenu Lcl;
+	FIELD k containerMenu Lcl;
+	FIELD l userType B
+	FIELD m score I
+	FIELD n oBob F
+	FIELD o bob F
+	FIELD p swinging Z
+	FIELD q swingTime I
+	FIELD r name Ljava/lang/String;
+	FIELD s dimension I
+	FIELD t xCloakO D
+	FIELD u yCloakO D
+	FIELD v zCloakO D
+	FIELD w xCloak D
+	FIELD x yCloak D
+	FIELD y zCloak D
+	FIELD z isSleeping Z
+	METHOD a startSleepInBed (III)Lbw;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a openTrap (Lak;)V
+		ARG 1 trap
+	METHOD a setRespawnPosition (Lay;)V
+		ARG 1 respawnPosition
+	METHOD a checkBedValidRespawnPosition (Ldj;Lay;)Lay;
+		ARG 0 level
+		ARG 1 pos
+	METHOD a reallyDrop (Lez;)V
+		ARG 1 itemEntity
+	METHOD a handleCollectItem (Lfy;)V
+		ARG 1 carried
+	METHOD a drop (Lfy;Z)V
+		ARG 1 item
+		ARG 2 randomly
+	METHOD a directAllTameWolvesOnTarget (Lhl;Z)V
+		ARG 1 target
+		ARG 2 skipSitting
+	METHOD a openContainer (Lhp;)V
+		ARG 1 container
+	METHOD a displayClientMessage (Ljava/lang/String;)V
+		ARG 1 message
+	METHOD a openFurnace (Lln;)V
+		ARG 1 furnace
+	METHOD a getDestroySpeed (Lna;)F
+		ARG 1 tile
+	METHOD a awardStat (Lns;)V
+		ARG 1 stat
+	METHOD a awardStat (Lns;I)V
+		ARG 1 stat
+		ARG 2 count
+	METHOD a openTextEdit (Lpq;)V
+		ARG 1 sign
+	METHOD a stopSleepInBed (ZZZ)V
+		ARG 1 forcefulWakeUp
+		ARG 2 updateLevelList
+		ARG 3 saveRespawnPoint
+	METHOD b startsCrafting (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b drop (Lfy;)V
+		ARG 1 item
+	METHOD b take (Llq;I)V
+		ARG 1 e
+		ARG 2 orgCount
+	METHOD b canDestroy (Lna;)Z
+		ARG 1 tile
+	METHOD c interact (Llq;)V
+		ARG 1 entity
+	METHOD d attack (Llq;)V
+		ARG 1 entity
+	METHOD e setBedOffset (I)V
+		ARG 1 bedDirection
+	METHOD F drop ()V
+	METHOD G getSelectedItem ()Lfy;
+	METHOD h checkMovementStatistiscs (DDD)V
+		ARG 1 dx
+		ARG 3 dy
+		ARG 5 dz
+	METHOD H removeSelectedItem ()V
+	METHOD i checkRidingStatistics (DDD)V
+		ARG 1 dx
+		ARG 3 dy
+		ARG 5 dz
+	METHOD i touch (Llq;)V
+		ARG 1 entity
+	METHOD j_ isPlayerVersusPlayer ()Z
+	METHOD M isSleepingLongEnough ()Z
+	METHOD N getRespawnPosition ()Lay;
+	METHOD o checkBed ()Z
+	METHOD s setDefaultHeadHeight ()V
+	METHOD w swing ()V
+	METHOD y closeContainer ()V

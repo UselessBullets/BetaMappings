@@ -1,0 +1,7 @@
+CLASS cv net/minecraft/server/network/PendingConnection_VerifyUserThread
+	FIELD a lp Liv;
+	FIELD b pc Lee;
+	METHOD <init> (Lee;Liv;)V
+		ARG 1 pendingConnection
+		ARG 2 loginPacket
+	METHOD run run ()V

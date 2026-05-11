@@ -1,0 +1,60 @@
+CLASS gg net/minecraft/stats/Stats
+	FIELD a statsById Ljava/util/Map;
+	FIELD A playerKills Lns;
+	FIELD b all Ljava/util/List;
+	FIELD B fishCaught Lns;
+	FIELD c generalStats Ljava/util/List;
+	FIELD C blockMined [Lns;
+	FIELD d blocksMinedStats Ljava/util/List;
+	FIELD D itemCrafted [Lns;
+	FIELD e itemsCraftedStats Ljava/util/List;
+	FIELD E itemUsed [Lns;
+	FIELD f startGame Lns;
+	FIELD F itemBroke [Lns;
+	FIELD g createWorld Lns;
+	FIELD G blockStatsLoaded Z
+	FIELD h loadWorld Lns;
+	FIELD H itemStatsLoaded Z
+	FIELD i joinMultiplayer Lns;
+	FIELD j leaveGame Lns;
+	FIELD k playOneMinute Lns;
+	FIELD l walkOneCm Lns;
+	FIELD m swimOneCm Lns;
+	FIELD n fallOneCm Lns;
+	FIELD o climbOneCm Lns;
+	FIELD p flyOneCm Lns;
+	FIELD q diveOneCm Lns;
+	FIELD r minecartOneCm Lns;
+	FIELD s boatOneCm Lns;
+	FIELD t pigOneCm Lns;
+	FIELD u jump Lns;
+	FIELD v drop Lns;
+	FIELD w damageDealt Lns;
+	FIELD x damageTaken Lns;
+	FIELD y deaths Lns;
+	FIELD z mobKills Lns;
+	METHOD a init ()V
+	METHOD a remapIds ([Lns;)V
+		ARG 0 stats
+	METHOD a remapId ([Lns;II)V
+		ARG 0 stats
+		ARG 1 id1
+		ARG 2 id2
+	METHOD a getUsedStats ([Lns;Ljava/lang/String;III)[Lns;
+		ARG 0 result
+		ARG 1 nameKey
+		ARG 2 idOff
+		ARG 3 start
+		ARG 4 end
+	METHOD a getMinedStats (Ljava/lang/String;I)[Lns;
+		ARG 0 nameKey
+		ARG 1 idOff
+	METHOD b buildBlockStats ()V
+	METHOD b getBreakStats ([Lns;Ljava/lang/String;III)[Lns;
+		ARG 0 result
+		ARG 1 nameKey
+		ARG 2 idOff
+		ARG 3 start
+		ARG 4 end
+	METHOD c buildItemStats ()V
+	METHOD d buildCraftableStats ()V

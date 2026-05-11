@@ -1,1 +1,5 @@
 CLASS bg net/minecraft/network/packet/BedResponsePacket
+	FIELD a BED_RESPONSES [Ljava/lang/String;
+	FIELD b type I
+	METHOD <init> (I)V
+		ARG 1 type

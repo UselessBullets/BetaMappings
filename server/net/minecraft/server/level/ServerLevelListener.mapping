@@ -1,0 +1,6 @@
+CLASS dm net/minecraft/server/level/ServerLevelListener
+	FIELD a server Lnet/minecraft/server/MinecraftServer;
+	FIELD b level Ldp;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ldp;)V
+		ARG 1 server
+		ARG 2 level

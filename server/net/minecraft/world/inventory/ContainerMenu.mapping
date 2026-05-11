@@ -1,0 +1,6 @@
+CLASS bh net/minecraft/world/inventory/ContainerMenu
+	FIELD a container Lhp;
+	FIELD b containerRows I
+	METHOD <init> (Lhp;Lhp;)V
+		ARG 1 inventory
+		ARG 2 container

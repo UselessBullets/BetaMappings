@@ -1,1 +1,2 @@
 CLASS cr net/minecraft/world/level/tile/entity/RecordPlayerTileEntity
+	FIELD a record I

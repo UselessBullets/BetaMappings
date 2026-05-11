@@ -1,1 +1,2 @@
 CLASS dv net/minecraft/world/entity/monster/Skeleton
+	FIELD a bow Lfy;

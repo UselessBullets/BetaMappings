@@ -1,0 +1,46 @@
+CLASS gs net/minecraft/world/level/biome/Biome
+	FIELD a rainForest Lgs;
+	FIELD b swampland Lgs;
+	FIELD c seasonalForest Lgs;
+	FIELD d forest Lgs;
+	FIELD e savanna Lgs;
+	FIELD f shrubland Lgs;
+	FIELD g taiga Lgs;
+	FIELD h desert Lgs;
+	FIELD i plains Lgs;
+	FIELD j iceDesert Lgs;
+	FIELD k tundra Lgs;
+	FIELD l hell Lgs;
+	FIELD m sky Lgs;
+	FIELD n name Ljava/lang/String;
+	FIELD o color I
+	FIELD p topMaterial B
+	FIELD q material B
+	FIELD r leafColor I
+	FIELD s enemies Ljava/util/List;
+	FIELD t friendlies Ljava/util/List;
+	FIELD u waterFriendlies Ljava/util/List;
+	FIELD v snowCovered Z
+	FIELD w hasRain Z
+	FIELD x map [Lgs;
+	METHOD a recalc ()V
+	METHOD a getBiome (DD)Lgs;
+		ARG 0 temp
+		ARG 2 downfall
+	METHOD a _getBiome (FF)Lgs;
+		ARG 0 temp
+		ARG 1 downfall
+	METHOD a setLeafColor (I)Lgs;
+		ARG 1 leafColor
+	METHOD a getMobs (Lhh;)Ljava/util/List;
+		ARG 1 category
+	METHOD a setName (Ljava/lang/String;)Lgs;
+		ARG 1 name
+	METHOD a getTreeFeature (Ljava/util/Random;)Ljm;
+		ARG 1 random
+	METHOD b setSnowCovered ()Lgs;
+	METHOD b setColor (I)Lgs;
+		ARG 1 color
+	METHOD c hasSnow ()Z
+	METHOD d hasRain ()Z
+	METHOD e setNoRain ()Lgs;

@@ -1,1 +1,10 @@
 CLASS ln net/minecraft/world/level/tile/entity/FurnaceTileEntity
+	FIELD a litTime I
+	FIELD b litDuration I
+	FIELD c tickCount I
+	FIELD i items [Lfy;
+	METHOD a getBurnDuration (Lfy;)I
+		ARG 1 itemInstance
+	METHOD k isLit ()Z
+	METHOD l burn ()V
+	METHOD m canBurn ()Z

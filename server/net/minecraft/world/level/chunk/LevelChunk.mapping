@@ -27,6 +27,15 @@ CLASS hi net/minecraft/world/level/chunk/LevelChunk
 		ARG 2 x
 		ARG 3 z
 	METHOD a recalcBlocksLights ()V
+	METHOD a getBlocksAndData ([BIIIIIII)I
+		ARG 1 data
+		ARG 2 x0
+		ARG 3 y0
+		ARG 4 z0
+		ARG 5 x1
+		ARG 6 y1
+		ARG 7 z1
+		ARG 8 p
 	METHOD a isAt (II)Z
 		ARG 1 x
 		ARG 2 z
@@ -45,6 +54,13 @@ CLASS hi net/minecraft/world/level/chunk/LevelChunk
 		ARG 3 z
 		ARG 4 tile
 		ARG 5 data
+	METHOD a setTileEntity (IIILjh;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tileEntity
+	METHOD a getRandom (J)Ljava/util/Random;
+		ARG 1 l
 	METHOD a getBrightness (Lco;III)I
 		ARG 1 layer
 		ARG 2 x
@@ -56,6 +72,23 @@ CLASS hi net/minecraft/world/level/chunk/LevelChunk
 		ARG 3 y
 		ARG 4 z
 		ARG 5 brightness
+	METHOD a getEntitiesOfClass (Ljava/lang/Class;Lcz;Ljava/util/List;)V
+		ARG 1 ec
+		ARG 2 bb
+		ARG 3 es
+	METHOD a addTileEntity (Ljh;)V
+		ARG 1 te
+	METHOD a addEntity (Llq;)V
+		ARG 1 e
+	METHOD a removeEntity (Llq;I)V
+		ARG 1 e
+		ARG 2 yc
+	METHOD a getEntities (Llq;Lcz;Ljava/util/List;)V
+		ARG 1 except
+		ARG 2 bb
+		ARG 3 es
+	METHOD a shouldSave (Z)Z
+		ARG 1 force
 	METHOD b recalcHeightmapOnly ()V
 	METHOD b getHeightmap (II)I
 		ARG 1 x
@@ -69,15 +102,39 @@ CLASS hi net/minecraft/world/level/chunk/LevelChunk
 		ARG 2 y
 		ARG 3 z
 		ARG 4 val
+	METHOD b removeEntity (Llq;)V
+		ARG 1 e
 	METHOD c lightLava ()V
 	METHOD c lightGaps (II)V
 		ARG 1 x
 		ARG 2 z
+	METHOD c isSkyLit (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD c getRawBrightness (IIII)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 skyDampen
+	METHOD d load ()V
+	METHOD d getTileEntity (III)Ljh;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD e unload ()V
+	METHOD e removeTileEntity (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD f markUnsaved ()V
 	METHOD f lightGap (III)V
 		ARG 1 x
 		ARG 2 z
 		ARG 3 source
+	METHOD g isEmpty ()Z
 	METHOD g recalcHeight (III)V
 		ARG 1 x
 		ARG 2 yStart
 		ARG 3 z
+	METHOD h attemptCompression ()V

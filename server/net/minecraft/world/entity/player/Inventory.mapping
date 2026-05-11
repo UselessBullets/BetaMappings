@@ -1,0 +1,42 @@
+CLASS fx net/minecraft/world/entity/player/Inventory
+	FIELD a items [Lfy;
+	FIELD b armor [Lfy;
+	FIELD c selected I
+	FIELD d player Lem;
+	FIELD e changed Z
+	FIELD f carried Lfy;
+	METHOD <init> (Lem;)V
+		ARG 1 player
+	METHOD a add (Lfy;)Z
+		ARG 1 item
+	METHOD a getAttackDamage (Llq;)I
+		ARG 1 entity
+	METHOD a save (Llr;)Llr;
+		ARG 1 listTag
+	METHOD a getDestroySpeed (Lna;)F
+		ARG 1 tile
+	METHOD b getSelected ()Lfy;
+	METHOD b removeResource (I)Z
+		ARG 1 type
+	METHOD b setCarried (Lfy;)V
+		ARG 1 carried
+	METHOD b load (Llr;)V
+		ARG 1 inventoryList
+	METHOD b canDestroy (Lna;)Z
+		ARG 1 tile
+	METHOD c hurtArmor (I)V
+		ARG 1 dmg
+	METHOD c contains (Lfy;)Z
+		ARG 1 itemInstance
+	METHOD d getSlot (I)I
+		ARG 1 tileId
+	METHOD d getSlotWithRemainingSpace (Lfy;)I
+		ARG 1 item
+	METHOD e getSelectionSize ()I
+	METHOD e addResource (Lfy;)I
+		ARG 1 itemInstance
+	METHOD f tick ()V
+	METHOD g getArmorValue ()I
+	METHOD h dropAll ()V
+	METHOD j getCarried ()Lfy;
+	METHOD k getFreeSlot ()I

@@ -1,0 +1,33 @@
+CLASS ha net/minecraft/server/network/PlayerConnection
+	FIELD a logger Ljava/util/logging/Logger;
+	FIELD b connection Ljl;
+	FIELD c done Z
+	FIELD d server Lnet/minecraft/server/MinecraftServer;
+	FIELD e player Ldl;
+	FIELD f tickCount I
+	FIELD g lastKeepAliveTick I
+	FIELD h aboveGroundTickCount I
+	FIELD i didTick Z
+	FIELD j xLastOk D
+	FIELD k yLastOk D
+	FIELD l zLastOk D
+	FIELD m synched Z
+	FIELD n expectedAcks Ljava/util/Map;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljl;Ldl;)V
+		ARG 1 server
+		ARG 2 connection
+		ARG 3 player
+	METHOD a tick ()V
+	METHOD a teleport (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yRot
+		ARG 8 xRot
+	METHOD a disconnect (Ljava/lang/String;)V
+		ARG 1 reason
+	METHOD b countDelayedPackets ()I
+	METHOD b send (Lgt;)V
+		ARG 1 packet
+	METHOD c handleCommand (Ljava/lang/String;)V
+		ARG 1 message

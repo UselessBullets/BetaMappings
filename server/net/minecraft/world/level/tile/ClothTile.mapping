@@ -1,1 +1,5 @@
 CLASS cq net/minecraft/world/level/tile/ClothTile
+	METHOD c getTileDataForItemAuxValue (I)I
+		ARG 0 auxValue
+	METHOD d getItemAuxValueForTileData (I)I
+		ARG 0 data
